@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dashboard Neo-brutalista Final</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "neo-bg": "#F5F2ED",
+                        "neo-yellow": "#FFEB00",
+                        "neo-purple": "#A855F7",
+                        "neo-orange": "#FB923C",
+                        "neo-cyan": "#22D3EE",
+                        "neo-lime": "#A3E635",
+                        "neo-blue": "#2563EB",
+                    },
+                    fontFamily: {
+                        "sans": ["Space Grotesk", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .neo-border {
+            border: 3px solid #000000;
+        }
+        .neo-shadow {
+            box-shadow: 4px 4px 0px 0px #000000;
+        }
+        .neo-shadow-lg {
+            box-shadow: 6px 6px 0px 0px #000000;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-neo-bg text-black overflow-x-hidden font-bold">
+<div class="relative flex h-full min-h-screen w-full flex-col max-w-md mx-auto bg-neo-bg overflow-hidden pb-24">
+<header class="flex items-center justify-between p-6 pt-10 sticky top-0 bg-neo-bg z-20">
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="text-sm uppercase tracking-tighter">Família Silva</span>
+<span class="material-symbols-outlined text-black font-black">expand_more</span>
+</div>
+<div class="flex items-center gap-2">
+<h2 class="text-2xl font-black uppercase tracking-tighter">Setembro 2024</h2>
+<span class="material-symbols-outlined font-black">calendar_month</span>
+</div>
+</div>
+<button class="p-2 neo-border neo-shadow bg-white rounded-none">
+<span class="material-symbols-outlined font-black">notifications</span>
+</button>
+</header>
+<main class="flex-1 flex flex-col gap-6 px-5 overflow-y-auto no-scrollbar">
+<div class="w-full bg-neo-yellow neo-border neo-shadow-lg p-6 flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<div class="flex flex-col">
+<p class="uppercase text-xs tracking-widest mb-1">Saldo Projetado</p>
+<h1 class="text-5xl font-black tracking-tighter">R$ 4.250</h1>
+</div>
+<span class="px-3 py-1 neo-border bg-neo-lime text-black text-xs font-black uppercase">
+                        Confortável
+                    </span>
+</div>
+<div class="w-full bg-black h-8 neo-border overflow-hidden p-1">
+<div class="bg-white h-full" style="width: 75%"></div>
+</div>
+<div class="flex justify-between text-sm uppercase tracking-tighter">
+<span>Hoje: R$ 3.100</span>
+<span>Meta: R$ 5.000</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4">
+<div class="flex flex-col p-3 bg-neo-lime neo-border neo-shadow">
+<p class="text-[10px] uppercase mb-1">Receitas</p>
+<p class="text-lg font-black leading-none">R$ 12k</p>
+</div>
+<div class="flex flex-col p-3 bg-neo-orange neo-border neo-shadow">
+<p class="text-[10px] uppercase mb-1">Despesas</p>
+<p class="text-lg font-black leading-none">R$ 7k</p>
+</div>
+<div class="flex flex-col p-3 bg-neo-cyan neo-border neo-shadow">
+<p class="text-[10px] uppercase mb-1">Dívidas</p>
+<p class="text-lg font-black leading-none">R$ 750</p>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex justify-between items-center px-1">
+<h3 class="text-xl font-black uppercase">Categorias</h3>
+<span class="text-xs underline decoration-2">VER TUDO</span>
+</div>
+<div class="p-6 bg-white neo-border neo-shadow flex flex-col gap-6">
+<div class="flex flex-col gap-4">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-xs uppercase tracking-tighter mb-1">
+<span>Essenciais</span>
+<span>50%</span>
+</div>
+<div class="h-6 w-full neo-border bg-neo-bg">
+<div class="h-full bg-neo-purple neo-border-r border-black" style="width: 50%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-xs uppercase tracking-tighter mb-1">
+<span>Lazer</span>
+<span>20%</span>
+</div>
+<div class="h-6 w-full neo-border bg-neo-bg">
+<div class="h-full bg-neo-orange neo-border-r border-black" style="width: 20%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-xs uppercase tracking-tighter mb-1">
+<span>Dívidas</span>
+<span>15%</span>
+</div>
+<div class="h-6 w-full neo-border bg-neo-bg">
+<div class="h-full bg-neo-cyan neo-border-r border-black" style="width: 15%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-xs uppercase tracking-tighter mb-1">
+<span>Outros</span>
+<span>15%</span>
+</div>
+<div class="h-6 w-full neo-border bg-neo-bg">
+<div class="h-full bg-neo-lime neo-border-r border-black" style="width: 15%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 pb-10">
+<h3 class="text-xl font-black uppercase px-1">Vencimentos</h3>
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between p-4 bg-white neo-border neo-shadow">
+<div class="flex items-center gap-3">
+<div class="size-10 neo-border bg-neo-purple flex items-center justify-center">
+<span class="material-symbols-outlined font-black">home</span>
+</div>
+<div class="flex flex-col">
+<span class="uppercase text-sm leading-none">Aluguel</span>
+<span class="text-[10px] uppercase font-medium">Em 2 dias</span>
+</div>
+</div>
+<div class="text-right">
+<span class="text-sm font-black">- R$ 2.500</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 bg-white neo-border neo-shadow">
+<div class="flex items-center gap-3">
+<div class="size-10 neo-border bg-neo-orange flex items-center justify-center">
+<span class="material-symbols-outlined font-black">movie</span>
+</div>
+<div class="flex flex-col">
+<span class="uppercase text-sm leading-none">Netflix</span>
+<span class="text-[10px] uppercase font-medium">Em 4 dias</span>
+</div>
+</div>
+<div class="text-right">
+<span class="text-sm font-black">- R$ 55,90</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 bg-neo-bg/50 neo-border neo-shadow opacity-60">
+<div class="flex items-center gap-3">
+<div class="size-10 neo-border bg-neo-cyan flex items-center justify-center">
+<span class="material-symbols-outlined font-black">flash_on</span>
+</div>
+<div class="flex flex-col">
+<span class="uppercase text-sm leading-none">Energia</span>
+<span class="text-[10px] uppercase font-medium">PAGO</span>
+</div>
+</div>
+<div class="text-right">
+<span class="text-sm font-black line-through">- R$ 220</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<button class="absolute bottom-28 right-6 size-16 rounded-full bg-neo-blue neo-border neo-shadow flex items-center justify-center text-white z-50">
+<span class="material-symbols-outlined text-4xl font-black">add</span>
+</button>
+<nav class="absolute bottom-0 w-full h-24 bg-white border-t-[3px] border-black flex justify-around items-center px-4 z-40">
+<a class="flex flex-col items-center gap-1 p-2 text-black" href="#">
+<span class="material-symbols-outlined font-black text-3xl">grid_view</span>
+<span class="text-[10px] font-black uppercase tracking-tighter">Início</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-black/40" href="#">
+<span class="material-symbols-outlined font-black text-3xl">receipt_long</span>
+<span class="text-[10px] font-black uppercase tracking-tighter">Extrato</span>
+</a>
+<div class="w-10"></div>
+<a class="flex flex-col items-center gap-1 p-2 text-black/40" href="#">
+<span class="material-symbols-outlined font-black text-3xl">pie_chart</span>
+<span class="text-[10px] font-black uppercase tracking-tighter">Budget</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-black/40" href="#">
+<span class="material-symbols-outlined font-black text-3xl">person</span>
+<span class="text-[10px] font-black uppercase tracking-tighter">Perfil</span>
+</a>
+</nav>
+</div>
+
+</body></html>

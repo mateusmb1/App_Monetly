@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Neo-Brutalism Mobile Dashboard</title>
+<!-- Load Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Configure Tailwind for custom colors and shadows -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'pop-pink': '#FF409F',
+            'pop-cyan': '#00E5FF',
+            'pop-orange': '#FF9900',
+            'pop-yellow': '#FFEA00',
+            'pop-lime': '#CCFF00',
+            'pop-purple': '#AA00FF',
+            'pop-blue': '#2979FF',
+            'pop-gray': '#E0E0E0',
+          },
+          boxShadow: {
+            'neo': '4px 4px 0px 0px #000000',
+            'neo-sm': '2px 2px 0px 0px #000000',
+          },
+          fontFamily: {
+            'sans': ['Inter', 'sans-serif'], // Assuming a clean sans-serif like the image
+          }
+        }
+      }
+    }
+  </script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-purpose="custom-utilities">
+    /* Custom styles to enforce the specific brutalist look */
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F3F4F6; /* Light gray background context */
+    }
+
+    .neo-border {
+      border: 3px solid #000000;
+    }
+    
+    .neo-border-sm {
+      border: 2px solid #000000;
+    }
+
+    /* Hide scrollbar for category list */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex justify-center bg-gray-100">
+<!-- BEGIN: Main Mobile Container -->
+<!-- Simulating a mobile device viewport width -->
+<main class="w-full max-w-md bg-[#F5F5F5] min-h-screen relative flex flex-col pb-safe">
+<!-- BEGIN: Header -->
+<header class="flex items-center justify-between px-5 py-4 bg-[#F5F5F5] sticky top-0 z-10">
+<div class="flex items-center gap-3">
+<!-- User Avatar -->
+<div class="w-10 h-10 rounded-full border-2 border-black overflow-hidden bg-white relative">
+<img alt="User Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClts_gMeYI9hK3ZxtKRGU-I5sRQsnPGsU5qDAaS04rCWX2Q_3jlzOEiK8QVIVtuhK4eOBs3juBMG85iA8X2o9MrW4gn1mU9umy0Bgroyhtb4jVnc3NfdMR51GqhtpOl5ETrQ437C7e5Jqxj7-hDsi5ikbcsJv-x6EsQyLUs0-A8hD7UJzpipVPA0iczJAjVGRdvR80tsIF87ZIRgqa5D_WVH_d_sbui0NyNdSHdvC6IRQU7rkNY90_iE2uV1c0LgfeQcNKwLHhlUw"/>
+<!-- Online status dot -->
+<div class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-500 rounded-full border border-black"></div>
+</div>
+<h1 class="text-xl font-extrabold text-black">Dashboard</h1>
+</div>
+<!-- Notification Bell -->
+<button class="w-10 h-10 bg-white rounded-full border-2 border-black flex items-center justify-center hover:bg-gray-100 transition-colors"><img alt="Notification" class="w-6 h-6 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmtbgxUv6Irp3daRc1xkcXArVOwEhCWicbk-GbWNjJr39xGOYW-Cr4J71g34_65AFlfbefLmD0FZaR4c-s0RWLe055LQ2yF-O-LvXb4f7FIEHQPusG2ELECF8Zx-SXLfzvzJSowDmNnty857RYF-moDdgxcMB6hUIyujgy9e2KKjXdh2fy1XNZdOykYYLLx8msIUFOCXKcxdsvyiK-Y37PfVNPJv64UxCiyA0aZ6OPVbUmEj73Ov2pf5AcJmoUdeZxeI_O1ojsRuc"/></button>
+</header>
+<!-- END: Header -->
+<!-- BEGIN: Scrollable Content -->
+<div class="px-4 pb-4 space-y-6 flex-grow">
+<!-- BEGIN: Pink Check-in Card -->
+<section class="bg-pop-pink neo-border rounded-xl p-5 shadow-neo relative overflow-hidden" data-purpose="check-in-card">
+<!-- Date Tag -->
+<div class="flex items-center gap-2 mb-3">
+<span class="bg-[#FFDD00] border border-black px-2 py-0.5 text-xs font-bold uppercase tracking-wide">Check-in</span>
+<span class="text-sm font-medium opacity-80">Hoje, 24 Out</span>
+</div>
+<!-- Main Question -->
+<h2 class="font-bold leading-tight mb-6 pr-2 text-2xl">
+          Hoje você teve algum gasto que ainda não registrou?
+        </h2>
+<!-- Action Buttons -->
+<div class="flex gap-3">
+<button class="flex-1 bg-pop-cyan text-black text-sm font-bold py-3 px-2 rounded-lg neo-border-sm shadow-neo-sm active:translate-y-0.5 active:shadow-none transition-all">
+            Sim, registrar agora
+          </button>
+<button class="flex-1 bg-pop-orange text-black text-sm font-bold py-3 px-2 rounded-lg neo-border-sm shadow-neo-sm active:translate-y-0.5 active:shadow-none transition-all">
+            Não, hoje não
+          </button>
+</div>
+</section>
+<!-- END: Pink Check-in Card -->
+<!-- BEGIN: New Register Modal/Card Area -->
+<!-- This represents the bottom sheet/card from the image -->
+<section class="bg-white neo-border rounded-t-xl rounded-b-lg shadow-neo overflow-hidden relative" data-purpose="transaction-card">
+<!-- Card Header -->
+<div class="flex justify-between items-center p-4 border-b-2 border-black">
+<span class="text-xs font-bold uppercase tracking-widest text-gray-500">Novo Registro</span>
+<button class="text-black hover:bg-gray-100 rounded p-1">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="3" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+</div>
+<!-- Amount Display -->
+<div class="flex justify-center items-center py-8">
+<span class="text-4xl font-extrabold flex items-start gap-1"><span class="text-2xl mt-1 font-bold text-black">R$</span><span class="text-6xl font-black ml-1">45,90</span></span>
+</div>
+<!-- Categories Section -->
+<div class="px-4 pb-2">
+<h3 class="text-xs font-bold uppercase mb-3 ml-1 text-gray-800">Categoria</h3>
+<!-- Category Horizontal Scroll -->
+<div class="flex gap-4 overflow-x-auto no-scrollbar pb-2">
+<!-- Food Category -->
+<div class="flex flex-col items-center gap-1 min-w-[70px]">
+<button class="w-16 h-16 bg-pop-orange neo-border-sm rounded-xl flex items-center justify-center shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-y-[2px] transition-all"><img alt="Alimentação" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBou-AQAoiEA41Jk4tLUcRi52ZNsHWZLhKA5LpOR7mFZC_GVqvcM3HWZF6rPi_Dpl4Je6vtKSqLdJCIHDbYl-A_D247ZUj4MKtN0M6yuZyRn2jtxEMlZxbZFZEJLxsfCP13tVB_K1HUbvEDmdnRCGTWPeKV755gSW5Xtz3duyZvaMJiJdk5g2OWkTsrOESsMm8vFf7iPN7eCbiXJUXgABhM01IbCkLb26DTVzhGbDHp9tBDcJckhhnYAZ5zVLgM0yR5tuG6VBrz6Jk"/></button>
+<span class="text-[10px] font-bold text-gray-600">Alimentação</span>
+</div>
+<!-- Transport Category -->
+<div class="flex flex-col items-center gap-1 min-w-[70px]">
+<button class="w-16 h-16 bg-pop-lime neo-border-sm rounded-xl flex items-center justify-center shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-y-[2px] transition-all"><img alt="Transporte" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUgoAC3SR-K4QfRPl4cqwT294M-xAstXLIjpPM0OxeKoFWmJzjpPkPlPv05Dv58AZMAzC6GSzCyPn9q2KSPbFPpiz4z-TH-52sTWMPvKFyLjJmu2iWOLKgspKsddzEe30IxPG3tPngO0tjvyteXAFm5SoJfFq-YtvKC2x7N2R-Mh_xiMN13HtEzxDHOaXgXH_JSVg_uxt3X7IDjaYiQ2c_IGrHatGFxGUOv1imhKFzM2VT7nBwbEyOGURbE3qzAbVD22Pk3aKN5Lk"/></button>
+<span class="text-[10px] font-bold text-gray-600">Transporte</span>
+</div>
+<!-- Shopping Category -->
+<div class="flex flex-col items-center gap-1 min-w-[70px]">
+<button class="w-16 h-16 neo-border-sm rounded-xl flex items-center justify-center shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-y-[2px] transition-all bg-[#00BBFF]"><img alt="Compras" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHeDFUyFaveCUkGAnYWbeNvBuc5Zw6A16FJO20EV5F15aKPhwmKVU6VbkXRNnv0rjQGRpHKsBzdDMwmLGLVvGg2GTFRlLr6Tg5TfCK_b3PlKETJwjc9meF_ddEGpRa-QQATCYJ5gZVLP_Gtv1pcHsBc6OA0_A_xzJdpo0eCXwblNgdZvno1lSyDgfxtLZOo7-a03s05VbboTT5b7WQDZ2YOn64aOZia6pMIJTQfwkTYu9ypryapjR6E9N0sK4KmSM7tddTSnJwfEQ"/></button>
+<span class="text-[10px] font-bold text-gray-600">Compras</span>
+</div>
+<!-- Home Category -->
+<div class="flex flex-col items-center gap-1 min-w-[70px]">
+<button class="w-16 h-16 bg-pop-purple neo-border-sm rounded-xl flex items-center justify-center shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-y-[2px] transition-all"><img alt="Saúde" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqQGTR-SpMUXQ51h_kzQUVGKp5Xo7Cd4Tx8ihHaWk7Tis4uhKjwDH_07cFm-75fNn7w8pBeavFyO_5wUWuIk0OizgdSFQjTI6seCSBk2mxBZFUAs3MQdXFa-jeZRUU40NcohQs97jec_s1UvEiSrzG29skux5m-GyX_BTaSJTq94b8Q883WFKObXSF0Jl9s4oIPFnhDMYSDD5T7EO-ejuSw0yXd6MX2RApoEgSO7HwKDAiOVOD8NrwPi7LjcJU5zjwNYTWhXBZYbQ"/></button>
+<span class="text-[10px] font-bold text-gray-600">Saúde</span>
+</div>
+</div>
+</div>
+<!-- Payment Method Tabs -->
+<div class="mt-4 border-t-2 border-black">
+<div class="flex overflow-x-auto no-scrollbar py-4 px-2 gap-3">
+<button class="whitespace-nowrap px-4 py-2 bg-white border-2 border-black rounded-full text-sm font-bold shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Cartão de Crédito</button>
+<button class="whitespace-nowrap px-4 py-2 bg-pop-cyan border-2 border-black rounded-full text-sm font-bold shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Débito (Nubank)</button>
+<button class="whitespace-nowrap px-4 py-2 bg-white border-2 border-black rounded-full text-sm font-bold shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Dinheiro</button>
+</div>
+</div>
+</section>
+<!-- END: New Register Modal/Card Area -->
+</div>
+<!-- END: Scrollable Content -->
+<!-- BEGIN: Keyboard Overlay (Simulated) -->
+<section class="bg-[#D1D5DB] pt-2 pb-8 px-1" data-purpose="keyboard">
+<!-- Control Bar -->
+<div class="flex justify-between px-4 py-2 mb-2">
+<button class="text-base font-medium text-black">Cancelar</button>
+<button class="text-base font-bold text-black"><span class="text-2xl font-bold">⌫</span></button>
+</div>
+<div class="grid grid-cols-3 gap-x-1.5 gap-y-2 px-1">
+<!-- Row 1 -->
+<button class="bg-white rounded-[5px] h-12 text-2xl font-normal shadow-[0_1px_0_0_#888888] active:bg-gray-200 flex items-center justify-center font-sans">1</button>
+<button class="bg-white rounded-[5px] h-12 text-2xl font-normal shadow-[0_1px_0_0_#888888] active:bg-gray-200 flex items-center justify-center font-sans">2</button>
+<button class="bg-white rounded-[5px] h-12 text-2xl font-normal shadow-[0_1px_0_0_#888888] active:bg-gray-200 flex items-center justify-center font-sans">3</button>
+<!-- Row 2 -->
+<button class="bg-white rounded-[5px] h-12 text-2xl font-normal shadow-[0_1px_0_0_#888888] active:bg-gray-200 flex items-center justify-center font-sans">4</button>
+<button class="bg-white rounded-[5px] h-12 text-2xl font-normal shadow-[0_1px_0_0_#888888] active:bg-gray-200 flex items-center justify-center font-sans">5</button>
+<button class="bg-white rounded-[5px] h-12 text-2xl font-normal shadow-[0_1px_0_0_#888888] active:bg-gray-200 flex items-center justify-center font-sans">6</button>
+<!-- Row 3 -->
+<button class="bg-white rounded-[5px] h-12 text-2xl font-normal shadow-[0_1px_0_0_#888888] active:bg-gray-200 flex items-center justify-center font-sans">7</button>
+<button class="bg-white rounded-[5px] h-12 text-2xl font-normal shadow-[0_1px_0_0_#888888] active:bg-gray-200 flex items-center justify-center font-sans">8</button>
+<button class="bg-white rounded-[5px] h-12 text-2xl font-normal shadow-[0_1px_0_0_#888888] active:bg-gray-200 flex items-center justify-center font-sans">9</button>
+<!-- Row 4 -->
+<button class="rounded-[5px] h-12 text-2xl font-normal flex items-center justify-center pb-2">,</button>
+<button class="bg-white rounded-[5px] h-12 text-2xl font-normal shadow-[0_1px_0_0_#888888] active:bg-gray-200 flex items-center justify-center font-sans">0</button>
+<button class="rounded-[5px] h-12 flex items-center justify-center active:bg-gray-300"><span class="text-2xl font-bold">⌫</span></button>
+</div>
+</section>
+<!-- END: Keyboard Overlay -->
+<!-- BEGIN: Toast Notification -->
+<!-- Positioned absolutely over the content, visually similar to the black toast in the image -->
+<div class="absolute left-1/2 -translate-x-1/2 w-[90%] z-50 bottom-[35%]"><div class="bg-black text-white px-4 py-3 rounded-full shadow-neo flex items-center gap-3 w-full">
+<div class="w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
+<img alt="Success" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm1znXOXuVwqWojelhAQwv6meqLPtbKON3hRAXhIUd4BprzeXgJJDZO3yvotPNpMOeDF7qd-_VuhbNJProbLQKT-bpD5fMxIxJeKzgTu_fxZUeyLG5kO-WypPliRIZh2YJGwetWbHw7hTBiDNyf7YrMTww48IKNnWtU4nJySb8mGGcLctWUGR2b0D9SwMVpjbCIiMASeEFbAOCXs2b1hVoL2kHbFmjp-GzF4XL1acpBZ2zTyNQdFDvaVezPEb65YI6Hi-DPNxxc7Q"/>
+</div>
+<div class="flex-grow">
+<p class="text-sm font-bold leading-tight">Gasto registrado!</p>
+<p class="text-xs text-gray-300 leading-tight">Seu saldo foi atualizado.</p>
+</div>
+<button class="text-xs font-bold uppercase tracking-wider text-white hover:underline">VER</button>
+</div></div>
+<!-- END: Toast Notification -->
+</main>
+<!-- END: Main Mobile Container -->
+</body></html>

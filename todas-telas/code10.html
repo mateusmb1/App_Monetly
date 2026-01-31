@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nova Despesa</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Font Awesome for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            bgBeige: '#F5F0E6',
+            primaryYellow: '#FFFF00',
+            primaryPurple: '#8A2BE2',
+            borderBlack: '#000000',
+          },
+          boxShadow: {
+            'brutal': '4px 4px 0px 0px #000000',
+            'brutal-sm': '2px 2px 0px 0px #000000',
+          },
+          borderWidth: {
+            '3': '3px',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles for Specific Neo-Brutalist elements -->
+<style data-purpose="custom-utilities">
+    /* Ensure inputs don't have default browser styles that conflict */
+    input:focus, select:focus, textarea:focus, button:focus {
+      outline: none;
+      box-shadow: none; 
+    }
+    
+    /* Specific styling for the brutalist borders to look crisp */
+    .brutal-border {
+      border: 3px solid black;
+    }
+
+    /* Custom scrollbar hiding for cleaner mobile look if needed */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen font-sans">
+<!-- BEGIN: Mobile Container -->
+<!-- This container simulates the mobile screen view -->
+<main class="w-full max-w-md bg-bgBeige min-h-screen relative shadow-2xl overflow-hidden flex flex-col">
+<!-- BEGIN: Header -->
+<header class="flex items-center justify-between px-6 pt-12 pb-4">
+<!-- Close Icon -->
+<button class="text-3xl text-black hover:scale-110 transition-transform p-2">
+<i class="fa-solid fa-times"></i>
+</button>
+<!-- Title -->
+<h1 class="text-xl font-bold text-black tracking-wide">Nova Despesa</h1>
+<!-- Spacer for centering -->
+<div class="w-8"></div>
+</header>
+<!-- END: Header -->
+<!-- BEGIN: Content Scrollable Area -->
+<div class="flex-1 overflow-y-auto px-6 pb-24 no-scrollbar">
+<!-- BEGIN: Amount Section -->
+<section class="mt-4 mb-8 text-center">
+<label class="block text-sm font-bold mb-2">Valor da despesa</label>
+<div class="bg-white brutal-border h-20 flex items-center justify-between px-4">
+<span class="text-3xl font-extrabold">R$</span>
+<!-- Input is right aligned to match design -->
+<input class="text-5xl font-bold text-right w-full bg-transparent border-none p-0 focus:ring-0 placeholder-black text-black" inputmode="decimal" type="text" value="0,00"/>
+</div>
+</section>
+<!-- END: Amount Section -->
+<!-- BEGIN: 'Quem Pagou?' Section -->
+<section class="mb-8">
+<label class="block text-xs font-bold uppercase tracking-wider mb-4">QUEM PAGOU?</label>
+<div class="flex space-x-6">
+<!-- User 1: You (Selected) -->
+<div class="flex flex-col items-center cursor-pointer">
+<div class="relative w-16 h-16 rounded-full brutal-border bg-primaryYellow flex items-center justify-center overflow-hidden">
+<!-- Double border effect using padding inside container -->
+<div class="w-14 h-14 rounded-full border-2 border-transparent overflow-hidden">
+<img alt="Você" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAguA1cxwZR33CdoIJ_1iwzJb3h35VPvd9kCchFczQVeTSW83VDioeFbcELL6yJFKlYH7Iq6FUxe19cNmeoi-mwjfITtWM0LZGhqqLCm57RnDnEMp5bRirUzy7p6g-zHGCChFUPidebGLopZXx72nGE7Bec4ZGsZpdN61Z3Z2p_73wZbTre5Tjjq60D8LPEo0khTeieRoCffqB7viCibmFzWLDCYNoKiayWX9ey3dwyHiGCTLvKe4bCo6wJ5Dudjq934z7eyPeHV9k"/>
+</div>
+<!-- Checkmark Badge -->
+<div class="absolute bottom-0 right-0 bg-black text-primaryYellow rounded-full w-6 h-6 flex items-center justify-center border-2 border-white text-xs z-10">
+<i class="fa-solid fa-check"></i>
+</div>
+</div>
+<span class="mt-2 text-sm font-medium">Você</span>
+</div>
+<!-- User 2: Joao -->
+<div class="flex flex-col items-center cursor-pointer opacity-60 hover:opacity-100 transition-opacity">
+<div class="w-16 h-16 rounded-full brutal-border bg-white flex items-center justify-center overflow-hidden">
+<img alt="João" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlQieNP_uyvmuMU8kRZKoUwes_npB1EjkX5OHMj-WAsuEzcIVV41DyrM9rMTXzyslarSEzO1v6snqk39J-EouXslc21c0-Dbsd85Uj_JY6PDpG_hwHXCpAQA9qmM9FHdnMmQs5kmpSzRy_mZEZhdE0LpLfVOvsLkAhNbAb26lZ-KXufIaVvBXa50I_l58tJ0DyB4aYMNEnpB55W_0-2QZZ3dzdqXs19KjQS8cQQG1AxsZ0jraF0E22UeKczwZ7n2V6f0lz-zlsQOU"/>
+</div>
+<span class="mt-2 text-sm font-medium">João</span>
+</div>
+<!-- Add New User -->
+<div class="flex flex-col items-center cursor-pointer hover:scale-105 transition-transform">
+<div class="w-16 h-16 rounded-full brutal-border bg-white flex items-center justify-center">
+<i class="fa-solid fa-plus text-2xl"></i>
+</div>
+<span class="mt-2 text-sm font-medium">Novo</span>
+</div>
+</div>
+</section>
+<!-- END: 'Quem Pagou?' Section -->
+<!-- BEGIN: Details Row (Data & Categoria) -->
+<section class="grid grid-cols-2 gap-4 mb-8">
+<!-- Date Input -->
+<div>
+<label class="block text-sm font-bold mb-2">Data</label>
+<div class="bg-white brutal-border h-12 flex items-center px-3 cursor-pointer">
+<i class="fa-solid fa-calendar text-xl mr-3"></i>
+<span class="font-bold">Hoje</span>
+</div>
+</div>
+<!-- Category Input -->
+<div>
+<label class="block text-sm font-bold mb-2">Categoria</label>
+<div class="bg-white brutal-border h-12 flex items-center justify-between px-3 cursor-pointer">
+<div class="flex items-center overflow-hidden">
+<i class="fa-solid fa-cart-shopping text-lg mr-2"></i>
+<span class="font-bold truncate">Mercado</span>
+</div>
+<i class="fa-solid fa-chevron-down text-sm"></i>
+</div>
+</div>
+</section>
+<!-- END: Details Row -->
+<!-- BEGIN: Frequency Section -->
+<section class="mb-8">
+<label class="block text-sm font-bold mb-2">Frequência</label>
+<div class="flex w-full brutal-border bg-white">
+<!-- Option 1: Unica (Active) -->
+<button class="flex-1 py-3 bg-primaryYellow font-bold border-r-2 border-black hover:bg-yellow-300 transition-colors">
+            Única
+          </button>
+<!-- Option 2: Fixa -->
+<button class="flex-1 py-3 bg-white font-bold border-r-2 border-black hover:bg-gray-50 transition-colors">
+            Fixa
+          </button>
+<!-- Option 3: Parcelada -->
+<button class="flex-1 py-3 bg-white font-bold hover:bg-gray-50 transition-colors">
+            Parcelada
+          </button>
+</div>
+</section>
+<!-- END: Frequency Section -->
+<!-- BEGIN: Payment Section -->
+<section class="mb-8">
+<label class="block text-sm font-bold mb-2">Pagamento</label>
+<div class="bg-white brutal-border p-3 flex items-center justify-between cursor-pointer">
+<div class="flex items-center">
+<!-- Card Icon Box -->
+<div class="w-10 h-8 bg-black rounded-sm flex items-center justify-center mr-3">
+<div class="w-6 h-4 bg-white rounded-sm"></div>
+</div>
+<!-- Text Details -->
+<div class="flex flex-col">
+<span class="font-bold text-sm leading-tight">Nubank Crédito</span>
+<span class="text-xs text-gray-600 font-medium">Vence em 05/Nov</span>
+</div>
+</div>
+<i class="fa-solid fa-chevron-right"></i>
+</div>
+</section>
+<!-- END: Payment Section -->
+<!-- BEGIN: Description Section -->
+<section class="mb-8">
+<label class="block text-sm font-bold mb-2">Descrição (Opcional)</label>
+<div class="bg-white brutal-border h-12 flex items-center px-3">
+<i class="fa-solid fa-pen text-sm mr-3"></i>
+<input class="w-full bg-transparent border-none p-0 focus:ring-0 text-sm font-medium placeholder-gray-800" placeholder="Ex: Jantar de aniversário" type="text"/>
+</div>
+</section>
+<!-- END: Description Section -->
+</div>
+<!-- END: Content Scrollable Area -->
+<!-- BEGIN: Footer Actions -->
+<footer class="absolute bottom-0 w-full bg-bgBeige px-6 pb-8 pt-4">
+<!-- Main Save Button -->
+<!-- Note: Using translate transform to create the offset shadow effect purely via CSS if box-shadow utility isn't enough, 
+           but here we use the custom shadow utility defined in config -->
+<button class="w-full bg-primaryPurple text-white font-bold text-lg py-4 brutal-border shadow-brutal active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">
+        Salvar Despesa
+      </button>
+<!-- Secondary Link -->
+<div class="text-center mt-4">
+<button class="text-sm font-bold text-black hover:underline">
+          Salvar e adicionar outra
+        </button>
+</div>
+</footer>
+<!-- END: Footer Actions -->
+</main>
+<!-- END: Mobile Container -->
+</body></html>

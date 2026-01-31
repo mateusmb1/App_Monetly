@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lembretes - Neo-Brutalist Layout</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration for Specific Colors and Fonts -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'cream-beige': '#F3EBD7',
+            'retro-purple': '#7C3AED',
+            'retro-green': '#22C55E',
+          },
+          fontFamily: {
+            sans: ['Arial', 'sans-serif'],
+          },
+          borderWidth: {
+            '3': '3px',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom CSS for specific neo-brutalist styling touches -->
+<style data-purpose="neo-brutalist-theme">
+    /* 
+       Neo-brutalism relies on harsh contrasts, thick borders, and lack of border-radius.
+       These global resets ensure that aesthetic is maintained.
+    */
+    body {
+      background-color: #F3EBD7;
+      color: #000000;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    /* Ensure all structural elements have sharp corners */
+    * {
+      border-radius: 0 !important;
+    }
+
+    /* Utility for thick underline on section titles */
+    .thick-underline {
+      text-decoration: none;
+      border-bottom: 3px solid black;
+      display: inline-block;
+      padding-bottom: 2px;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex flex-col font-sans">
+<!-- BEGIN: Header -->
+<!-- Main sticky header with the page title -->
+<header class="bg-cream-beige border-b-3 border-black p-6 sticky top-0 z-50">
+<h1 class="text-3xl font-bold text-center tracking-wide">Lembretes</h1>
+</header>
+<!-- END: Header -->
+<!-- BEGIN: Main Content -->
+<main class="flex-grow p-4 md:p-6 max-w-md mx-auto w-full">
+<!-- BEGIN: Daily Habits Section -->
+<section aria-labelledby="daily-habits-title" class="mb-8">
+<h2 class="text-2xl font-bold mb-4 thick-underline inline-block" id="daily-habits-title">
+        Hábitos Diários
+      </h2>
+<!-- Card Container: Daily Habits -->
+<article class="border-3 border-black bg-cream-beige mb-6" data-purpose="card-active">
+<!-- Top Part: Description and Toggle -->
+<div class="p-4">
+<div class="flex justify-between items-start mb-2 gap-2">
+<h3 class="text-lg font-bold leading-tight">Registrar gastos diários</h3>
+<!-- Active Badge -->
+<span class="text-white font-bold text-xs px-2 py-1 border-3 border-black uppercase shrink-0" style="background-color: #6200ea;">ATIVADO</span>
+</div>
+<p class="text-sm font-medium leading-snug">
+            Receba um lembrete para categorizar suas compras do dia.
+          </p>
+</div>
+<!-- Divider Line -->
+<div class="border-t-3 border-black w-full"></div>
+<!-- Bottom Part: Time Settings -->
+<div class="flex justify-between items-center bg-cream-beige p-4">
+<div class="flex items-center gap-2">
+<!-- Clock Icon SVG -->
+<svg fill="none" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewbox="0 0 24 24" width="20"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+<span class="font-bold text-lg">Horário</span>
+</div>
+<!-- Time Badge -->
+<div class="text-black font-bold text-lg px-3 py-1 border-3 border-black" style="background-color: #00e676;">20:00</div>
+</div>
+</article>
+</section>
+<!-- END: Daily Habits Section -->
+<!-- BEGIN: Monthly Routine Section -->
+<section aria-labelledby="monthly-routine-title" class="mb-8">
+<h2 class="text-2xl font-bold mb-4 thick-underline inline-block" id="monthly-routine-title">
+        Rotina Mensal
+      </h2>
+<!-- Card Container: Monthly Routine -->
+<article class="border-3 border-black bg-cream-beige mb-6" data-purpose="card-inactive">
+<!-- Top Part: Description and Toggle -->
+<div class="p-4">
+<div class="flex justify-between items-start mb-2 gap-2">
+<h3 class="text-lg font-bold leading-tight">Confirmar salário mensal</h3>
+<!-- Inactive Badge -->
+<span class="text-black font-bold text-xs px-2 py-1 border-3 border-black uppercase shrink-0 bg-cream-beige">
+              Desativado
+            </span>
+</div>
+<p class="text-sm font-medium leading-snug">
+            Lembrete para confirmar a entrada da renda no início do mês.
+          </p>
+</div>
+<!-- Divider Line -->
+<div class="border-t-3 border-black w-full"></div>
+<!-- Bottom Part: Time Settings -->
+<div class="flex justify-between items-center bg-cream-beige p-4">
+<div class="flex items-center gap-2">
+<!-- Clock Icon SVG -->
+<svg fill="none" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewbox="0 0 24 24" width="20"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+<span class="font-bold text-lg">Horário</span>
+</div>
+<!-- Time Badge (Neutral) -->
+<div class="bg-white text-black font-bold text-lg px-3 py-1 border-3 border-black">
+            09:00
+          </div>
+</div>
+</article>
+</section>
+<!-- END: Monthly Routine Section -->
+<!-- BEGIN: Footer Info -->
+<footer class="mt-4 font-medium leading-relaxed text-base">
+<p>Esses lembretes ajudam a manter seu fluxo de caixa atualizado e suas projeções financeiras precisas.</p>
+</footer>
+<!-- END: Footer Info -->
+</main>
+<!-- END: Main Content -->
+</body></html>

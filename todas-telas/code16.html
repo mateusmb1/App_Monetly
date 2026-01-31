@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f2f20d",
+                        "accent-purple": "#8b5cf6",
+                        "background-light": "#f4f4e7",
+                        "background-dark": "#1c1c0d",
+                        "brutal-black": "#000000"
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'brutal': '6px 6px 0px 0px #000000',
+                        'brutal-sm': '4px 4px 0px 0px #000000',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .brutal-border { border: 4px solid #000000; }
+        .brutal-border-sm { border: 2px solid #000000; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-brutal-black">
+<div class="relative flex h-auto min-h-screen w-full flex-col max-w-[480px] mx-auto overflow-x-hidden p-4">
+<!-- Top Navigation -->
+<div class="flex items-center justify-between mb-8">
+<button class="flex h-12 w-12 items-center justify-center bg-white brutal-border shadow-brutal-sm active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">
+<span class="material-symbols-outlined font-bold">arrow_back</span>
+</button>
+<h2 class="text-xl font-bold tracking-tight uppercase">Configurações</h2>
+<button class="flex h-12 w-12 items-center justify-center bg-white brutal-border shadow-brutal-sm">
+<span class="material-symbols-outlined font-bold">info</span>
+</button>
+</div>
+<!-- Hero Security Icon -->
+<div class="flex flex-col items-center justify-center mb-10">
+<div class="w-32 h-32 bg-primary brutal-border shadow-brutal flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-6xl font-bold" style="font-variation-settings: 'FILL' 0, 'wght' 700;">fingerprint</span>
+</div>
+<h1 class="text-4xl font-bold tracking-tighter uppercase italic">Segurança</h1>
+</div>
+<!-- Settings List -->
+<div class="flex flex-col gap-6">
+<!-- Biometry Card -->
+<div class="flex items-center justify-between bg-white brutal-border p-5 shadow-brutal">
+<div class="flex items-center gap-4">
+<div class="bg-primary/20 brutal-border-sm p-2 flex items-center justify-center">
+<span class="material-symbols-outlined">face</span>
+</div>
+<p class="font-bold text-lg leading-tight uppercase">Usar Biometria</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-8 w-14 cursor-pointer items-center brutal-border bg-white p-0.5 has-[:checked]:bg-accent-purple transition-colors">
+<input checked="" class="invisible absolute peer" type="checkbox"/>
+<div class="h-full w-6 bg-brutal-black peer-checked:translate-x-6 transition-transform"></div>
+</label>
+</div>
+</div>
+<!-- Password Change Card -->
+<div class="flex items-center justify-between bg-white brutal-border p-5 shadow-brutal cursor-pointer active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">
+<div class="flex items-center gap-4">
+<div class="bg-primary/20 brutal-border-sm p-2 flex items-center justify-center">
+<span class="material-symbols-outlined">lock_reset</span>
+</div>
+<p class="font-bold text-lg leading-tight uppercase">Alterar Senha</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined font-bold">chevron_right</span>
+</div>
+</div>
+<!-- 2FA Card -->
+<div class="flex items-center justify-between bg-white brutal-border p-5 shadow-brutal">
+<div class="flex items-center gap-4">
+<div class="bg-primary/20 brutal-border-sm p-2 flex items-center justify-center">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<p class="font-bold text-lg leading-tight uppercase">Dois Fatores (2FA)</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-8 w-14 cursor-pointer items-center brutal-border bg-white p-0.5 has-[:checked]:bg-accent-purple transition-colors">
+<input class="invisible absolute peer" type="checkbox"/>
+<div class="h-full w-6 bg-brutal-black peer-checked:translate-x-6 transition-transform"></div>
+</label>
+</div>
+</div>
+<!-- Devices Card -->
+<div class="flex items-center justify-between bg-white brutal-border p-5 shadow-brutal cursor-pointer active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">
+<div class="flex items-center gap-4">
+<div class="bg-primary/20 brutal-border-sm p-2 flex items-center justify-center">
+<span class="material-symbols-outlined">devices</span>
+</div>
+<p class="font-bold text-lg leading-tight uppercase">Dispositivos</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined font-bold">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Footer Info -->
+<div class="mt-12 mb-8 bg-brutal-black text-white p-4 brutal-border">
+<p class="text-xs font-bold uppercase tracking-widest text-center leading-relaxed">
+                Seus dados são protegidos com criptografia de ponta a ponta e padrões bancários de segurança.
+            </p>
+</div>
+<!-- Image Placeholder (Header Visual) -->
+<div class="@container mt-4">
+<div class="w-full brutal-border h-40 bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden shadow-brutal" data-alt="Abstract neo-brutalist pattern with purple and yellow shapes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBVi_fDp_NRe9TqkJ3cA5uD3wW4uTkHDy-s6Ex_CJy93jQQ4M8wr5ycH4kdZYK27qjTVs7DYrN46-ptaq6l50UF8mSsZc4mNGEtbo1ZviKRExiRGDjHUa7aj6CKD4yomBX73XYIr8MXdSMwN2uvcOPoWjEdvQdPkaYkxAbvIZcw0PP4yh8m95iBwnfG5CtQiCAvqRXGUIRz0CO9961bcPUu0f5s74DoUN3uhQu_ilVAIFVeJKnyvpwgW-013Q2uWOpJ1QkopISLbx0");'>
+</div>
+</div>
+<div class="h-10"></div>
+</div>
+</body></html>

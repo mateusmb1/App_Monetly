@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Meus Cartões Neo-brutalistas</title>
+<!-- Load Tailwind CSS v3 with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Load Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Inter:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'bg-cream': '#F2F0E9',
+            'card-purple': '#C026D3',
+            'card-lime': '#A3E635',
+            'card-yellow': '#FACC15',
+            'card-blue': '#2563EB',
+          },
+          fontFamily: {
+            'display': ['"Archivo Black"', '"Arial Black"', '"Impact"', 'sans-serif'],
+            'body': ['"Inter"', 'sans-serif'],
+          },
+          boxShadow: {
+            'neo': '5px 5px 0px 0px #000000',
+            'neo-sm': '3px 3px 0px 0px #000000',
+            'neo-btn': '5px 5px 0px 0px #000000',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles for specific Neo-brutalist tweaks -->
+<style data-purpose="neo-brutalism-base">
+    body {
+      background-color: #F2F0E9;
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    .neo-border {
+      border: 3px solid #000000;
+    }
+
+    /* Text shadow for the add button title to match the slight depth effect */
+    .text-shadow-hard {
+      text-shadow: 2px 2px 0px #000000;
+    }
+
+    /* Custom progress bar container styling */
+    .progress-track {
+      background-color: #000000;
+      border-radius: 9999px; /* Pill shape */
+      height: 20px; /* Updated to 20px */
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: flex-end; /* Align child to right */
+      align-items: center;
+    }
+
+    /* Inner pill alignment */
+    .progress-fill {
+      border-radius: 9999px;
+      height: 100%;
+      /* Flexbox handles positioning */
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex flex-col items-center py-10 px-4">
+<!-- BEGIN: MainHeader -->
+<header class="text-center mb-8 w-full max-w-md">
+<h1 class="font-display text-4xl sm:text-5xl leading-none text-black uppercase tracking-tight font-black">
+<div class="mb-1">Meus Cartões</div>
+<div>Neo-brutalistas</div>
+</h1>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: ContentContainer -->
+<main class="w-full max-w-md space-y-6 flex flex-col"><!-- BEGIN: SummaryCard -->
+<section class="bg-card-purple neo-border rounded-xl shadow-neo p-5 relative overflow-hidden" data-purpose="summary-card">
+<div class="relative z-10">
+<h2 class="font-display text-sm uppercase font-black text-black mb-1 tracking-tight">Total em Faturas</h2>
+<p class="font-display text-6xl font-black text-black tracking-tighter">R$ 13.900,00</p>
+</div>
+</section>
+<!-- END: SummaryCard -->
+<!-- BEGIN: CardItem_Nubank -->
+<article class="bg-card-lime neo-border rounded-xl shadow-neo p-5 space-y-4" data-purpose="credit-card-item">
+<!-- Header: Name and Status -->
+<div class="flex justify-between items-center">
+<h3 class="font-display text-xl font-black text-black">Nubank Platinum</h3>
+<span class="bg-black text-card-lime font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wide">
+          Status
+        </span>
+</div>
+<!-- Amount and Date -->
+<div class="flex justify-between items-end">
+<div class="text-black font-display text-3xl font-black tracking-tighter">R$ 13.900,00</div>
+<div class="text-black font-bold text-sm mb-1 text-right">03/07/23</div>
+</div>
+<!-- Progress Bar -->
+<div aria-label="Progress bar" class="progress-track">
+<div class="progress-fill bg-card-lime w-[25%]"></div>
+</div>
+</article>
+<!-- END: CardItem_Nubank -->
+<!-- BEGIN: CardItem_Inter -->
+<article class="bg-card-yellow neo-border rounded-xl shadow-neo p-5 space-y-4" data-purpose="credit-card-item">
+<!-- Header: Name and Status -->
+<div class="flex justify-between items-center">
+<h3 class="font-display text-xl font-black text-black">Inter Black</h3>
+<span class="bg-black text-card-yellow font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wide">
+          Status
+        </span>
+</div>
+<!-- Amount and Date -->
+<div class="flex justify-between items-end">
+<div class="text-black font-display text-3xl font-black tracking-tighter">R$ 1.250,00</div>
+<div class="text-black font-bold text-sm mb-1 text-right">01/07/23</div>
+</div>
+<!-- Progress Bar -->
+<div aria-label="Progress bar" class="progress-track">
+<div class="progress-fill bg-card-yellow w-[30%]"></div>
+</div>
+</article>
+<!-- END: CardItem_Inter -->
+<!-- BEGIN: CardItem_XP -->
+<article class="bg-card-purple neo-border rounded-xl shadow-neo p-5 space-y-4" data-purpose="credit-card-item">
+<!-- Header: Name and Status -->
+<div class="flex justify-between items-center">
+<h3 class="font-display text-xl font-black text-black">XP Visa Infinite</h3>
+<span class="bg-black text-card-purple font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wide">
+          Status
+        </span>
+</div>
+<!-- Amount and Date -->
+<div class="flex justify-between items-end">
+<div class="text-black font-display text-3xl font-black tracking-tighter">R$ 1.250,00</div>
+<div class="text-black font-bold text-sm mb-1 text-right">01/07/23</div>
+</div>
+<!-- Progress Bar -->
+<div aria-label="Progress bar" class="progress-track">
+<div class="progress-fill bg-card-purple w-[25%]"></div>
+</div>
+</article>
+<!-- END: CardItem_XP --></main>
+<!-- END: ContentContainer -->
+<!-- BEGIN: FooterAction -->
+<footer class="w-full max-w-md mt-8 pb-8">
+<button aria-label="Add new card" class="w-full bg-card-blue text-white font-display text-xl py-4 rounded-xl neo-border shadow-neo active:shadow-none active:translate-x-[6px] active:translate-y-[6px] transition-all duration-150 text-shadow-hard flex items-center justify-center gap-2 font-black">
+      Adicionar Cartão
+    </button>
+</footer>
+<!-- END: FooterAction -->
+</body></html>

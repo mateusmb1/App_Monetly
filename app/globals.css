@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-retro-bg: #f5f0e6;
+  --color-retro-purple: #6200ea;
+  --color-retro-yellow: #FFD600;
+  --color-retro-red: #f20d0d;
+  --color-retro-green: #13ec49;
+  --color-retro-cyan: #00F0FF;
+  --color-retro-pink: #FF00B8;
+  --color-brutal-black: #000000;
+  
+  /* Neo-Brutalist Specifics from Templates */
+  --color-neo-bg: #F5F2ED;
+  --color-neo-yellow: #FFEB00;
+  --color-neo-purple: #A855F7;
+  --color-neo-orange: #FB923C;
+  --color-neo-cyan: #22D3EE;
+  --color-neo-lime: #A3E635;
+  --color-neo-blue: #2563EB;
+  --color-neo-green: #4ADE80;
+  --color-neo-pink: #FF66C4;
+  --color-neo-cream: #F3EFE0;
+  --color-pop-pink: #FF409F;
+
+  --shadow-brutal: 4px 4px 0px 0px #000;
+  --shadow-brutal-sm: 2px 2px 0px 0px #000;
+  --shadow-brutal-lg: 6px 6px 0px 0px #000;
+  --shadow-neo: 4px 4px 0px 0px #000;
+  --shadow-neo-sm: 2px 2px 0px 0px #000;
+  --shadow-hard: 4px 4px 0px 0px #000;
+
+  --font-inter: var(--font-inter);
+  --font-space: var(--font-space-grotesk);
+}
+
+/* Material Symbols fix */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+  background-color: var(--color-retro-bg);
+  color: var(--color-brutal-black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-space), sans-serif;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Neo-Brutalist Salary Confirmation</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- FontAwesome for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts: Using 'Archivo Black' and 'Inter' for that bold, chunky look -->
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Inter:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'neo-bg': '#EBE4D5',     // Beige background
+            'neo-green': '#65F572',  // Toast green
+            'neo-yellow': '#FFEA2B', // Button yellow
+            'neo-cyan': '#22D3EE',   // Button cyan
+            'neo-black': '#000000',
+            'neo-white': '#FFFFFF',
+          },
+          fontFamily: {
+            'sans': ['Inter', 'sans-serif'],
+            'display': ['Archivo Black', 'sans-serif'],
+          },
+          boxShadow: {
+            'hard': '4px 4px 0px 0px #000000',
+            'hard-sm': '2px 2px 0px 0px #000000',
+            'hard-lg': '8px 8px 0px 0px #000000',
+            'hard-toast': '6px 6px 0px 0px #000000',
+          },
+          borderWidth: {
+            '3': '3px',
+            '4': '4px',
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-utilities">
+    /* 
+      Custom utility class to force the specific hard shadow offset 
+      if Tailwind's extend config isn't specific enough for certain elements.
+    */
+    .shadow-hard-custom {
+      box-shadow: 5px 5px 0px 0px #000;
+    }
+    
+    .shadow-hard-deep {
+      box-shadow: 10px 10px 0px 0px #000;
+    }
+
+    /* Hide scrollbar for cleaner mobile preview */
+    body::-webkit-scrollbar {
+      display: none;
+    }
+    body {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-neo-bg text-neo-black font-sans min-h-screen relative overflow-hidden flex flex-col items-center">
+<!-- BEGIN: Header Section -->
+<!-- Contains the hamburger menu, notification bell, and main page title -->
+<header class="w-full max-w-md px-6 pt-12 pb-4 flex flex-col relative z-0">
+<!-- Top Row: Icons -->
+<div class="flex justify-between items-center mb-4">
+<button aria-label="Menu" class="text-3xl focus:outline-none">
+<i class="fa-solid fa-bars"></i>
+</button>
+<button aria-label="Notifications" class="text-3xl focus:outline-none relative">
+<i class="fa-regular fa-bell"></i>
+<!-- Notification dot style -->
+<span class="absolute top-0 right-0 block h-3 w-3 rounded-full bg-neo-black ring-2 ring-neo-bg transform translate-x-1 -translate-y-1"></span>
+</button>
+</div>
+<!-- Page Title -->
+<h1 class="text-4xl font-display font-black tracking-tight">Dashboard</h1>
+</header>
+<!-- END: Header Section -->
+<!-- BEGIN: Background Content (Partially Obscured) -->
+<!-- This represents the dashboard content sitting behind the modal. 
+       We create a few cards to simulate the layout seen in the background of the source image. -->
+<main class="w-full max-w-md px-4 space-y-6 relative z-0 opacity-100">
+<!-- Background Card 1 -->
+<section class="bg-neo-bg border-4 border-neo-black shadow-hard p-4 rounded-lg flex items-center justify-between h-32">
+<div>
+<h2 class="text-xl font-bold text-gray-500 mb-1">Período atual</h2>
+<div class="text-4xl font-black">R$ 5.4...</div>
+<div class="mt-2 inline-flex items-center justify-center w-8 h-8 rounded-full bg-blue-500 text-white border-2 border-black">
+<i class="fa-solid fa-info"></i>
+</div>
+</div>
+<div class="text-2xl">
+<i class="fa-solid fa-chevron-right"></i>
+</div>
+</section>
+<!-- Background Card 2 -->
+<section class="bg-neo-bg border-4 border-neo-black shadow-hard p-4 rounded-lg h-24 flex items-center justify-between opacity-80">
+<div>
+<h2 class="text-lg font-bold">Prestação</h2>
+<div class="h-4 w-32 bg-gray-300 rounded mt-2 border-2 border-black"></div>
+</div>
+<div class="text-2xl">
+<i class="fa-solid fa-chevron-right"></i>
+</div>
+</section>
+<!-- Background Card 3 -->
+<section class="bg-neo-bg border-4 border-neo-black shadow-hard p-4 rounded-lg h-24 flex items-center justify-between opacity-60">
+<div>
+<h2 class="text-lg font-bold">Transações</h2>
+<div class="h-4 w-24 bg-gray-300 rounded mt-2 border-2 border-black"></div>
+</div>
+<div class="text-2xl">
+<i class="fa-solid fa-chevron-right"></i>
+</div>
+</section>
+</main>
+<!-- END: Background Content -->
+<!-- BEGIN: Toast Notification -->
+<!-- Positioned absolutely at the top, overlaying everything. -->
+<div class="absolute left-1/2 transform -translate-x-1/2 z-50 w-auto top-6">
+<div class="bg-neo-green border-4 border-neo-black shadow-hard-toast px-6 py-3 animate-bounce rounded-lg">
+<span class="text-lg font-black tracking-wide text-center block whitespace-nowrap">
+        Salário confirmado!
+      </span>
+</div>
+</div>
+<!-- END: Toast Notification -->
+<!-- BEGIN: Modal Overlay -->
+<!-- The main interaction point. A large card centered on the screen. -->
+<div aria-modal="true" class="fixed inset-0 z-40 flex items-center justify-center px-4" role="dialog">
+<!-- Backdrop (optional slightly dark overlay to help focus) -->
+<div class="absolute inset-0 bg-neo-bg/50"></div>
+<!-- Modal Card -->
+<div class="relative bg-white border-4 border-neo-black shadow-hard-deep w-full max-w-xs sm:max-w-sm rounded-lg flex flex-col gap-4 p-8">
+<!-- Modal Header -->
+<div class="text-center space-y-2">
+<h2 class="text-xl font-display leading-tight font-extrabold">
+          Confirmação de Salário Neo-brutalista
+        </h2>
+<p class="text-sm font-bold leading-snug px-1">
+          Confirme seu salário deste mês. Seu salário foi igual ao do mês passado?
+        </p>
+</div>
+<!-- Action Buttons Group 1 -->
+<div class="space-y-3 w-full">
+<!-- Yes Button -->
+<button class="w-full bg-neo-yellow border-3 border-neo-black shadow-hard py-3 px-4 font-bold text-lg hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-hard-sm transition-all active:translate-x-[4px] active:translate-y-[4px] active:shadow-none rounded-lg text-black">
+          Sim, foi igual
+        </button>
+<!-- No Button -->
+<button class="w-full bg-neo-cyan border-3 border-neo-black shadow-hard py-3 px-4 font-bold text-lg hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-hard-sm transition-all active:translate-x-[4px] active:translate-y-[4px] active:shadow-none rounded-lg text-black">
+          Não, foi diferente
+        </button>
+</div>
+<!-- Adjustment Buttons Group (Row) -->
+<div class="flex gap-3 w-full">
+<button class="flex-1 bg-white border-3 border-neo-black shadow-hard py-2 px-2 font-bold text-base flex items-center justify-center gap-1 hover:bg-gray-50 active:translate-y-[2px] active:shadow-hard-sm transition-all rounded-lg">
+          Menor <i class="fa-solid fa-arrow-right text-sm"></i>
+</button>
+<button class="flex-1 bg-white border-3 border-neo-black shadow-hard py-2 px-2 font-bold text-base flex items-center justify-center gap-1 hover:bg-gray-50 active:translate-y-[2px] active:shadow-hard-sm transition-all rounded-lg">
+          Maior <i class="fa-solid fa-arrow-right text-sm"></i>
+</button>
+</div>
+<!-- Value Display Input -->
+<div class="w-full">
+<div class="bg-white border-3 border-neo-black shadow-hard py-3 px-4 text-center rounded-lg">
+<span class="text-3xl font-black block tracking-tighter">R$ 5.400,00</span>
+</div>
+</div>
+<!-- Confirm Button -->
+<button class="w-full bg-neo-cyan border-3 border-neo-black shadow-hard py-3 px-4 font-bold text-lg mt-1 hover:brightness-110 active:translate-y-[4px] active:shadow-none transition-all rounded-lg">
+        Confirmar
+      </button>
+</div>
+</div>
+<!-- END: Modal Overlay -->
+</body></html>

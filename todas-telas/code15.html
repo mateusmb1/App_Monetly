@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Perfil Neo-brutalista</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f20d0d",
+                        "background-light": "#f8f5f5",
+                        "background-dark": "#221010",
+                        "neo-yellow": "#FFD600",
+                        "neo-pink": "#FF00B8",
+                        "neo-cyan": "#00F0FF",
+                        "neo-purple": "#BC00FF"
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px", 
+                        "lg": "0px", 
+                        "xl": "0px", 
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .neo-shadow {
+            box-shadow: 4px 4px 0px 0px #000000;
+        }
+        .neo-shadow-lg {
+            box-shadow: 6px 6px 0px 0px #000000;
+        }
+        .neo-border {
+            border: 3px solid #000000;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-black dark:text-white min-h-screen">
+<div class="max-w-[480px] mx-auto min-h-screen flex flex-col pb-10">
+<!-- TopAppBar -->
+<header class="flex items-center p-6 justify-between">
+<div class="neo-border bg-white p-2 flex items-center justify-center neo-shadow">
+<span class="material-symbols-outlined text-black font-bold">arrow_back</span>
+</div>
+<h2 class="text-2xl font-bold tracking-tighter uppercase">Perfil</h2>
+<div class="neo-border bg-white p-2 flex items-center justify-center neo-shadow">
+<span class="material-symbols-outlined text-black font-bold">more_vert</span>
+</div>
+</header>
+<!-- ProfileHeader -->
+<div class="px-6 py-4 flex flex-col items-center">
+<div class="neo-border rounded-full p-1 bg-neo-yellow neo-shadow mb-4">
+<div class="w-32 h-32 rounded-full neo-border bg-cover bg-center" data-alt="User profile picture in a circular frame" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBfx8sklhFxIreq1VIOX8gFMhLko4ZEHoPIeiGc7f7JCTn0iyX2BZRTnmLtCeiH1kocpPRanCEeIKs9p5VhH6W1z6mevXO0lDqy2p7N0czVJs2cYIlGx2jCQHmlw1ZLmlooYTjxnj-1W6d-NmpOXogzGUATQEsz1vdCzCOvuC5lfKFScbioT6duzu04KYRPAmcZtCOWaOdXSa6SurqhyEmi3SpEhIG6lV0q2io6Tw_28UROGkusRQxyUYkEfV046tDbIfNDAPawc7U");'>
+</div>
+</div>
+<h1 class="text-4xl font-extrabold tracking-tighter uppercase text-center mb-1">Rodrigo Silva</h1>
+<p class="text-lg font-bold bg-neo-cyan px-2 neo-border">rodrigo.silva@email.com</p>
+<p class="text-sm font-medium mt-2 opacity-70">MEMBRO DESDE JANEIRO 2024</p>
+</div>
+<!-- Stats Grid -->
+<div class="grid grid-cols-2 gap-4 px-6 py-6">
+<div class="neo-border bg-white p-4 neo-shadow flex flex-col gap-1">
+<p class="text-xs font-bold uppercase tracking-widest opacity-60">Economia</p>
+<p class="text-xl font-extrabold">R$ 1.200</p>
+<div class="flex items-center gap-1 mt-2">
+<span class="bg-green-400 neo-border px-1 text-xs font-bold">+15%</span>
+</div>
+</div>
+<div class="neo-border bg-white p-4 neo-shadow flex flex-col gap-1">
+<p class="text-xs font-bold uppercase tracking-widest opacity-60">Rank Grupo</p>
+<p class="text-xl font-extrabold">1º Lugar</p>
+<div class="flex items-center gap-1 mt-2">
+<span class="bg-neo-pink neo-border px-1 text-xs font-bold text-white">TOP 1</span>
+</div>
+</div>
+</div>
+<!-- SectionHeader -->
+<div class="px-6">
+<h3 class="text-xl font-black uppercase tracking-tight mb-4 border-b-4 border-black inline-block">Menu Principal</h3>
+</div>
+<!-- Menu List -->
+<div class="px-6 flex flex-col gap-4">
+<!-- ListItem: Meus Dados -->
+<div class="flex items-center gap-4 bg-white neo-border p-4 neo-shadow cursor-pointer active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">
+<div class="bg-neo-yellow neo-border p-2 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-black font-bold">person</span>
+</div>
+<div class="flex-1">
+<p class="text-lg font-bold leading-none uppercase">Meus Dados</p>
+<p class="text-xs font-medium opacity-70">Pessoais e documentos</p>
+</div>
+<span class="material-symbols-outlined font-bold">chevron_right</span>
+</div>
+<!-- ListItem: Configurações de Grupo -->
+<div class="flex items-center gap-4 bg-white neo-border p-4 neo-shadow cursor-pointer active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">
+<div class="bg-neo-pink neo-border p-2 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white font-bold">groups</span>
+</div>
+<div class="flex-1">
+<p class="text-lg font-bold leading-none uppercase">Grupo Familiar</p>
+<p class="text-xs font-medium opacity-70">Gerenciar participantes</p>
+</div>
+<span class="material-symbols-outlined font-bold">chevron_right</span>
+</div>
+<!-- ListItem: Segurança -->
+<div class="flex items-center gap-4 bg-white neo-border p-4 neo-shadow cursor-pointer active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">
+<div class="bg-neo-cyan neo-border p-2 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-black font-bold">lock</span>
+</div>
+<div class="flex-1">
+<p class="text-lg font-bold leading-none uppercase">Segurança</p>
+<p class="text-xs font-medium opacity-70">Senhas e biometria</p>
+</div>
+<span class="material-symbols-outlined font-bold">chevron_right</span>
+</div>
+<!-- ListItem: Ajuda -->
+<div class="flex items-center gap-4 bg-white neo-border p-4 neo-shadow cursor-pointer active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">
+<div class="bg-neo-purple neo-border p-2 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white font-bold">help</span>
+</div>
+<div class="flex-1">
+<p class="text-lg font-bold leading-none uppercase">Ajuda</p>
+<p class="text-xs font-medium opacity-70">Suporte e perguntas</p>
+</div>
+<span class="material-symbols-outlined font-bold">chevron_right</span>
+</div>
+</div>
+<!-- Logout Button -->
+<div class="mt-auto p-6 pt-10">
+<button class="w-full bg-primary neo-border py-4 neo-shadow-lg active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">
+<span class="text-white text-2xl font-black uppercase tracking-tighter flex items-center justify-center gap-2">
+                    Sair da Conta
+                    <span class="material-symbols-outlined font-black">logout</span>
+</span>
+</button>
+<p class="text-center text-[10px] font-bold opacity-30 mt-6 tracking-widest uppercase">Versão 2.4.0-NEO</p>
+</div>
+</div>
+</body></html>

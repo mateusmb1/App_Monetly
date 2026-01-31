@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Grupo Familiar - Neo-Brutalism</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'nb-beige': '#F3EFE0',
+            'nb-yellow': '#FFE600',
+            'nb-cyan': '#00C2FF',
+            'nb-pink': '#FF66C4',
+            'nb-green': '#4ADE80',
+            'nb-purple': '#A855F7',
+            'nb-orange': '#FB923C',
+          },
+          fontFamily: {
+            sans: ['Roboto', 'sans-serif'],
+          },
+          boxShadow: {
+            'hard': '4px 4px 0px 0px #000000',
+            'hard-sm': '2px 2px 0px 0px #000000',
+          },
+          borderWidth: {
+            '3': '3px',
+          }
+        }
+      }
+    }
+  </script>
+<!-- FontAwesome for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts: Roboto for a clean sans-serif look -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'nb-beige': '#F3EFE0',
+            'nb-yellow': '#FFE600',
+            'nb-cyan': '#00C2FF',
+            'nb-pink': '#FF66C4',
+            'nb-green': '#4ADE80',
+            'nb-purple': '#A855F7',
+            'nb-orange': '#FB923C',
+          },
+          fontFamily: {
+            sans: ['Roboto', 'sans-serif'],
+          },
+          boxShadow: {
+            'hard': '4px 4px 0px 0px #000000',
+            'hard-sm': '2px 2px 0px 0px #000000',
+          },
+          borderWidth: {
+            '3': '3px',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles for Neo-Brutalism specific details -->
+<style data-purpose="neobrutalism-utils">
+    body {
+      background-color: #F3EFE0;
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    /* Utility for thick borders */
+    .border-thick {
+      border: 3px solid black;
+    }
+
+    /* Progress bar specific styling */
+    .progress-bar-container {
+      background-color: #e5e7eb;
+      border: 2px solid black;
+      border-radius: 9999px;
+      height: 1.5rem;
+      overflow: hidden;
+      display: flex;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased min-h-screen pb-10">
+<!-- BEGIN: Main Container -->
+<main class="max-w-md mx-auto p-4 flex flex-col gap-6">
+<!-- BEGIN: Header -->
+<header class="flex items-center justify-between py-2" data-purpose="screen-header">
+<button class="w-10 h-10 flex items-center justify-center border-thick rounded-full bg-white shadow-hard active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all">
+<i class="fa-solid fa-arrow-left text-lg"></i>
+</button>
+<h1 class="text-xl font-black uppercase tracking-wide">Grupo Familiar</h1>
+<button class="w-10 h-10 flex items-center justify-center border-thick rounded-full bg-white shadow-hard active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all">
+<i class="fa-solid fa-gear text-lg"></i>
+</button>
+</header>
+<!-- END: Header -->
+<!-- BEGIN: Invite Card -->
+<!-- Main top card for inviting new members -->
+<section class="bg-white border-thick rounded-xl shadow-hard p-6 text-center flex flex-col items-center gap-4 relative overflow-hidden" data-purpose="invite-card">
+<!-- Decorative background blobs can go here if needed, keeping it clean for now -->
+<div class="w-16 h-16 rounded-full bg-nb-green flex items-center justify-center mb-1 overflow-hidden border-2 border-black">
+<!-- Using placeholder for Icon -->
+<img alt="Invite Icon" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCoqdfgYGBmGxbjb7FLncj1-vKE19vXMOqEY9I4k6M5wy8HI2ugZnPG8SzSs8Lz_GkElFGNUO_-tRl5o-8-X7Fc8TFKCPmVL6k5vhUUnrjdVZ3e5gaeco5QF0vS9bRrIvbT-yT1VBTAniBKwe3whSME7H1oSrB0MZl3V3iuTAJtlpe6EspA_ZJuI66uFfBSv8Lmyt7OCU0WuS6J-mPrusUEw5J1v8hoagxcacXYun8PXOXEGpABc_GoHvbzTFMe-S8dn2NsexyVl4"/>
+</div>
+<div class="space-y-1">
+<h2 class="text-2xl font-black">Convide membros</h2>
+<p class="font-medium leading-tight text-black">Compartilhe o código abaixo para adicionar sua família ou parceiros.</p>
+</div>
+<!-- Code Display Box -->
+<div class="bg-nb-yellow px-6 py-3 rounded-lg w-full max-w-[200px] transform -rotate-1 hover:rotate-0 transition-transform duration-300 border-2 border-black">
+<span class="text-2xl font-black tracking-widest block">X9F-22A</span>
+</div>
+<!-- Action Button -->
+<button class="w-full bg-nb-cyan rounded-lg py-3 shadow-hard font-bold text-lg flex items-center justify-center gap-2 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all mt-2 border-2 border-black">
+<span>Enviar Convite</span>
+<i class="fa-solid fa-share-nodes"></i>
+</button>
+</section>
+<!-- END: Invite Card -->
+<!-- BEGIN: Members Section -->
+<section class="flex flex-col gap-3" data-purpose="members-list">
+<h3 class="text-lg font-black uppercase tracking-wide ml-1">Membros</h3>
+<!-- Member 1: João -->
+<div class="bg-nb-pink rounded-xl shadow-hard p-4 flex items-center justify-between active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all cursor-pointer border-2 border-black">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full border-thick bg-white overflow-hidden shrink-0 border-2 border-black">
+<img alt="João Silva" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbiT9m-czcy2zK27iyv4H6dNqkMEvT2UlOvjlxBmBe58T-0uc24wUEYc1kvNACagyaACN3SdveO0mus4HHaMNap1-LbCrP4QTvj14WvJ-aB5HhC0EZbP5FJnqqDzKckUSRiQrf1RFZClCKbFzN025eq-oKPB88FWOKU7jGPsqeg1pZSQzE3RCvZ5p1a4yDnlOTWGopakISfRaY5YRylUYYDczMACL8sLTFIvqh0QJTAkmg8-rRpJSSedgeX45Ub0BSz6d64E4w9QY"/>
+</div>
+<div class="border-2 border-black">
+<div class="flex items-center gap-2">
+<h4 class="font-bold text-lg leading-none">João Silva</h4>
+<span class="bg-nb-green border-2 border-black text-xs font-bold px-1.5 py-0.5 rounded shadow-hard-sm leading-none">ADMIN</span>
+</div>
+<p class="text-sm font-medium mt-1 text-gray-800">joao.silva@email.com</p>
+</div>
+</div>
+<i class="fa-solid fa-chevron-right text-xl"></i>
+</div>
+<!-- Member 2: Maria -->
+<div class="bg-nb-yellow rounded-xl shadow-hard p-4 flex items-center justify-between active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all cursor-pointer border-2 border-black">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full border-thick bg-white overflow-hidden shrink-0 border-2 border-black">
+<img alt="Maria Silva" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtx1MIKoTaunQUyTQKjBQvRIDzNdNrwu7NHewrxNvMcRMFGi8d_vbr6Ywol3V9LFROah6vSvzvrqfzl1VQe3g4s0Fz_POcj2VcnxISTj6DRk9sSf4RoneuXbJaUGf6FjXx27CnPQw5nm4a7521AUjJb2S5Iu2Y1-poKFBUhiTLkYIt2iCULi8pac9AzF63HKxVAaGxf9KTwk6AbgUUQj4V7m6oeXodXmKyfXQ8huu4GzqpMBIMSVd0KAuWKqGNmFgktJTZbVojTR8"/>
+</div>
+<div class="border-2 border-black">
+<div class="flex items-center gap-2">
+<h4 class="font-bold text-lg leading-none">Maria Silva</h4>
+<span class="bg-nb-purple text-white border-2 border-black text-xs font-bold px-1.5 py-0.5 rounded shadow-hard-sm leading-none">MEMBRO</span>
+</div>
+<p class="text-sm font-medium mt-1 text-gray-800">maria.silva@email.com</p>
+</div>
+</div>
+<i class="fa-solid fa-chevron-right text-xl"></i>
+</div>
+</section>
+<!-- END: Members Section -->
+<!-- BEGIN: Summary Section -->
+<section class="flex flex-col gap-3" data-purpose="financial-summary">
+<div class="flex items-center justify-between px-1">
+<h3 class="text-lg font-black uppercase tracking-wide">Resumo por Pessoa</h3>
+<button class="bg-black text-white border-2 border-black px-3 py-1 rounded-md text-sm font-bold flex items-center gap-2 shadow-hard-sm active:translate-x-[1px] active:translate-y-[1px] active:shadow-none transition-all">
+<i class="fa-solid fa-eye-slash"></i>
+          Ocultar
+        </button>
+</div>
+<div class="bg-white border-thick rounded-xl shadow-hard p-5 flex flex-col gap-6">
+<!-- Person 1 Stats (João) -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-end mb-1">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full border-2 border-black overflow-hidden border-2 border-black">
+<img alt="João" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbiT9m-czcy2zK27iyv4H6dNqkMEvT2UlOvjlxBmBe58T-0uc24wUEYc1kvNACagyaACN3SdveO0mus4HHaMNap1-LbCrP4QTvj14WvJ-aB5HhC0EZbP5FJnqqDzKckUSRiQrf1RFZClCKbFzN025eq-oKPB88FWOKU7jGPsqeg1pZSQzE3RCvZ5p1a4yDnlOTWGopakISfRaY5YRylUYYDczMACL8sLTFIvqh0QJTAkmg8-rRpJSSedgeX45Ub0BSz6d64E4w9QY"/>
+</div>
+<span class="font-bold text-lg">João</span>
+</div>
+<span class="font-black text-sm">62% dos gastos</span>
+</div>
+<!-- Custom Progress Bar -->
+<div class="w-full rounded-full border-2 border-black overflow-hidden h-4" style="background: linear-gradient(90deg, #4ADE80 0%, #4ADE80 62%, #00C2FF 62%, #00C2FF 100%);"></div>
+<!-- Stats Numbers -->
+<div class="flex items-center justify-between bg-nb-beige border-2 border-black rounded-lg p-3 mt-1">
+<div class="flex flex-col w-1/2 items-start pl-2">
+<span class="text-xs font-bold mb-1 uppercase text-black">Receitas</span>
+<div class="flex items-center gap-1 text-nb-green drop-shadow-sm">
+<i class="fa-solid fa-arrow-trend-up"></i>
+<span class="font-black text-black">R$ 5.000</span>
+</div>
+</div>
+<div class="w-0.5 h-8 bg-black"></div> <!-- Vertical Divider -->
+<div class="flex flex-col w-1/2 items-end pr-2">
+<span class="text-xs font-bold mb-1 uppercase text-black">Despesas</span>
+<div class="flex items-center gap-1 text-red-500 drop-shadow-sm">
+<span class="font-black text-black">R$ 3.200</span>
+<i class="fa-solid fa-arrow-trend-down transform rotate-45"></i>
+</div>
+</div>
+</div>
+</div>
+<hr class="border-t-2 border-black border-dashed opacity-50"/>
+<!-- Person 2 Stats (Maria) -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-end mb-1">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full border-2 border-black overflow-hidden border-2 border-black">
+<img alt="Maria" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtx1MIKoTaunQUyTQKjBQvRIDzNdNrwu7NHewrxNvMcRMFGi8d_vbr6Ywol3V9LFROah6vSvzvrqfzl1VQe3g4s0Fz_POcj2VcnxISTj6DRk9sSf4RoneuXbJaUGf6FjXx27CnPQw5nm4a7521AUjJb2S5Iu2Y1-poKFBUhiTLkYIt2iCULi8pac9AzF63HKxVAaGxf9KTwk6AbgUUQj4V7m6oeXodXmKyfXQ8huu4GzqpMBIMSVd0KAuWKqGNmFgktJTZbVojTR8"/>
+</div>
+<span class="font-bold text-lg">Maria</span>
+</div>
+<span class="font-black text-sm">38% dos gastos</span>
+</div>
+<!-- Custom Progress Bar -->
+<div class="w-full h-6 rounded-full border-2 border-black overflow-hidden" style="background: linear-gradient(90deg, #FB923C 0%, #FB923C 38%, #A855F7 38%, #A855F7 100%);"></div>
+<!-- Stats Numbers -->
+<div class="flex items-center justify-between bg-nb-beige border-2 border-black rounded-lg p-3 mt-1">
+<div class="flex flex-col w-1/2 items-start pl-2">
+<span class="text-xs font-bold mb-1 uppercase text-black">Receitas</span>
+<div class="flex items-center gap-1 text-nb-green drop-shadow-sm">
+<i class="fa-solid fa-arrow-trend-up"></i>
+<span class="font-black text-black">R$ 4.200</span>
+</div>
+</div>
+<div class="w-0.5 h-8 bg-black"></div> <!-- Vertical Divider -->
+<div class="flex flex-col w-1/2 items-end pr-2">
+<span class="text-xs font-bold mb-1 uppercase text-black">Despesas</span>
+<div class="flex items-center gap-1 text-red-500 drop-shadow-sm">
+<span class="font-black text-black">R$ 1.950</span>
+<i class="fa-solid fa-arrow-trend-down transform rotate-45"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Summary Section -->
+</main>
+<!-- END: Main Container -->
+</body></html>

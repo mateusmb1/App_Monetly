@@ -1,0 +1,3138 @@
+<!-- Perfil do Usuário Neo-brutalista -->
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Perfil Neo-brutalista</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f20d0d",
+                        "background-light": "#f8f5f5",
+                        "background-dark": "#221010",
+                        "neo-yellow": "#FFD600",
+                        "neo-pink": "#FF00B8",
+                        "neo-cyan": "#00F0FF",
+                        "neo-purple": "#BC00FF"
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px", 
+                        "lg": "0px", 
+                        "xl": "0px", 
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .neo-shadow {
+            box-shadow: 4px 4px 0px 0px #000000;
+        }
+        .neo-shadow-lg {
+            box-shadow: 6px 6px 0px 0px #000000;
+        }
+        .neo-border {
+            border: 3px solid #000000;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-black dark:text-white min-h-screen">
+<div class="max-w-[480px] mx-auto min-h-screen flex flex-col pb-10">
+<!-- TopAppBar -->
+<header class="flex items-center p-6 justify-between">
+<div class="neo-border bg-white p-2 flex items-center justify-center neo-shadow">
+<span class="material-symbols-outlined text-black font-bold">arrow_back</span>
+</div>
+<h2 class="text-2xl font-bold tracking-tighter uppercase">Perfil</h2>
+<div class="neo-border bg-white p-2 flex items-center justify-center neo-shadow">
+<span class="material-symbols-outlined text-black font-bold">more_vert</span>
+</div>
+</header>
+<!-- ProfileHeader -->
+<div class="px-6 py-4 flex flex-col items-center">
+<div class="neo-border rounded-full p-1 bg-neo-yellow neo-shadow mb-4">
+<div class="w-32 h-32 rounded-full neo-border bg-cover bg-center" data-alt="User profile picture in a circular frame" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBfx8sklhFxIreq1VIOX8gFMhLko4ZEHoPIeiGc7f7JCTn0iyX2BZRTnmLtCeiH1kocpPRanCEeIKs9p5VhH6W1z6mevXO0lDqy2p7N0czVJs2cYIlGx2jCQHmlw1ZLmlooYTjxnj-1W6d-NmpOXogzGUATQEsz1vdCzCOvuC5lfKFScbioT6duzu04KYRPAmcZtCOWaOdXSa6SurqhyEmi3SpEhIG6lV0q2io6Tw_28UROGkusRQxyUYkEfV046tDbIfNDAPawc7U");'>
+</div>
+</div>
+<h1 class="text-4xl font-extrabold tracking-tighter uppercase text-center mb-1">Rodrigo Silva</h1>
+<p class="text-lg font-bold bg-neo-cyan px-2 neo-border">rodrigo.silva@email.com</p>
+<p class="text-sm font-medium mt-2 opacity-70">MEMBRO DESDE JANEIRO 2024</p>
+</div>
+<!-- Stats Grid -->
+<div class="grid grid-cols-2 gap-4 px-6 py-6">
+<div class="neo-border bg-white p-4 neo-shadow flex flex-col gap-1">
+<p class="text-xs font-bold uppercase tracking-widest opacity-60">Economia</p>
+<p class="text-xl font-extrabold">R$ 1.200</p>
+<div class="flex items-center gap-1 mt-2">
+<span class="bg-green-400 neo-border px-1 text-xs font-bold">+15%</span>
+</div>
+</div>
+<div class="neo-border bg-white p-4 neo-shadow flex flex-col gap-1">
+<p class="text-xs font-bold uppercase tracking-widest opacity-60">Rank Grupo</p>
+<p class="text-xl font-extrabold">1º Lugar</p>
+<div class="flex items-center gap-1 mt-2">
+<span class="bg-neo-pink neo-border px-1 text-xs font-bold text-white">TOP 1</span>
+</div>
+</div>
+</div>
+<!-- SectionHeader -->
+<div class="px-6">
+<h3 class="text-xl font-black uppercase tracking-tight mb-4 border-b-4 border-black inline-block">Menu Principal</h3>
+</div>
+<!-- Menu List -->
+<div class="px-6 flex flex-col gap-4">
+<!-- ListItem: Meus Dados -->
+<div class="flex items-center gap-4 bg-white neo-border p-4 neo-shadow cursor-pointer active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">
+<div class="bg-neo-yellow neo-border p-2 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-black font-bold">person</span>
+</div>
+<div class="flex-1">
+<p class="text-lg font-bold leading-none uppercase">Meus Dados</p>
+<p class="text-xs font-medium opacity-70">Pessoais e documentos</p>
+</div>
+<span class="material-symbols-outlined font-bold">chevron_right</span>
+</div>
+<!-- ListItem: Configurações de Grupo -->
+<div class="flex items-center gap-4 bg-white neo-border p-4 neo-shadow cursor-pointer active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">
+<div class="bg-neo-pink neo-border p-2 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white font-bold">groups</span>
+</div>
+<div class="flex-1">
+<p class="text-lg font-bold leading-none uppercase">Grupo Familiar</p>
+<p class="text-xs font-medium opacity-70">Gerenciar participantes</p>
+</div>
+<span class="material-symbols-outlined font-bold">chevron_right</span>
+</div>
+<!-- ListItem: Segurança -->
+<div class="flex items-center gap-4 bg-white neo-border p-4 neo-shadow cursor-pointer active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">
+<div class="bg-neo-cyan neo-border p-2 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-black font-bold">lock</span>
+</div>
+<div class="flex-1">
+<p class="text-lg font-bold leading-none uppercase">Segurança</p>
+<p class="text-xs font-medium opacity-70">Senhas e biometria</p>
+</div>
+<span class="material-symbols-outlined font-bold">chevron_right</span>
+</div>
+<!-- ListItem: Ajuda -->
+<div class="flex items-center gap-4 bg-white neo-border p-4 neo-shadow cursor-pointer active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">
+<div class="bg-neo-purple neo-border p-2 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white font-bold">help</span>
+</div>
+<div class="flex-1">
+<p class="text-lg font-bold leading-none uppercase">Ajuda</p>
+<p class="text-xs font-medium opacity-70">Suporte e perguntas</p>
+</div>
+<span class="material-symbols-outlined font-bold">chevron_right</span>
+</div>
+</div>
+<!-- Logout Button -->
+<div class="mt-auto p-6 pt-10">
+<button class="w-full bg-primary neo-border py-4 neo-shadow-lg active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">
+<span class="text-white text-2xl font-black uppercase tracking-tighter flex items-center justify-center gap-2">
+                    Sair da Conta
+                    <span class="material-symbols-outlined font-black">logout</span>
+</span>
+</button>
+<p class="text-center text-[10px] font-bold opacity-30 mt-6 tracking-widest uppercase">Versão 2.4.0-NEO</p>
+</div>
+</div>
+</body></html>
+
+<!-- Segurança e Biometria Neo-brutalista -->
+<!DOCTYPE html>
+
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f2f20d",
+                        "accent-purple": "#8b5cf6",
+                        "background-light": "#f4f4e7",
+                        "background-dark": "#1c1c0d",
+                        "brutal-black": "#000000"
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'brutal': '6px 6px 0px 0px #000000',
+                        'brutal-sm': '4px 4px 0px 0px #000000',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .brutal-border { border: 4px solid #000000; }
+        .brutal-border-sm { border: 2px solid #000000; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-brutal-black">
+<div class="relative flex h-auto min-h-screen w-full flex-col max-w-[480px] mx-auto overflow-x-hidden p-4">
+<!-- Top Navigation -->
+<div class="flex items-center justify-between mb-8">
+<button class="flex h-12 w-12 items-center justify-center bg-white brutal-border shadow-brutal-sm active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">
+<span class="material-symbols-outlined font-bold">arrow_back</span>
+</button>
+<h2 class="text-xl font-bold tracking-tight uppercase">Configurações</h2>
+<button class="flex h-12 w-12 items-center justify-center bg-white brutal-border shadow-brutal-sm">
+<span class="material-symbols-outlined font-bold">info</span>
+</button>
+</div>
+<!-- Hero Security Icon -->
+<div class="flex flex-col items-center justify-center mb-10">
+<div class="w-32 h-32 bg-primary brutal-border shadow-brutal flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-6xl font-bold" style="font-variation-settings: 'FILL' 0, 'wght' 700;">fingerprint</span>
+</div>
+<h1 class="text-4xl font-bold tracking-tighter uppercase italic">Segurança</h1>
+</div>
+<!-- Settings List -->
+<div class="flex flex-col gap-6">
+<!-- Biometry Card -->
+<div class="flex items-center justify-between bg-white brutal-border p-5 shadow-brutal">
+<div class="flex items-center gap-4">
+<div class="bg-primary/20 brutal-border-sm p-2 flex items-center justify-center">
+<span class="material-symbols-outlined">face</span>
+</div>
+<p class="font-bold text-lg leading-tight uppercase">Usar Biometria</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-8 w-14 cursor-pointer items-center brutal-border bg-white p-0.5 has-[:checked]:bg-accent-purple transition-colors">
+<input checked="" class="invisible absolute peer" type="checkbox"/>
+<div class="h-full w-6 bg-brutal-black peer-checked:translate-x-6 transition-transform"></div>
+</label>
+</div>
+</div>
+<!-- Password Change Card -->
+<div class="flex items-center justify-between bg-white brutal-border p-5 shadow-brutal cursor-pointer active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">
+<div class="flex items-center gap-4">
+<div class="bg-primary/20 brutal-border-sm p-2 flex items-center justify-center">
+<span class="material-symbols-outlined">lock_reset</span>
+</div>
+<p class="font-bold text-lg leading-tight uppercase">Alterar Senha</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined font-bold">chevron_right</span>
+</div>
+</div>
+<!-- 2FA Card -->
+<div class="flex items-center justify-between bg-white brutal-border p-5 shadow-brutal">
+<div class="flex items-center gap-4">
+<div class="bg-primary/20 brutal-border-sm p-2 flex items-center justify-center">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<p class="font-bold text-lg leading-tight uppercase">Dois Fatores (2FA)</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-8 w-14 cursor-pointer items-center brutal-border bg-white p-0.5 has-[:checked]:bg-accent-purple transition-colors">
+<input class="invisible absolute peer" type="checkbox"/>
+<div class="h-full w-6 bg-brutal-black peer-checked:translate-x-6 transition-transform"></div>
+</label>
+</div>
+</div>
+<!-- Devices Card -->
+<div class="flex items-center justify-between bg-white brutal-border p-5 shadow-brutal cursor-pointer active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">
+<div class="flex items-center gap-4">
+<div class="bg-primary/20 brutal-border-sm p-2 flex items-center justify-center">
+<span class="material-symbols-outlined">devices</span>
+</div>
+<p class="font-bold text-lg leading-tight uppercase">Dispositivos</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined font-bold">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Footer Info -->
+<div class="mt-12 mb-8 bg-brutal-black text-white p-4 brutal-border">
+<p class="text-xs font-bold uppercase tracking-widest text-center leading-relaxed">
+                Seus dados são protegidos com criptografia de ponta a ponta e padrões bancários de segurança.
+            </p>
+</div>
+<!-- Image Placeholder (Header Visual) -->
+<div class="@container mt-4">
+<div class="w-full brutal-border h-40 bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden shadow-brutal" data-alt="Abstract neo-brutalist pattern with purple and yellow shapes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBVi_fDp_NRe9TqkJ3cA5uD3wW4uTkHDy-s6Ex_CJy93jQQ4M8wr5ycH4kdZYK27qjTVs7DYrN46-ptaq6l50UF8mSsZc4mNGEtbo1ZviKRExiRGDjHUa7aj6CKD4yomBX73XYIr8MXdSMwN2uvcOPoWjEdvQdPkaYkxAbvIZcw0PP4yh8m95iBwnfG5CtQiCAvqRXGUIRz0CO9961bcPUu0f5s74DoUN3uhQu_ilVAIFVeJKnyvpwgW-013Q2uWOpJ1QkopISLbx0");'>
+</div>
+</div>
+<div class="h-10"></div>
+</div>
+</body></html>
+
+<!-- Neo-Brutalist Login Screen -->
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Login - Neo-brutalist App</title>
+<!-- Tailwind CSS with Forms and Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration for Custom Colors and Fonts -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'retro-bg': '#f5f0e6',
+            'retro-purple': '#6200ea', // Vibrant purple from the reference
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'], // Using Inter for a clean sans-serif look
+          },
+          boxShadow: {
+            'hard': '4px 4px 0px 0px #000000', // Custom hard shadow
+            'hard-sm': '2px 2px 0px 0px #000000',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&amp;display=swap" rel="stylesheet"/>
+<!-- Custom Styles for Specific Neo-brutalist Elements -->
+<style data-purpose="neo-brutalist-components">
+    body {
+      background-color: #f5f0e6;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Common Input and Button Styles */
+    .neo-input {
+      background-color: #f5f0e6;
+      border: 3px solid #000;
+      box-shadow: 4px 4px 0px 0px #000;
+      transition: all 0.1s ease;
+      width: 100%;
+      padding: 0.75rem 1rem;
+      font-weight: 700;
+      color: #000;
+      outline: none;
+    }
+    
+    .neo-input::placeholder {
+      color: #000;
+      font-weight: 700;
+    }
+
+    .neo-input:focus {
+      box-shadow: 2px 2px 0px 0px #000;
+      transform: translate(2px, 2px);
+    }
+
+    .neo-button {
+      border: 3px solid #000;
+      box-shadow: 4px 4px 0px 0px #000;
+      transition: all 0.1s ease;
+      cursor: pointer;
+      font-weight: 700;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .neo-button:active {
+      box-shadow: 0px 0px 0px 0px #000;
+      transform: translate(4px, 4px);
+    }
+
+    /* Primary Action Button */
+    .btn-primary {
+      background-color: #6200EE; /* Vibrant Purple */
+      color: white;
+    }
+
+    /* Secondary/Social Buttons */
+    .btn-social {
+      background-color: #f5f0e6;
+      color: black;
+    }
+
+    /* Logo Container */
+    .logo-container {
+      background-color: #ffffff;
+      border: 3px solid #000;
+      box-shadow: 4px 4px 0px 0px #000;
+      display: inline-block;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4">
+<!-- BEGIN: Main Container -->
+<!-- This container centers the content and restricts width on larger screens -->
+<main class="w-full max-w-sm flex flex-col items-center gap-6" data-purpose="login-form-container">
+<!-- BEGIN: Header Section -->
+<header class="text-center w-full flex flex-col items-center gap-6">
+<!-- Logo Block -->
+<div class="logo-container px-6 py-2 mb-2" data-purpose="app-logo">
+<h1 class="text-4xl font-black tracking-tighter uppercase text-black">APP</h1>
+</div>
+<!-- Welcome Text -->
+<div class="space-y-1">
+<h2 class="text-3xl font-black text-black leading-tight">Acesse sua conta</h2>
+<p class="text-black font-semibold text-sm sm:text-base leading-snug">
+          Gerencie suas finanças com simplicidade.
+        </p>
+</div>
+</header>
+<!-- END: Header Section -->
+<!-- BEGIN: Form Section -->
+<section class="w-full flex flex-col" data-purpose="login-inputs">
+<!-- Email Input -->
+<div class="relative mb-4">
+<input aria-label="Endereço de e-mail" class="neo-input placeholder-black placeholder:font-bold" placeholder="E-mail" type="email"/>
+</div>
+<!-- Password Input -->
+<div class="relative mb-2">
+<input aria-label="Senha" class="neo-input placeholder-black placeholder:font-bold" placeholder="Senha" type="password"/>
+</div>
+<!-- Forgot Password Link -->
+<div class="flex justify-end w-full mb-4">
+<a class="text-black font-bold text-sm underline hover:no-underline decoration-2 underline-offset-2" href="#">
+          Esqueci minha senha
+        </a>
+</div>
+<!-- Submit Button -->
+<button class="neo-button btn-primary w-full py-3 text-lg" type="submit">
+        Entrar
+      </button>
+</section>
+<!-- END: Form Section -->
+<!-- BEGIN: Divider Section -->
+<div class="w-full flex items-center justify-between gap-2 my-2" data-purpose="separator">
+<div class="h-0.5 bg-black flex-grow"></div>
+<span class="text-black font-bold text-sm">ou continue com</span>
+<div class="h-0.5 bg-black flex-grow"></div>
+</div>
+<!-- END: Divider Section -->
+<!-- BEGIN: Social Login Section -->
+<section class="w-full space-y-3" data-purpose="social-buttons">
+<!-- Google Button -->
+<button class="neo-button btn-social w-full py-2.5" type="button"><svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M12.24 10.285V14.4h6.806c-.275 1.765-.968 3.074-2.688 4.254-1.223.837-2.77 1.258-4.12 1.258-3.414 0-6.183-2.766-6.183-6.18s2.768-6.182 6.183-6.182c1.47 0 2.83.477 3.91 1.507l3.07-3.07c-1.85-1.724-4.22-2.657-6.98-2.657-5.74 0-10.41 4.67-10.41 10.4 0 5.733 4.67 10.402 10.41 10.402 5.56 0 10.23-4.143 10.23-10.4 0-.66-.08-1.52-.16-2.16H12.24z"></path></svg><span>Continuar com Google</span></button>
+<!-- Apple Button -->
+<button class="neo-button btn-social w-full py-2.5" type="button"><svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M17.8 11.2c.02 2.76 2.42 3.68 2.44 3.69-.02.06-.38 1.3-1.26 2.58-.78 1.14-1.6 2.28-2.88 2.28-1.26 0-1.66-.74-3.1-.74-1.44 0-1.9.72-3.1.72-1.24 0-2.18-1.22-2.98-2.36-1.6-2.34-2.84-6.62-1.18-9.52.82-1.44 2.3-2.34 3.9-2.34 1.22 0 2.38.82 3.12.82.74 0 2.14-.98 3.6-.84.6.02 2.32.24 3.4 1.82-2.92 1.44-2.44 5.38-2.42 5.38zm-2.8-5.32c.66-.8 1.1-1.92 1-3.04-1 .04-2.18.66-2.88 1.48-.6.68-1.12 1.76-1 2.92 1.1.08 2.2-.62 2.88-1.36z"></path></svg><span>Continuar com Apple</span></button>
+<!-- Facebook Button -->
+<button class="neo-button btn-social w-full py-2.5" type="button"><svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.79-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg><span>Continuar com Facebook</span></button>
+</section>
+<!-- END: Social Login Section -->
+<!-- BEGIN: Footer Section -->
+<footer class="mt-4 text-center">
+<p class="text-black font-bold text-sm">
+        Ainda não tem conta? 
+        <a class="underline hover:no-underline decoration-2 underline-offset-2 font-bold" href="#">Cadastre-se</a>
+</p>
+</footer>
+<!-- END: Footer Section -->
+</main>
+<!-- END: Main Container -->
+</body></html>
+
+<!-- Neo-Brutalist Dashboard -->
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Planejamento Neo-brutalista</title>
+<!-- Tailwind CSS v3 with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Arial Black"', '"Helvetica Neue"', 'sans-serif'],
+          },
+          colors: {
+            'nb-green': '#86efac', 
+            'nb-purple': '#d8b4fe',
+            'nb-yellow': '#fef08a',
+            'nb-blue': '#2563eb',
+          },
+          boxShadow: {
+            'hard': '6px 6px 0px 0px #000000',
+            'hard-sm': '3px 3px 0px 0px #000000',
+          },
+          borderWidth: {
+            '3': '3px',
+            '4': '3px', /* Overriding 4 to 3px as requested for container borders */
+          }
+        }
+      }
+    }
+  </script>
+<!-- Tailwind Config for Custom Colors and Fonts -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Arial Black"', '"Helvetica Neue"', 'sans-serif'],
+          },
+          colors: {
+            'nb-green': '#86efac', 
+            'nb-purple': '#d8b4fe',
+            'nb-yellow': '#fef08a',
+            'nb-blue': '#2563eb',
+          },
+          boxShadow: {
+            'hard': '6px 6px 0px 0px #000000',
+            'hard-sm': '3px 3px 0px 0px #000000',
+          },
+          borderWidth: {
+            '3': '3px',
+            '4': '3px', /* Overriding 4 to 3px as requested for container borders */
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles for Specific Neo-Brutalist Elements -->
+<style data-purpose="custom-inputs">
+    /* Custom Range Slider Styling to match Neo-Brutalist aesthetic */
+    input[type=range] {
+      -webkit-appearance: none; 
+      width: 100%; 
+      background: transparent; 
+      margin: 10px 0;
+    }
+    
+    input[type=range]:focus {
+      outline: none;
+    }
+
+    /* Track (Chrome/Safari/Opera) */
+    input[type=range]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 6px;
+      cursor: pointer;
+      background: #000000;
+      border-radius: 0px;
+    }
+
+    /* Thumb (Chrome/Safari/Opera) */
+    input[type=range]::-webkit-slider-thumb {
+      height: 20px;
+      width: 20px;
+      border: 2px solid #000000;
+      background: #ffffff; 
+      cursor: pointer;
+      -webkit-appearance: none;
+      margin-top: -7px; /* Centers the thumb on the track (height 6px - 20px)/2 */
+      box-shadow: none;
+    }
+
+    /* Track (Firefox) */
+    input[type=range]::-moz-range-track {
+      width: 100%;
+      height: 6px;
+      cursor: pointer;
+      background: #000000;
+      border-radius: 0px;
+    }
+
+    /* Thumb (Firefox) */
+    input[type=range]::-moz-range-thumb {
+      height: 20px;
+      width: 20px;
+      border: 2px solid #000000;
+      background: #ffffff;
+      cursor: pointer;
+      border-radius: 0px;
+      box-shadow: none;
+    }
+
+    /* Specific Thumb Colors */
+    .thumb-green-custom::-webkit-slider-thumb { background: #90EE90 !important; }
+    .thumb-green-custom::-moz-range-thumb { background: #90EE90 !important; }
+    
+    .thumb-yellow-custom::-webkit-slider-thumb { background: #FFFFE0 !important; }
+    .thumb-yellow-custom::-moz-range-thumb { background: #FFFFE0 !important; }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-white text-black font-sans antialiased pb-12">
+<!-- BEGIN: Main Header -->
+<header class="border-b-4 border-black p-4 flex items-center bg-white sticky top-0 z-50">
+<!-- Back Arrow Icon -->
+<button aria-label="Voltar" class="mr-4 hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform active:translate-x-0 active:translate-y-0"><svg fill="none" height="32" stroke="black" stroke-linecap="square" stroke-linejoin="miter" stroke-width="4" viewbox="0 0 24 24" width="32"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg></button>
+<!-- Title -->
+<h1 class="text-2xl md:text-4xl font-black uppercase tracking-tight flex-grow text-center pr-10 md:pr-0">
+      Planejamento Neo-brutalista
+    </h1>
+</header>
+<!-- END: Main Header -->
+<!-- BEGIN: Main Content Container -->
+<main class="max-w-md mx-auto p-4 space-y-12 md:max-w-5xl md:grid md:grid-cols-3 md:gap-8 md:space-y-0 mt-8">
+<!-- BEGIN: January Group -->
+<section class="flex flex-col gap-6" data-purpose="january-section">
+<!-- JAN Card -->
+<article class="bg-nb-green border-4 border-black shadow-hard rounded-lg p-[20px]">
+<h2 class="text-4xl font-black mb-4">JAN</h2>
+<div class="space-y-1 text-lg font-bold leading-tight">
+<p>Renda: R$ 5000</p>
+<p>Desp: R$ 3500</p>
+<p>Saldo: R$ 1500</p>
+</div>
+</article>
+<!-- Chart Placeholder -->
+<div class="border-4 border-black shadow-hard bg-white overflow-hidden h-40 flex items-center justify-center relative">
+<!-- Grid Background Pattern for Aesthetic -->
+<div class="absolute inset-0 opacity-10" style="background-image: linear-gradient(#000 2px, transparent 2px), linear-gradient(90deg, #000 2px, transparent 2px); background-size: 20px 20px;"></div>
+<img alt="Gráfico de Evolução Janeiro" class="w-full h-full object-cover p-2 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7aVNCvkA72YalNZkZMwpIPodMm4I-f64YqNo-pBphhH3ZT-w_92-nLhg9lQ_eTqig44ejXTa8bnmlaueF_SZQgwBFwzsS_0VB0ez7Shv7EIKCmqUJQInQ0lro-ODaYQxMm6D3dISDVEeHIkVZU1eL5ajVXZprEsrdNtZOACnTqZiso2LEHfEg8TspV_TuXVCnScUk3Y8XGyfilh0e7YNT0k9rcCbrbUcUYclI7qvCf3dqI6jX7QrxpupJcWUu_Cd-yVWiiKfcA5o"/>
+</div>
+<!-- Simulation Controls -->
+<div class="space-y-4">
+<h3 class="text-xl font-black">Simulação de Economia</h3>
+<!-- Slider 1 -->
+<div class="space-y-1">
+<label class="block text-sm font-bold">Economia Mensal</label>
+<div class="flex items-center gap-2">
+<input class="thumb-green-custom flex-grow h-2 bg-black appearance-none" max="10000" min="0" type="range" value="5000"/>
+<div class="border-3 border-black px-2 py-1 font-bold text-sm min-w-[60px] text-center shadow-hard-sm" style="background-color: #90EE90;">
+              5000
+            </div>
+</div>
+</div>
+<!-- Slider 2 -->
+<div class="space-y-1">
+<label class="block text-sm font-bold">Redução de Gastos</label>
+<div class="flex items-center gap-2">
+<input class="thumb-yellow-custom flex-grow h-2 bg-black appearance-none" max="1000" min="0" type="range" value="400"/>
+<div class="border-3 border-black px-2 py-1 font-bold text-sm min-w-[60px] text-center shadow-hard-sm" style="background-color: #FFFFE0;">
+              400
+            </div>
+</div>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full bg-nb-blue text-black border-4 border-black shadow-hard font-black py-3 px-4 text-center uppercase tracking-wide hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all active:bg-blue-600" style="background-color: #2962FF !important; color: black !important; font-weight: bold !important;">
+        Ver Detalhes do Cenário
+      </button>
+</section>
+<!-- END: January Group -->
+<!-- BEGIN: February Group -->
+<section class="flex flex-col gap-6" data-purpose="february-section">
+<!-- FEV Card -->
+<article class="bg-nb-purple border-4 border-black shadow-hard rounded-lg p-[20px]">
+<h2 class="text-4xl font-black mb-4">FEV</h2>
+<div class="space-y-1 text-lg font-bold leading-tight">
+<p>Renda: R$ 5000</p>
+<p>Desp: R$ 3200</p>
+<p>Saldo: R$ 1800</p>
+</div>
+</article>
+<!-- Chart Placeholder Middle -->
+<div class="border-4 border-black shadow-hard bg-white overflow-hidden p-2 relative h-48"><div class="flex flex-col items-center justify-center h-full w-full relative pt-2">
+<h3 class="text-center font-black text-lg border-b-2 border-black pb-1 mb-4 z-20 relative bg-white px-2">Evolução do Saldo</h3>
+<div class="absolute inset-0 z-0 opacity-10" style="background-image: linear-gradient(#000 2px, transparent 2px), linear-gradient(90deg, #000 2px, transparent 2px); background-size: 30px 30px;"></div>
+<img alt="Gráfico de Evolução Fevereiro" class="w-full h-24 object-contain mix-blend-multiply relative z-10 mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3R31xWm1xtO2D3qThdqsu9OmGJikL3BLWvUln0XHkDlzJKQbnPyAXwkYDXq6Uiz2-qn1vAX_0lbljxChHcoPKA8tfdfLQJEVpCrBD11u3YcpSQzCn_LvAcyAXDIixAdfo6xlWOuPbO-pfMBbEk72srrBaJyiwZfpdNLiOXNdUBD9UmZtEmIkz6dbZzzlESbelbEuy3q3zJqV38FGGA4Gjc8t4J4BYLIXrWR7iazvrkq2L-zJ9MWgnU2-95jnZvZUlNslPe1Tlz6A"/>
+</div></div>
+<!-- Action Button (February doesn't have sliders in the image prompt description, only button) -->
+<div class="flex-grow flex items-end">
+<button class="w-full bg-nb-blue text-black border-4 border-black shadow-hard font-black py-3 px-4 text-center uppercase tracking-wide hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all active:bg-blue-600" style="background-color: #2962FF !important; color: black !important; font-weight: bold !important;">
+          Ver Detalhes do Cenário
+        </button>
+</div>
+</section>
+<!-- END: February Group -->
+<!-- BEGIN: March Group -->
+<section class="flex flex-col gap-6" data-purpose="march-section">
+<!-- MAR Card -->
+<article class="bg-nb-yellow border-4 border-black shadow-hard rounded-lg p-[20px]">
+<h2 class="text-4xl font-black mb-4">MAR</h2>
+<div class="space-y-1 text-lg font-bold leading-tight">
+<p>Renda: R$ 5000</p>
+<p>Desp: R$ 3600</p>
+<p>Saldo: R$ 1400</p>
+</div>
+</article>
+<!-- Chart Placeholder Right -->
+<div class="border-4 border-black shadow-hard bg-white overflow-hidden h-40 flex items-center justify-center relative">
+<div class="absolute inset-0 opacity-10" style="background-image: linear-gradient(#000 2px, transparent 2px), linear-gradient(90deg, #000 2px, transparent 2px); background-size: 20px 20px;"></div>
+<img alt="Gráfico de Evolução Março" class="w-full h-full object-cover p-2 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2MH1Yqik33S8O_MpNuHbLxEeuOk1trR1gGWXErZ0MpLDxqkQEKU1pxRhTDHTN8dmyBmMSdS0m4vkMlkBEIDdihBnIhny8xvDvuEDYJ3pq8IKwAnrq7VFa3_CD3cohQHUeu1Y0PLdsjo2IdgWtr_3q6PjtEinQpiopxcKYxulWW9hSLz38e_uQlqB0G4Uh0dEhaHwSfnpyjspmwDEwslhOjVrejBKUVRyx5I14nfbG2TdA2m3so1cX-sLhhhdwGMy54R3dNblqdb4"/>
+</div>
+<!-- Simulation Controls -->
+<div class="space-y-4">
+<h3 class="text-xl font-black">Simulação de Economia</h3>
+<!-- Slider 1 -->
+<div class="space-y-1">
+<label class="block text-sm font-bold">Economia Mensal</label>
+<div class="flex items-center gap-2">
+<input class="thumb-green-custom flex-grow h-2 bg-black appearance-none" max="1000" min="0" type="range" value="0"/>
+<div class="border-3 border-black px-2 py-1 font-bold text-sm min-w-[60px] text-center shadow-hard-sm" style="background-color: #90EE90;">
+              $000
+            </div>
+</div>
+</div>
+<!-- Slider 2 -->
+<div class="space-y-1">
+<label class="block text-sm font-bold">Redução de Gastos</label>
+<div class="flex items-center gap-2">
+<input class="thumb-yellow-custom flex-grow h-2 bg-black appearance-none" max="100" min="0" type="range" value="50"/>
+<div class="border-3 border-black px-2 py-1 font-bold text-sm min-w-[60px] text-center shadow-hard-sm" style="background-color: #FFFFE0;">
+              50
+            </div>
+</div>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full bg-nb-blue text-black border-4 border-black shadow-hard font-black py-3 px-4 text-center uppercase tracking-wide hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all active:bg-blue-600" style="background-color: #2962FF !important; color: black !important; font-weight: bold !important;">
+        Ver Detalhes do Cenário
+      </button>
+</section>
+<!-- END: March Group -->
+</main>
+<!-- END: Main Content Container -->
+</body></html>
+
+<!-- Onboarding Step 1 - Completed -->
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Neo-Brutalist Onboarding</title>
+<!-- Tailwind CSS v3 with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- FontAwesome for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts: Space Grotesk for that chunky neo-brutalist feel -->
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brutal-bg': '#F3F0E9',
+            'brutal-purple': '#6200EA',
+            'brutal-blue': '#2979FF',
+            'brutal-yellow': '#FFEA00',
+            'brutal-black': '#000000',
+          },
+          fontFamily: {
+            sans: ['"Space Grotesk"', 'sans-serif'],
+          },
+          boxShadow: {
+            'hard': '4px 4px 0px #000000',
+            'hard-sm': '2px 2px 0px #000000',
+            'hard-lg': '6px 6px 0px #000000',
+          },
+          borderWidth: {
+            '3': '3px',
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles -->
+<!-- Purpose: Handle specific neo-brutalist resets and mobile optimizations -->
+<style data-purpose="global-styles">
+    body {
+      background-color: #F3F0E9;
+      color: #000000;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    /* Enforce specific neo-brutalist styles requested */
+    .neo-box {
+      border: 2px solid black;
+      border-radius: 8px;
+      box-shadow: 4px 4px 0px 0px black;
+    }
+
+    input[type="text"], input[type="number"] {
+       border-radius: 8px;
+    }
+
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+  </style>
+<!-- END: Custom Styles -->
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex flex-col font-sans p-5 pb-8">
+<!-- BEGIN: Header Section -->
+<!-- Purpose: Displays the step counter and progress bar -->
+<header class="w-full mb-6" data-purpose="onboarding-progress">
+<div class="flex items-center mb-2 justify-center">
+<span class="font-bold text-sm tracking-wide">Passo 1 de 3</span>
+</div>
+<div class="w-full h-4 bg-white border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] overflow-hidden rounded-full justify-center">
+<div class="h-full bg-[#7B1FA2] w-1/4 border-r-2 border-black rounded-l-full"></div>
+</div>
+</header>
+<!-- END: Header Section -->
+<!-- BEGIN: Main Content -->
+<!-- Purpose: Hero image, headings, and form inputs -->
+<main class="flex-grow flex flex-col items-center w-full max-w-md mx-auto space-y-6">
+<!-- BEGIN: Hero Image -->
+<!-- Circular container for the extracted plant icon -->
+<div class="relative w-[150px] h-[150px] rounded-full border-2 border-black bg-white overflow-hidden shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center shrink-0 mb-4 mx-auto p-1" data-purpose="hero-image">
+<img alt="Plant sprout on coins" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxMhTThjnu9gCgKL7ar2PerZRO8iSSMdHZxNdfsP0PeKqXCYdq3wcsm92iUTuiRLXuecSaSITNICpOVqUKWKV0JAtMasHEHlV45YfCdNToe31n3AaE7m-OUdRT8Ndl1hcU2gwot4-AjdF75kQyZ39qvGEcGJqw30NCf-esL0flTQe7LhTW_pmZbIeFmZknVe1uIw8m_8e4TLbNnWzzDqcwXpprGiWl_x9VLYe2C_QmkfkQehmj2U5YhSFKuWu4AA3Y7K1pdNN-BW8"/>
+</div>
+<!-- END: Hero Image -->
+<!-- BEGIN: Headings -->
+<div class="text-center space-y-2" data-purpose="text-intro">
+<h1 class="text-3xl leading-tight font-extrabold">Vamos começar?</h1>
+<p class="text-base font-normal leading-snug px-2">
+        Para iniciar, precisamos de alguns dados básicos. Não se preocupe, você pode ajustar tudo depois.
+      </p>
+</div>
+<!-- END: Headings -->
+<!-- BEGIN: Form Section -->
+<form class="w-full space-y-6 mt-4" data-purpose="onboarding-form">
+<!-- Field 1: Income -->
+<div class="flex flex-col space-y-2 mb-4">
+<label class="font-bold text-lg" for="income">Renda mensal aproximada</label>
+<div class="relative">
+<input class="w-full h-14 border-2 border-black bg-white rounded-lg px-4 text-xl font-bold text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] focus:ring-0 focus:border-black focus:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all placeholder-gray-500" id="income" placeholder="R$ 0,00" type="text"/>
+</div>
+</div>
+<!-- Field 2: Fixed Expenses (Optional) -->
+<div class="flex flex-col space-y-2">
+<label class="font-bold text-lg">Principais despesas fixas <span class="text-sm font-normal text-gray-600">(Opcional)</span></label>
+<div class="grid grid-cols-1 gap-3">
+<!-- Option 1: Rent -->
+<button class="flex items-center w-full h-14 px-4 bg-white border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all text-left" type="button">
+<div class="w-8 flex justify-center mr-3">
+<i class="fa-solid fa-house text-xl"></i>
+</div>
+<span class="font-bold">Ex: Aluguel</span>
+</button>
+<!-- Option 2: Utilities -->
+<button class="flex items-center w-full h-14 px-4 bg-white border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all text-left" type="button">
+<div class="w-8 flex justify-center mr-3">
+<i class="fa-solid fa-bolt text-xl"></i>
+</div>
+<span class="font-bold">Ex: Contas de consumo</span>
+</button>
+</div>
+</div>
+<!-- Field 3: Credit Card -->
+<div class="flex flex-col space-y-2">
+<label class="font-bold text-lg">Você possui cartão de crédito?</label>
+<div class="grid grid-cols-2 gap-4">
+<!-- Button: Yes (Selected State - Blue) -->
+<button class="h-12 bg-[#2979FF] text-white border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] font-bold text-lg active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" type="button">
+            Sim
+          </button>
+<!-- Button: No -->
+<button class="h-12 bg-transparent text-black border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] font-bold text-lg hover:bg-white active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" type="button">
+            Não
+          </button>
+</div>
+</div>
+<!-- Field 4: Loans -->
+<div class="flex flex-col space-y-2">
+<label class="font-bold text-lg leading-tight">Possui financiamentos ou empréstimos?</label>
+<div class="grid grid-cols-2 gap-4">
+<!-- Button: Yes -->
+<button class="h-12 bg-transparent text-black border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] font-bold text-lg hover:bg-white active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" type="button">
+            Sim
+          </button>
+<!-- Button: No -->
+<button class="h-12 bg-transparent text-black border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] font-bold text-lg hover:bg-white active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" type="button">
+            Não
+          </button>
+</div>
+</div>
+</form>
+<!-- END: Form Section -->
+</main>
+<!-- END: Main Content -->
+<!-- BEGIN: Footer Actions -->
+<!-- Purpose: Primary Call to Action anchored at the bottom of the flow -->
+<footer class="mt-8 w-full max-w-md mx-auto mb-6" data-purpose="footer-actions">
+<button class="w-full h-16 bg-[#FFEA00] text-black border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] font-bold text-lg flex items-center justify-center space-x-2 active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" type="button">
+<span>Começar meu orçamento</span>
+<i class="fa-solid fa-arrow-right"></i>
+</button>
+</footer>
+<!-- END: Footer Actions -->
+</body></html>
+
+<!-- Neo-Brutalist Salary Confirmation -->
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Neo-Brutalist Salary Confirmation</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- FontAwesome for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts: Using 'Archivo Black' and 'Inter' for that bold, chunky look -->
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Inter:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'neo-bg': '#EBE4D5',     // Beige background
+            'neo-green': '#65F572',  // Toast green
+            'neo-yellow': '#FFEA2B', // Button yellow
+            'neo-cyan': '#22D3EE',   // Button cyan
+            'neo-black': '#000000',
+            'neo-white': '#FFFFFF',
+          },
+          fontFamily: {
+            'sans': ['Inter', 'sans-serif'],
+            'display': ['Archivo Black', 'sans-serif'],
+          },
+          boxShadow: {
+            'hard': '4px 4px 0px 0px #000000',
+            'hard-sm': '2px 2px 0px 0px #000000',
+            'hard-lg': '8px 8px 0px 0px #000000',
+            'hard-toast': '6px 6px 0px 0px #000000',
+          },
+          borderWidth: {
+            '3': '3px',
+            '4': '4px',
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-utilities">
+    /* 
+      Custom utility class to force the specific hard shadow offset 
+      if Tailwind's extend config isn't specific enough for certain elements.
+    */
+    .shadow-hard-custom {
+      box-shadow: 5px 5px 0px 0px #000;
+    }
+    
+    .shadow-hard-deep {
+      box-shadow: 10px 10px 0px 0px #000;
+    }
+
+    /* Hide scrollbar for cleaner mobile preview */
+    body::-webkit-scrollbar {
+      display: none;
+    }
+    body {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-neo-bg text-neo-black font-sans min-h-screen relative overflow-hidden flex flex-col items-center">
+<!-- BEGIN: Header Section -->
+<!-- Contains the hamburger menu, notification bell, and main page title -->
+<header class="w-full max-w-md px-6 pt-12 pb-4 flex flex-col relative z-0">
+<!-- Top Row: Icons -->
+<div class="flex justify-between items-center mb-4">
+<button aria-label="Menu" class="text-3xl focus:outline-none">
+<i class="fa-solid fa-bars"></i>
+</button>
+<button aria-label="Notifications" class="text-3xl focus:outline-none relative">
+<i class="fa-regular fa-bell"></i>
+<!-- Notification dot style -->
+<span class="absolute top-0 right-0 block h-3 w-3 rounded-full bg-neo-black ring-2 ring-neo-bg transform translate-x-1 -translate-y-1"></span>
+</button>
+</div>
+<!-- Page Title -->
+<h1 class="text-4xl font-display font-black tracking-tight">Dashboard</h1>
+</header>
+<!-- END: Header Section -->
+<!-- BEGIN: Background Content (Partially Obscured) -->
+<!-- This represents the dashboard content sitting behind the modal. 
+       We create a few cards to simulate the layout seen in the background of the source image. -->
+<main class="w-full max-w-md px-4 space-y-6 relative z-0 opacity-100">
+<!-- Background Card 1 -->
+<section class="bg-neo-bg border-4 border-neo-black shadow-hard p-4 rounded-lg flex items-center justify-between h-32">
+<div>
+<h2 class="text-xl font-bold text-gray-500 mb-1">Período atual</h2>
+<div class="text-4xl font-black">R$ 5.4...</div>
+<div class="mt-2 inline-flex items-center justify-center w-8 h-8 rounded-full bg-blue-500 text-white border-2 border-black">
+<i class="fa-solid fa-info"></i>
+</div>
+</div>
+<div class="text-2xl">
+<i class="fa-solid fa-chevron-right"></i>
+</div>
+</section>
+<!-- Background Card 2 -->
+<section class="bg-neo-bg border-4 border-neo-black shadow-hard p-4 rounded-lg h-24 flex items-center justify-between opacity-80">
+<div>
+<h2 class="text-lg font-bold">Prestação</h2>
+<div class="h-4 w-32 bg-gray-300 rounded mt-2 border-2 border-black"></div>
+</div>
+<div class="text-2xl">
+<i class="fa-solid fa-chevron-right"></i>
+</div>
+</section>
+<!-- Background Card 3 -->
+<section class="bg-neo-bg border-4 border-neo-black shadow-hard p-4 rounded-lg h-24 flex items-center justify-between opacity-60">
+<div>
+<h2 class="text-lg font-bold">Transações</h2>
+<div class="h-4 w-24 bg-gray-300 rounded mt-2 border-2 border-black"></div>
+</div>
+<div class="text-2xl">
+<i class="fa-solid fa-chevron-right"></i>
+</div>
+</section>
+</main>
+<!-- END: Background Content -->
+<!-- BEGIN: Toast Notification -->
+<!-- Positioned absolutely at the top, overlaying everything. -->
+<div class="absolute left-1/2 transform -translate-x-1/2 z-50 w-auto top-6">
+<div class="bg-neo-green border-4 border-neo-black shadow-hard-toast px-6 py-3 animate-bounce rounded-lg">
+<span class="text-lg font-black tracking-wide text-center block whitespace-nowrap">
+        Salário confirmado!
+      </span>
+</div>
+</div>
+<!-- END: Toast Notification -->
+<!-- BEGIN: Modal Overlay -->
+<!-- The main interaction point. A large card centered on the screen. -->
+<div aria-modal="true" class="fixed inset-0 z-40 flex items-center justify-center px-4" role="dialog">
+<!-- Backdrop (optional slightly dark overlay to help focus) -->
+<div class="absolute inset-0 bg-neo-bg/50"></div>
+<!-- Modal Card -->
+<div class="relative bg-white border-4 border-neo-black shadow-hard-deep w-full max-w-xs sm:max-w-sm rounded-lg flex flex-col gap-4 p-8">
+<!-- Modal Header -->
+<div class="text-center space-y-2">
+<h2 class="text-xl font-display leading-tight font-extrabold">
+          Confirmação de Salário Neo-brutalista
+        </h2>
+<p class="text-sm font-bold leading-snug px-1">
+          Confirme seu salário deste mês. Seu salário foi igual ao do mês passado?
+        </p>
+</div>
+<!-- Action Buttons Group 1 -->
+<div class="space-y-3 w-full">
+<!-- Yes Button -->
+<button class="w-full bg-neo-yellow border-3 border-neo-black shadow-hard py-3 px-4 font-bold text-lg hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-hard-sm transition-all active:translate-x-[4px] active:translate-y-[4px] active:shadow-none rounded-lg text-black">
+          Sim, foi igual
+        </button>
+<!-- No Button -->
+<button class="w-full bg-neo-cyan border-3 border-neo-black shadow-hard py-3 px-4 font-bold text-lg hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-hard-sm transition-all active:translate-x-[4px] active:translate-y-[4px] active:shadow-none rounded-lg text-black">
+          Não, foi diferente
+        </button>
+</div>
+<!-- Adjustment Buttons Group (Row) -->
+<div class="flex gap-3 w-full">
+<button class="flex-1 bg-white border-3 border-neo-black shadow-hard py-2 px-2 font-bold text-base flex items-center justify-center gap-1 hover:bg-gray-50 active:translate-y-[2px] active:shadow-hard-sm transition-all rounded-lg">
+          Menor <i class="fa-solid fa-arrow-right text-sm"></i>
+</button>
+<button class="flex-1 bg-white border-3 border-neo-black shadow-hard py-2 px-2 font-bold text-base flex items-center justify-center gap-1 hover:bg-gray-50 active:translate-y-[2px] active:shadow-hard-sm transition-all rounded-lg">
+          Maior <i class="fa-solid fa-arrow-right text-sm"></i>
+</button>
+</div>
+<!-- Value Display Input -->
+<div class="w-full">
+<div class="bg-white border-3 border-neo-black shadow-hard py-3 px-4 text-center rounded-lg">
+<span class="text-3xl font-black block tracking-tighter">R$ 5.400,00</span>
+</div>
+</div>
+<!-- Confirm Button -->
+<button class="w-full bg-neo-cyan border-3 border-neo-black shadow-hard py-3 px-4 font-bold text-lg mt-1 hover:brightness-110 active:translate-y-[4px] active:shadow-none transition-all rounded-lg">
+        Confirmar
+      </button>
+</div>
+</div>
+<!-- END: Modal Overlay -->
+</body></html>
+
+<!-- Neo-Brutalism Finance Dashboard -->
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Neo-Brutalism Mobile Dashboard</title>
+<!-- Load Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Configure Tailwind for custom colors and shadows -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'pop-pink': '#FF409F',
+            'pop-cyan': '#00E5FF',
+            'pop-orange': '#FF9900',
+            'pop-yellow': '#FFEA00',
+            'pop-lime': '#CCFF00',
+            'pop-purple': '#AA00FF',
+            'pop-blue': '#2979FF',
+            'pop-gray': '#E0E0E0',
+          },
+          boxShadow: {
+            'neo': '4px 4px 0px 0px #000000',
+            'neo-sm': '2px 2px 0px 0px #000000',
+          },
+          fontFamily: {
+            'sans': ['Inter', 'sans-serif'], // Assuming a clean sans-serif like the image
+          }
+        }
+      }
+    }
+  </script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-purpose="custom-utilities">
+    /* Custom styles to enforce the specific brutalist look */
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F3F4F6; /* Light gray background context */
+    }
+
+    .neo-border {
+      border: 3px solid #000000;
+    }
+    
+    .neo-border-sm {
+      border: 2px solid #000000;
+    }
+
+    /* Hide scrollbar for category list */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex justify-center bg-gray-100">
+<!-- BEGIN: Main Mobile Container -->
+<!-- Simulating a mobile device viewport width -->
+<main class="w-full max-w-md bg-[#F5F5F5] min-h-screen relative flex flex-col pb-safe">
+<!-- BEGIN: Header -->
+<header class="flex items-center justify-between px-5 py-4 bg-[#F5F5F5] sticky top-0 z-10">
+<div class="flex items-center gap-3">
+<!-- User Avatar -->
+<div class="w-10 h-10 rounded-full border-2 border-black overflow-hidden bg-white relative">
+<img alt="User Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClts_gMeYI9hK3ZxtKRGU-I5sRQsnPGsU5qDAaS04rCWX2Q_3jlzOEiK8QVIVtuhK4eOBs3juBMG85iA8X2o9MrW4gn1mU9umy0Bgroyhtb4jVnc3NfdMR51GqhtpOl5ETrQ437C7e5Jqxj7-hDsi5ikbcsJv-x6EsQyLUs0-A8hD7UJzpipVPA0iczJAjVGRdvR80tsIF87ZIRgqa5D_WVH_d_sbui0NyNdSHdvC6IRQU7rkNY90_iE2uV1c0LgfeQcNKwLHhlUw"/>
+<!-- Online status dot -->
+<div class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-500 rounded-full border border-black"></div>
+</div>
+<h1 class="text-xl font-extrabold text-black">Dashboard</h1>
+</div>
+<!-- Notification Bell -->
+<button class="w-10 h-10 bg-white rounded-full border-2 border-black flex items-center justify-center hover:bg-gray-100 transition-colors"><img alt="Notification" class="w-6 h-6 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmtbgxUv6Irp3daRc1xkcXArVOwEhCWicbk-GbWNjJr39xGOYW-Cr4J71g34_65AFlfbefLmD0FZaR4c-s0RWLe055LQ2yF-O-LvXb4f7FIEHQPusG2ELECF8Zx-SXLfzvzJSowDmNnty857RYF-moDdgxcMB6hUIyujgy9e2KKjXdh2fy1XNZdOykYYLLx8msIUFOCXKcxdsvyiK-Y37PfVNPJv64UxCiyA0aZ6OPVbUmEj73Ov2pf5AcJmoUdeZxeI_O1ojsRuc"/></button>
+</header>
+<!-- END: Header -->
+<!-- BEGIN: Scrollable Content -->
+<div class="px-4 pb-4 space-y-6 flex-grow">
+<!-- BEGIN: Pink Check-in Card -->
+<section class="bg-pop-pink neo-border rounded-xl p-5 shadow-neo relative overflow-hidden" data-purpose="check-in-card">
+<!-- Date Tag -->
+<div class="flex items-center gap-2 mb-3">
+<span class="bg-[#FFDD00] border border-black px-2 py-0.5 text-xs font-bold uppercase tracking-wide">Check-in</span>
+<span class="text-sm font-medium opacity-80">Hoje, 24 Out</span>
+</div>
+<!-- Main Question -->
+<h2 class="font-bold leading-tight mb-6 pr-2 text-2xl">
+          Hoje você teve algum gasto que ainda não registrou?
+        </h2>
+<!-- Action Buttons -->
+<div class="flex gap-3">
+<button class="flex-1 bg-pop-cyan text-black text-sm font-bold py-3 px-2 rounded-lg neo-border-sm shadow-neo-sm active:translate-y-0.5 active:shadow-none transition-all">
+            Sim, registrar agora
+          </button>
+<button class="flex-1 bg-pop-orange text-black text-sm font-bold py-3 px-2 rounded-lg neo-border-sm shadow-neo-sm active:translate-y-0.5 active:shadow-none transition-all">
+            Não, hoje não
+          </button>
+</div>
+</section>
+<!-- END: Pink Check-in Card -->
+<!-- BEGIN: New Register Modal/Card Area -->
+<!-- This represents the bottom sheet/card from the image -->
+<section class="bg-white neo-border rounded-t-xl rounded-b-lg shadow-neo overflow-hidden relative" data-purpose="transaction-card">
+<!-- Card Header -->
+<div class="flex justify-between items-center p-4 border-b-2 border-black">
+<span class="text-xs font-bold uppercase tracking-widest text-gray-500">Novo Registro</span>
+<button class="text-black hover:bg-gray-100 rounded p-1">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="3" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+</div>
+<!-- Amount Display -->
+<div class="flex justify-center items-center py-8">
+<span class="text-4xl font-extrabold flex items-start gap-1"><span class="text-2xl mt-1 font-bold text-black">R$</span><span class="text-6xl font-black ml-1">45,90</span></span>
+</div>
+<!-- Categories Section -->
+<div class="px-4 pb-2">
+<h3 class="text-xs font-bold uppercase mb-3 ml-1 text-gray-800">Categoria</h3>
+<!-- Category Horizontal Scroll -->
+<div class="flex gap-4 overflow-x-auto no-scrollbar pb-2">
+<!-- Food Category -->
+<div class="flex flex-col items-center gap-1 min-w-[70px]">
+<button class="w-16 h-16 bg-pop-orange neo-border-sm rounded-xl flex items-center justify-center shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-y-[2px] transition-all"><img alt="Alimentação" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBou-AQAoiEA41Jk4tLUcRi52ZNsHWZLhKA5LpOR7mFZC_GVqvcM3HWZF6rPi_Dpl4Je6vtKSqLdJCIHDbYl-A_D247ZUj4MKtN0M6yuZyRn2jtxEMlZxbZFZEJLxsfCP13tVB_K1HUbvEDmdnRCGTWPeKV755gSW5Xtz3duyZvaMJiJdk5g2OWkTsrOESsMm8vFf7iPN7eCbiXJUXgABhM01IbCkLb26DTVzhGbDHp9tBDcJckhhnYAZ5zVLgM0yR5tuG6VBrz6Jk"/></button>
+<span class="text-[10px] font-bold text-gray-600">Alimentação</span>
+</div>
+<!-- Transport Category -->
+<div class="flex flex-col items-center gap-1 min-w-[70px]">
+<button class="w-16 h-16 bg-pop-lime neo-border-sm rounded-xl flex items-center justify-center shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-y-[2px] transition-all"><img alt="Transporte" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUgoAC3SR-K4QfRPl4cqwT294M-xAstXLIjpPM0OxeKoFWmJzjpPkPlPv05Dv58AZMAzC6GSzCyPn9q2KSPbFPpiz4z-TH-52sTWMPvKFyLjJmu2iWOLKgspKsddzEe30IxPG3tPngO0tjvyteXAFm5SoJfFq-YtvKC2x7N2R-Mh_xiMN13HtEzxDHOaXgXH_JSVg_uxt3X7IDjaYiQ2c_IGrHatGFxGUOv1imhKFzM2VT7nBwbEyOGURbE3qzAbVD22Pk3aKN5Lk"/></button>
+<span class="text-[10px] font-bold text-gray-600">Transporte</span>
+</div>
+<!-- Shopping Category -->
+<div class="flex flex-col items-center gap-1 min-w-[70px]">
+<button class="w-16 h-16 neo-border-sm rounded-xl flex items-center justify-center shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-y-[2px] transition-all bg-[#00BBFF]"><img alt="Compras" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHeDFUyFaveCUkGAnYWbeNvBuc5Zw6A16FJO20EV5F15aKPhwmKVU6VbkXRNnv0rjQGRpHKsBzdDMwmLGLVvGg2GTFRlLr6Tg5TfCK_b3PlKETJwjc9meF_ddEGpRa-QQATCYJ5gZVLP_Gtv1pcHsBc6OA0_A_xzJdpo0eCXwblNgdZvno1lSyDgfxtLZOo7-a03s05VbboTT5b7WQDZ2YOn64aOZia6pMIJTQfwkTYu9ypryapjR6E9N0sK4KmSM7tddTSnJwfEQ"/></button>
+<span class="text-[10px] font-bold text-gray-600">Compras</span>
+</div>
+<!-- Home Category -->
+<div class="flex flex-col items-center gap-1 min-w-[70px]">
+<button class="w-16 h-16 bg-pop-purple neo-border-sm rounded-xl flex items-center justify-center shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-y-[2px] transition-all"><img alt="Saúde" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqQGTR-SpMUXQ51h_kzQUVGKp5Xo7Cd4Tx8ihHaWk7Tis4uhKjwDH_07cFm-75fNn7w8pBeavFyO_5wUWuIk0OizgdSFQjTI6seCSBk2mxBZFUAs3MQdXFa-jeZRUU40NcohQs97jec_s1UvEiSrzG29skux5m-GyX_BTaSJTq94b8Q883WFKObXSF0Jl9s4oIPFnhDMYSDD5T7EO-ejuSw0yXd6MX2RApoEgSO7HwKDAiOVOD8NrwPi7LjcJU5zjwNYTWhXBZYbQ"/></button>
+<span class="text-[10px] font-bold text-gray-600">Saúde</span>
+</div>
+</div>
+</div>
+<!-- Payment Method Tabs -->
+<div class="mt-4 border-t-2 border-black">
+<div class="flex overflow-x-auto no-scrollbar py-4 px-2 gap-3">
+<button class="whitespace-nowrap px-4 py-2 bg-white border-2 border-black rounded-full text-sm font-bold shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Cartão de Crédito</button>
+<button class="whitespace-nowrap px-4 py-2 bg-pop-cyan border-2 border-black rounded-full text-sm font-bold shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Débito (Nubank)</button>
+<button class="whitespace-nowrap px-4 py-2 bg-white border-2 border-black rounded-full text-sm font-bold shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Dinheiro</button>
+</div>
+</div>
+</section>
+<!-- END: New Register Modal/Card Area -->
+</div>
+<!-- END: Scrollable Content -->
+<!-- BEGIN: Keyboard Overlay (Simulated) -->
+<section class="bg-[#D1D5DB] pt-2 pb-8 px-1" data-purpose="keyboard">
+<!-- Control Bar -->
+<div class="flex justify-between px-4 py-2 mb-2">
+<button class="text-base font-medium text-black">Cancelar</button>
+<button class="text-base font-bold text-black"><span class="text-2xl font-bold">⌫</span></button>
+</div>
+<div class="grid grid-cols-3 gap-x-1.5 gap-y-2 px-1">
+<!-- Row 1 -->
+<button class="bg-white rounded-[5px] h-12 text-2xl font-normal shadow-[0_1px_0_0_#888888] active:bg-gray-200 flex items-center justify-center font-sans">1</button>
+<button class="bg-white rounded-[5px] h-12 text-2xl font-normal shadow-[0_1px_0_0_#888888] active:bg-gray-200 flex items-center justify-center font-sans">2</button>
+<button class="bg-white rounded-[5px] h-12 text-2xl font-normal shadow-[0_1px_0_0_#888888] active:bg-gray-200 flex items-center justify-center font-sans">3</button>
+<!-- Row 2 -->
+<button class="bg-white rounded-[5px] h-12 text-2xl font-normal shadow-[0_1px_0_0_#888888] active:bg-gray-200 flex items-center justify-center font-sans">4</button>
+<button class="bg-white rounded-[5px] h-12 text-2xl font-normal shadow-[0_1px_0_0_#888888] active:bg-gray-200 flex items-center justify-center font-sans">5</button>
+<button class="bg-white rounded-[5px] h-12 text-2xl font-normal shadow-[0_1px_0_0_#888888] active:bg-gray-200 flex items-center justify-center font-sans">6</button>
+<!-- Row 3 -->
+<button class="bg-white rounded-[5px] h-12 text-2xl font-normal shadow-[0_1px_0_0_#888888] active:bg-gray-200 flex items-center justify-center font-sans">7</button>
+<button class="bg-white rounded-[5px] h-12 text-2xl font-normal shadow-[0_1px_0_0_#888888] active:bg-gray-200 flex items-center justify-center font-sans">8</button>
+<button class="bg-white rounded-[5px] h-12 text-2xl font-normal shadow-[0_1px_0_0_#888888] active:bg-gray-200 flex items-center justify-center font-sans">9</button>
+<!-- Row 4 -->
+<button class="rounded-[5px] h-12 text-2xl font-normal flex items-center justify-center pb-2">,</button>
+<button class="bg-white rounded-[5px] h-12 text-2xl font-normal shadow-[0_1px_0_0_#888888] active:bg-gray-200 flex items-center justify-center font-sans">0</button>
+<button class="rounded-[5px] h-12 flex items-center justify-center active:bg-gray-300"><span class="text-2xl font-bold">⌫</span></button>
+</div>
+</section>
+<!-- END: Keyboard Overlay -->
+<!-- BEGIN: Toast Notification -->
+<!-- Positioned absolutely over the content, visually similar to the black toast in the image -->
+<div class="absolute left-1/2 -translate-x-1/2 w-[90%] z-50 bottom-[35%]"><div class="bg-black text-white px-4 py-3 rounded-full shadow-neo flex items-center gap-3 w-full">
+<div class="w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
+<img alt="Success" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm1znXOXuVwqWojelhAQwv6meqLPtbKON3hRAXhIUd4BprzeXgJJDZO3yvotPNpMOeDF7qd-_VuhbNJProbLQKT-bpD5fMxIxJeKzgTu_fxZUeyLG5kO-WypPliRIZh2YJGwetWbHw7hTBiDNyf7YrMTww48IKNnWtU4nJySb8mGGcLctWUGR2b0D9SwMVpjbCIiMASeEFbAOCXs2b1hVoL2kHbFmjp-GzF4XL1acpBZ2zTyNQdFDvaVezPEb65YI6Hi-DPNxxc7Q"/>
+</div>
+<div class="flex-grow">
+<p class="text-sm font-bold leading-tight">Gasto registrado!</p>
+<p class="text-xs text-gray-300 leading-tight">Seu saldo foi atualizado.</p>
+</div>
+<button class="text-xs font-bold uppercase tracking-wider text-white hover:underline">VER</button>
+</div></div>
+<!-- END: Toast Notification -->
+</main>
+<!-- END: Main Mobile Container -->
+</body></html>
+
+<!-- Lançamento de Receita -->
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nova Receita - Neobrutalism</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Font Awesome for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts: Inter (Clean Sans-Serif) -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'neo-green': '#4ADE80', // Bright lime green approximation
+            'neo-black': '#000000',
+            'neo-white': '#FFFFFF',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          boxShadow: {
+            'neo': '4px 4px 0px 0px #000000', // Hard shadow, no blur
+            'neo-sm': '2px 2px 0px 0px #000000',
+          },
+          borderWidth: {
+            '3': '3px',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom CSS for specific styling needs -->
+<style data-purpose="custom-utilities">
+    /* Remove tap highlight on mobile */
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    /* Custom cursor animation for the price input */
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    .cursor-blink {
+      animation: blink 1s step-end infinite;
+    }
+
+    /* Hide scrollbar for clean mobile look */
+    body::-webkit-scrollbar {
+      display: none;
+    }
+    body {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-neo-white font-sans text-neo-black min-h-screen flex flex-col antialiased relative overflow-x-hidden">
+<!-- BEGIN: Main Header -->
+<!-- Simple centered header with a bottom border -->
+<header class="w-full bg-neo-white z-10 sticky top-0">
+<div class="py-4 text-center">
+<h1 class="text-lg font-bold tracking-tight">Nova Receita</h1>
+</div>
+<div class="h-[3px] w-full bg-neo-black"></div>
+</header>
+<!-- END: Main Header -->
+<!-- BEGIN: Main Content Area -->
+<main class="flex-grow px-5 py-6 flex flex-col items-center w-full max-w-md mx-auto space-y-8 pb-32">
+<!-- BEGIN: Amount Section -->
+<!-- Large price display with a blinking cursor effect -->
+<section class="text-center w-full mt-4" data-purpose="amount-display"><h2 class="text-xs font-bold uppercase tracking-wider mb-2">VALOR DA RECEITA</h2>
+<div class="flex items-center justify-center text-6xl font-extrabold tracking-tighter relative">
+<span class="relative z-10">R$ <span class="relative">0<span class="absolute inset-y-0 left-1/2 -translate-x-1/2 w-[4px] h-[80%] top-[10%] animate-pulse bg-neo-green"></span></span>,00</span>
+</div></section>
+<!-- END: Amount Section -->
+<!-- BEGIN: Details Card 1 -->
+<!-- Contains Description, Type Toggle, and Switch -->
+<div class="relative w-full mt-6 mb-8">
+<!-- Green Tab Decoration Top -->
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 w-3/4 h-6 bg-neo-green border-3 border-neo-black rounded-t-lg z-0"></div>
+<section class="w-full bg-neo-white border-3 border-neo-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rounded-lg overflow-hidden relative z-10" data-purpose="details-card">
+<!-- Description Input Row -->
+<div class="flex gap-3 border-b-3 border-neo-black bg-white p-5 items-center">
+<div class="">
+<i class="fa-solid fa-file-lines text-xl"></i>
+</div>
+<div class="flex-grow">
+<label class="block text-xs font-bold mb-1 uppercase" for="description">Descrição</label>
+<input class="w-full border-none p-0 text-neo-black placeholder-gray-400 focus:ring-0 text-lg bg-transparent font-semibold" id="description" placeholder="Ex: Salário, Projeto X..." type="text"/>
+</div>
+</div>
+<!-- Toggle Switch (Fixo / Variável) -->
+<div class="border-b-3 border-neo-black bg-white p-5">
+<div class="flex w-full border-3 border-neo-black rounded-full overflow-hidden h-12 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] bg-white">
+<button class="flex-1 font-bold text-sm bg-white hover:bg-gray-50 transition-colors flex items-center justify-center border-r-3 border-neo-black">
+              Fixo
+            </button>
+<button class="flex-1 font-bold text-sm bg-neo-green flex items-center justify-center">
+              Variável
+            </button>
+</div>
+</div>
+<!-- Monthly Variation Checkbox -->
+<div class="flex items-center justify-between bg-white p-5">
+<span class="font-bold text-sm">Valor varia mensalmente?</span>
+<!-- Custom Blocky Switch Toggle -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-14 h-8 bg-white border-3 border-neo-black peer-focus:outline-none peer-checked:bg-neo-green rounded-none shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-colors"></div>
+<div class="absolute bg-neo-black h-5 w-5 border border-black transition-transform peer-checked:translate-x-6 rounded-none left-[3px] top-[3px]"></div>
+</label>
+</div>
+</section>
+</div>
+<!-- END: Details Card 1 -->
+<!-- BEGIN: Details Card 2 -->
+<!-- Contains Date, Account, and Responsible person selectors -->
+<div class="relative w-full mb-8">
+<!-- Green Tab Decoration Bottom -->
+<div class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-3/4 h-6 bg-neo-green border-3 border-neo-black rounded-b-lg z-0"></div>
+<section class="w-full bg-neo-white border-3 border-neo-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rounded-lg overflow-hidden relative z-10" data-purpose="meta-card">
+<!-- Row: Date -->
+<div class="flex items-center justify-between border-b-3 border-neo-black bg-white active:bg-gray-50 cursor-pointer p-5">
+<div class="flex items-center gap-4">
+<i class="fa-solid fa-calendar text-xl w-6 text-center"></i>
+<span class="font-bold text-sm">Data</span>
+</div>
+<div class="flex items-center gap-2 font-bold text-sm">
+<span>Hoje</span>
+<i class="fa-solid fa-chevron-right text-xs"></i>
+</div>
+</div>
+<!-- Row: Account -->
+<div class="flex items-center justify-between border-b-3 border-neo-black bg-white active:bg-gray-50 cursor-pointer p-5">
+<div class="flex items-center gap-4">
+<i class="fa-solid fa-building-columns text-xl w-6 text-center"></i>
+<span class="font-bold text-sm">Conta de Destino</span>
+</div>
+<div class="flex items-center gap-2 font-bold text-sm">
+<span>Nubank</span>
+<i class="fa-solid fa-chevron-right text-xs"></i>
+</div>
+</div>
+<!-- Row: Responsible -->
+<div class="flex items-center justify-between bg-white active:bg-gray-50 cursor-pointer p-5">
+<div class="flex items-center gap-4">
+<i class="fa-solid fa-user-group text-xl w-6 text-center"></i>
+<span class="font-bold text-sm">Responsável</span>
+</div>
+<div class="flex items-center gap-2 font-bold text-sm">
+<span>Eu</span>
+<i class="fa-solid fa-chevron-right text-xs"></i>
+</div>
+</div>
+</section>
+</div>
+<!-- END: Details Card 2 -->
+</main>
+<!-- END: Main Content Area -->
+<!-- BEGIN: Bottom Action Footer -->
+<footer class="fixed bottom-0 left-0 w-full px-5 pb-8 pt-4 bg-neo-white/90 backdrop-blur-sm z-20">
+<div class="max-w-md mx-auto">
+<button class="w-full bg-neo-green text-neo-black font-extrabold text-lg py-4 px-6 border-3 border-neo-black active:shadow-none active:translate-x-[4px] active:translate-y-[4px] transition-all rounded-sm uppercase tracking-wide shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">Salvar Receita</button>
+</div>
+</footer>
+<!-- END: Bottom Action Footer -->
+</body></html>
+
+<!-- Nova Despesa -->
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nova Despesa</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Font Awesome for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            bgBeige: '#F5F0E6',
+            primaryYellow: '#FFFF00',
+            primaryPurple: '#8A2BE2',
+            borderBlack: '#000000',
+          },
+          boxShadow: {
+            'brutal': '4px 4px 0px 0px #000000',
+            'brutal-sm': '2px 2px 0px 0px #000000',
+          },
+          borderWidth: {
+            '3': '3px',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles for Specific Neo-Brutalist elements -->
+<style data-purpose="custom-utilities">
+    /* Ensure inputs don't have default browser styles that conflict */
+    input:focus, select:focus, textarea:focus, button:focus {
+      outline: none;
+      box-shadow: none; 
+    }
+    
+    /* Specific styling for the brutalist borders to look crisp */
+    .brutal-border {
+      border: 3px solid black;
+    }
+
+    /* Custom scrollbar hiding for cleaner mobile look if needed */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen font-sans">
+<!-- BEGIN: Mobile Container -->
+<!-- This container simulates the mobile screen view -->
+<main class="w-full max-w-md bg-bgBeige min-h-screen relative shadow-2xl overflow-hidden flex flex-col">
+<!-- BEGIN: Header -->
+<header class="flex items-center justify-between px-6 pt-12 pb-4">
+<!-- Close Icon -->
+<button class="text-3xl text-black hover:scale-110 transition-transform p-2">
+<i class="fa-solid fa-times"></i>
+</button>
+<!-- Title -->
+<h1 class="text-xl font-bold text-black tracking-wide">Nova Despesa</h1>
+<!-- Spacer for centering -->
+<div class="w-8"></div>
+</header>
+<!-- END: Header -->
+<!-- BEGIN: Content Scrollable Area -->
+<div class="flex-1 overflow-y-auto px-6 pb-24 no-scrollbar">
+<!-- BEGIN: Amount Section -->
+<section class="mt-4 mb-8 text-center">
+<label class="block text-sm font-bold mb-2">Valor da despesa</label>
+<div class="bg-white brutal-border h-20 flex items-center justify-between px-4">
+<span class="text-3xl font-extrabold">R$</span>
+<!-- Input is right aligned to match design -->
+<input class="text-5xl font-bold text-right w-full bg-transparent border-none p-0 focus:ring-0 placeholder-black text-black" inputmode="decimal" type="text" value="0,00"/>
+</div>
+</section>
+<!-- END: Amount Section -->
+<!-- BEGIN: 'Quem Pagou?' Section -->
+<section class="mb-8">
+<label class="block text-xs font-bold uppercase tracking-wider mb-4">QUEM PAGOU?</label>
+<div class="flex space-x-6">
+<!-- User 1: You (Selected) -->
+<div class="flex flex-col items-center cursor-pointer">
+<div class="relative w-16 h-16 rounded-full brutal-border bg-primaryYellow flex items-center justify-center overflow-hidden">
+<!-- Double border effect using padding inside container -->
+<div class="w-14 h-14 rounded-full border-2 border-transparent overflow-hidden">
+<img alt="Você" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAguA1cxwZR33CdoIJ_1iwzJb3h35VPvd9kCchFczQVeTSW83VDioeFbcELL6yJFKlYH7Iq6FUxe19cNmeoi-mwjfITtWM0LZGhqqLCm57RnDnEMp5bRirUzy7p6g-zHGCChFUPidebGLopZXx72nGE7Bec4ZGsZpdN61Z3Z2p_73wZbTre5Tjjq60D8LPEo0khTeieRoCffqB7viCibmFzWLDCYNoKiayWX9ey3dwyHiGCTLvKe4bCo6wJ5Dudjq934z7eyPeHV9k"/>
+</div>
+<!-- Checkmark Badge -->
+<div class="absolute bottom-0 right-0 bg-black text-primaryYellow rounded-full w-6 h-6 flex items-center justify-center border-2 border-white text-xs z-10">
+<i class="fa-solid fa-check"></i>
+</div>
+</div>
+<span class="mt-2 text-sm font-medium">Você</span>
+</div>
+<!-- User 2: Joao -->
+<div class="flex flex-col items-center cursor-pointer opacity-60 hover:opacity-100 transition-opacity">
+<div class="w-16 h-16 rounded-full brutal-border bg-white flex items-center justify-center overflow-hidden">
+<img alt="João" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlQieNP_uyvmuMU8kRZKoUwes_npB1EjkX5OHMj-WAsuEzcIVV41DyrM9rMTXzyslarSEzO1v6snqk39J-EouXslc21c0-Dbsd85Uj_JY6PDpG_hwHXCpAQA9qmM9FHdnMmQs5kmpSzRy_mZEZhdE0LpLfVOvsLkAhNbAb26lZ-KXufIaVvBXa50I_l58tJ0DyB4aYMNEnpB55W_0-2QZZ3dzdqXs19KjQS8cQQG1AxsZ0jraF0E22UeKczwZ7n2V6f0lz-zlsQOU"/>
+</div>
+<span class="mt-2 text-sm font-medium">João</span>
+</div>
+<!-- Add New User -->
+<div class="flex flex-col items-center cursor-pointer hover:scale-105 transition-transform">
+<div class="w-16 h-16 rounded-full brutal-border bg-white flex items-center justify-center">
+<i class="fa-solid fa-plus text-2xl"></i>
+</div>
+<span class="mt-2 text-sm font-medium">Novo</span>
+</div>
+</div>
+</section>
+<!-- END: 'Quem Pagou?' Section -->
+<!-- BEGIN: Details Row (Data & Categoria) -->
+<section class="grid grid-cols-2 gap-4 mb-8">
+<!-- Date Input -->
+<div>
+<label class="block text-sm font-bold mb-2">Data</label>
+<div class="bg-white brutal-border h-12 flex items-center px-3 cursor-pointer">
+<i class="fa-solid fa-calendar text-xl mr-3"></i>
+<span class="font-bold">Hoje</span>
+</div>
+</div>
+<!-- Category Input -->
+<div>
+<label class="block text-sm font-bold mb-2">Categoria</label>
+<div class="bg-white brutal-border h-12 flex items-center justify-between px-3 cursor-pointer">
+<div class="flex items-center overflow-hidden">
+<i class="fa-solid fa-cart-shopping text-lg mr-2"></i>
+<span class="font-bold truncate">Mercado</span>
+</div>
+<i class="fa-solid fa-chevron-down text-sm"></i>
+</div>
+</div>
+</section>
+<!-- END: Details Row -->
+<!-- BEGIN: Frequency Section -->
+<section class="mb-8">
+<label class="block text-sm font-bold mb-2">Frequência</label>
+<div class="flex w-full brutal-border bg-white">
+<!-- Option 1: Unica (Active) -->
+<button class="flex-1 py-3 bg-primaryYellow font-bold border-r-2 border-black hover:bg-yellow-300 transition-colors">
+            Única
+          </button>
+<!-- Option 2: Fixa -->
+<button class="flex-1 py-3 bg-white font-bold border-r-2 border-black hover:bg-gray-50 transition-colors">
+            Fixa
+          </button>
+<!-- Option 3: Parcelada -->
+<button class="flex-1 py-3 bg-white font-bold hover:bg-gray-50 transition-colors">
+            Parcelada
+          </button>
+</div>
+</section>
+<!-- END: Frequency Section -->
+<!-- BEGIN: Payment Section -->
+<section class="mb-8">
+<label class="block text-sm font-bold mb-2">Pagamento</label>
+<div class="bg-white brutal-border p-3 flex items-center justify-between cursor-pointer">
+<div class="flex items-center">
+<!-- Card Icon Box -->
+<div class="w-10 h-8 bg-black rounded-sm flex items-center justify-center mr-3">
+<div class="w-6 h-4 bg-white rounded-sm"></div>
+</div>
+<!-- Text Details -->
+<div class="flex flex-col">
+<span class="font-bold text-sm leading-tight">Nubank Crédito</span>
+<span class="text-xs text-gray-600 font-medium">Vence em 05/Nov</span>
+</div>
+</div>
+<i class="fa-solid fa-chevron-right"></i>
+</div>
+</section>
+<!-- END: Payment Section -->
+<!-- BEGIN: Description Section -->
+<section class="mb-8">
+<label class="block text-sm font-bold mb-2">Descrição (Opcional)</label>
+<div class="bg-white brutal-border h-12 flex items-center px-3">
+<i class="fa-solid fa-pen text-sm mr-3"></i>
+<input class="w-full bg-transparent border-none p-0 focus:ring-0 text-sm font-medium placeholder-gray-800" placeholder="Ex: Jantar de aniversário" type="text"/>
+</div>
+</section>
+<!-- END: Description Section -->
+</div>
+<!-- END: Content Scrollable Area -->
+<!-- BEGIN: Footer Actions -->
+<footer class="absolute bottom-0 w-full bg-bgBeige px-6 pb-8 pt-4">
+<!-- Main Save Button -->
+<!-- Note: Using translate transform to create the offset shadow effect purely via CSS if box-shadow utility isn't enough, 
+           but here we use the custom shadow utility defined in config -->
+<button class="w-full bg-primaryPurple text-white font-bold text-lg py-4 brutal-border shadow-brutal active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">
+        Salvar Despesa
+      </button>
+<!-- Secondary Link -->
+<div class="text-center mt-4">
+<button class="text-sm font-bold text-black hover:underline">
+          Salvar e adicionar outra
+        </button>
+</div>
+</footer>
+<!-- END: Footer Actions -->
+</main>
+<!-- END: Mobile Container -->
+</body></html>
+
+<!-- Dashboard Financeiro Mensal -->
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dashboard Neo-brutalista Final</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "neo-bg": "#F5F2ED",
+                        "neo-yellow": "#FFEB00",
+                        "neo-purple": "#A855F7",
+                        "neo-orange": "#FB923C",
+                        "neo-cyan": "#22D3EE",
+                        "neo-lime": "#A3E635",
+                        "neo-blue": "#2563EB",
+                    },
+                    fontFamily: {
+                        "sans": ["Space Grotesk", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .neo-border {
+            border: 3px solid #000000;
+        }
+        .neo-shadow {
+            box-shadow: 4px 4px 0px 0px #000000;
+        }
+        .neo-shadow-lg {
+            box-shadow: 6px 6px 0px 0px #000000;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-neo-bg text-black overflow-x-hidden font-bold">
+<div class="relative flex h-full min-h-screen w-full flex-col max-w-md mx-auto bg-neo-bg overflow-hidden pb-24">
+<header class="flex items-center justify-between p-6 pt-10 sticky top-0 bg-neo-bg z-20">
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="text-sm uppercase tracking-tighter">Família Silva</span>
+<span class="material-symbols-outlined text-black font-black">expand_more</span>
+</div>
+<div class="flex items-center gap-2">
+<h2 class="text-2xl font-black uppercase tracking-tighter">Setembro 2024</h2>
+<span class="material-symbols-outlined font-black">calendar_month</span>
+</div>
+</div>
+<button class="p-2 neo-border neo-shadow bg-white rounded-none">
+<span class="material-symbols-outlined font-black">notifications</span>
+</button>
+</header>
+<main class="flex-1 flex flex-col gap-6 px-5 overflow-y-auto no-scrollbar">
+<div class="w-full bg-neo-yellow neo-border neo-shadow-lg p-6 flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<div class="flex flex-col">
+<p class="uppercase text-xs tracking-widest mb-1">Saldo Projetado</p>
+<h1 class="text-5xl font-black tracking-tighter">R$ 4.250</h1>
+</div>
+<span class="px-3 py-1 neo-border bg-neo-lime text-black text-xs font-black uppercase">
+                        Confortável
+                    </span>
+</div>
+<div class="w-full bg-black h-8 neo-border overflow-hidden p-1">
+<div class="bg-white h-full" style="width: 75%"></div>
+</div>
+<div class="flex justify-between text-sm uppercase tracking-tighter">
+<span>Hoje: R$ 3.100</span>
+<span>Meta: R$ 5.000</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4">
+<div class="flex flex-col p-3 bg-neo-lime neo-border neo-shadow">
+<p class="text-[10px] uppercase mb-1">Receitas</p>
+<p class="text-lg font-black leading-none">R$ 12k</p>
+</div>
+<div class="flex flex-col p-3 bg-neo-orange neo-border neo-shadow">
+<p class="text-[10px] uppercase mb-1">Despesas</p>
+<p class="text-lg font-black leading-none">R$ 7k</p>
+</div>
+<div class="flex flex-col p-3 bg-neo-cyan neo-border neo-shadow">
+<p class="text-[10px] uppercase mb-1">Dívidas</p>
+<p class="text-lg font-black leading-none">R$ 750</p>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex justify-between items-center px-1">
+<h3 class="text-xl font-black uppercase">Categorias</h3>
+<span class="text-xs underline decoration-2">VER TUDO</span>
+</div>
+<div class="p-6 bg-white neo-border neo-shadow flex flex-col gap-6">
+<div class="flex flex-col gap-4">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-xs uppercase tracking-tighter mb-1">
+<span>Essenciais</span>
+<span>50%</span>
+</div>
+<div class="h-6 w-full neo-border bg-neo-bg">
+<div class="h-full bg-neo-purple neo-border-r border-black" style="width: 50%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-xs uppercase tracking-tighter mb-1">
+<span>Lazer</span>
+<span>20%</span>
+</div>
+<div class="h-6 w-full neo-border bg-neo-bg">
+<div class="h-full bg-neo-orange neo-border-r border-black" style="width: 20%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-xs uppercase tracking-tighter mb-1">
+<span>Dívidas</span>
+<span>15%</span>
+</div>
+<div class="h-6 w-full neo-border bg-neo-bg">
+<div class="h-full bg-neo-cyan neo-border-r border-black" style="width: 15%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-xs uppercase tracking-tighter mb-1">
+<span>Outros</span>
+<span>15%</span>
+</div>
+<div class="h-6 w-full neo-border bg-neo-bg">
+<div class="h-full bg-neo-lime neo-border-r border-black" style="width: 15%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 pb-10">
+<h3 class="text-xl font-black uppercase px-1">Vencimentos</h3>
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between p-4 bg-white neo-border neo-shadow">
+<div class="flex items-center gap-3">
+<div class="size-10 neo-border bg-neo-purple flex items-center justify-center">
+<span class="material-symbols-outlined font-black">home</span>
+</div>
+<div class="flex flex-col">
+<span class="uppercase text-sm leading-none">Aluguel</span>
+<span class="text-[10px] uppercase font-medium">Em 2 dias</span>
+</div>
+</div>
+<div class="text-right">
+<span class="text-sm font-black">- R$ 2.500</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 bg-white neo-border neo-shadow">
+<div class="flex items-center gap-3">
+<div class="size-10 neo-border bg-neo-orange flex items-center justify-center">
+<span class="material-symbols-outlined font-black">movie</span>
+</div>
+<div class="flex flex-col">
+<span class="uppercase text-sm leading-none">Netflix</span>
+<span class="text-[10px] uppercase font-medium">Em 4 dias</span>
+</div>
+</div>
+<div class="text-right">
+<span class="text-sm font-black">- R$ 55,90</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 bg-neo-bg/50 neo-border neo-shadow opacity-60">
+<div class="flex items-center gap-3">
+<div class="size-10 neo-border bg-neo-cyan flex items-center justify-center">
+<span class="material-symbols-outlined font-black">flash_on</span>
+</div>
+<div class="flex flex-col">
+<span class="uppercase text-sm leading-none">Energia</span>
+<span class="text-[10px] uppercase font-medium">PAGO</span>
+</div>
+</div>
+<div class="text-right">
+<span class="text-sm font-black line-through">- R$ 220</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<button class="absolute bottom-28 right-6 size-16 rounded-full bg-neo-blue neo-border neo-shadow flex items-center justify-center text-white z-50">
+<span class="material-symbols-outlined text-4xl font-black">add</span>
+</button>
+<nav class="absolute bottom-0 w-full h-24 bg-white border-t-[3px] border-black flex justify-around items-center px-4 z-40">
+<a class="flex flex-col items-center gap-1 p-2 text-black" href="#">
+<span class="material-symbols-outlined font-black text-3xl">grid_view</span>
+<span class="text-[10px] font-black uppercase tracking-tighter">Início</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-black/40" href="#">
+<span class="material-symbols-outlined font-black text-3xl">receipt_long</span>
+<span class="text-[10px] font-black uppercase tracking-tighter">Extrato</span>
+</a>
+<div class="w-10"></div>
+<a class="flex flex-col items-center gap-1 p-2 text-black/40" href="#">
+<span class="material-symbols-outlined font-black text-3xl">pie_chart</span>
+<span class="text-[10px] font-black uppercase tracking-tighter">Budget</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-black/40" href="#">
+<span class="material-symbols-outlined font-black text-3xl">person</span>
+<span class="text-[10px] font-black uppercase tracking-tighter">Perfil</span>
+</a>
+</nav>
+</div>
+
+</body></html>
+
+<!-- Meus Cartões Neo-Brutalistas -->
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Meus Cartões Neo-brutalistas</title>
+<!-- Load Tailwind CSS v3 with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Load Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Inter:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'bg-cream': '#F2F0E9',
+            'card-purple': '#C026D3',
+            'card-lime': '#A3E635',
+            'card-yellow': '#FACC15',
+            'card-blue': '#2563EB',
+          },
+          fontFamily: {
+            'display': ['"Archivo Black"', '"Arial Black"', '"Impact"', 'sans-serif'],
+            'body': ['"Inter"', 'sans-serif'],
+          },
+          boxShadow: {
+            'neo': '5px 5px 0px 0px #000000',
+            'neo-sm': '3px 3px 0px 0px #000000',
+            'neo-btn': '5px 5px 0px 0px #000000',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles for specific Neo-brutalist tweaks -->
+<style data-purpose="neo-brutalism-base">
+    body {
+      background-color: #F2F0E9;
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    .neo-border {
+      border: 3px solid #000000;
+    }
+
+    /* Text shadow for the add button title to match the slight depth effect */
+    .text-shadow-hard {
+      text-shadow: 2px 2px 0px #000000;
+    }
+
+    /* Custom progress bar container styling */
+    .progress-track {
+      background-color: #000000;
+      border-radius: 9999px; /* Pill shape */
+      height: 20px; /* Updated to 20px */
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: flex-end; /* Align child to right */
+      align-items: center;
+    }
+
+    /* Inner pill alignment */
+    .progress-fill {
+      border-radius: 9999px;
+      height: 100%;
+      /* Flexbox handles positioning */
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex flex-col items-center py-10 px-4">
+<!-- BEGIN: MainHeader -->
+<header class="text-center mb-8 w-full max-w-md">
+<h1 class="font-display text-4xl sm:text-5xl leading-none text-black uppercase tracking-tight font-black">
+<div class="mb-1">Meus Cartões</div>
+<div>Neo-brutalistas</div>
+</h1>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: ContentContainer -->
+<main class="w-full max-w-md space-y-6 flex flex-col"><!-- BEGIN: SummaryCard -->
+<section class="bg-card-purple neo-border rounded-xl shadow-neo p-5 relative overflow-hidden" data-purpose="summary-card">
+<div class="relative z-10">
+<h2 class="font-display text-sm uppercase font-black text-black mb-1 tracking-tight">Total em Faturas</h2>
+<p class="font-display text-6xl font-black text-black tracking-tighter">R$ 13.900,00</p>
+</div>
+</section>
+<!-- END: SummaryCard -->
+<!-- BEGIN: CardItem_Nubank -->
+<article class="bg-card-lime neo-border rounded-xl shadow-neo p-5 space-y-4" data-purpose="credit-card-item">
+<!-- Header: Name and Status -->
+<div class="flex justify-between items-center">
+<h3 class="font-display text-xl font-black text-black">Nubank Platinum</h3>
+<span class="bg-black text-card-lime font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wide">
+          Status
+        </span>
+</div>
+<!-- Amount and Date -->
+<div class="flex justify-between items-end">
+<div class="text-black font-display text-3xl font-black tracking-tighter">R$ 13.900,00</div>
+<div class="text-black font-bold text-sm mb-1 text-right">03/07/23</div>
+</div>
+<!-- Progress Bar -->
+<div aria-label="Progress bar" class="progress-track">
+<div class="progress-fill bg-card-lime w-[25%]"></div>
+</div>
+</article>
+<!-- END: CardItem_Nubank -->
+<!-- BEGIN: CardItem_Inter -->
+<article class="bg-card-yellow neo-border rounded-xl shadow-neo p-5 space-y-4" data-purpose="credit-card-item">
+<!-- Header: Name and Status -->
+<div class="flex justify-between items-center">
+<h3 class="font-display text-xl font-black text-black">Inter Black</h3>
+<span class="bg-black text-card-yellow font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wide">
+          Status
+        </span>
+</div>
+<!-- Amount and Date -->
+<div class="flex justify-between items-end">
+<div class="text-black font-display text-3xl font-black tracking-tighter">R$ 1.250,00</div>
+<div class="text-black font-bold text-sm mb-1 text-right">01/07/23</div>
+</div>
+<!-- Progress Bar -->
+<div aria-label="Progress bar" class="progress-track">
+<div class="progress-fill bg-card-yellow w-[30%]"></div>
+</div>
+</article>
+<!-- END: CardItem_Inter -->
+<!-- BEGIN: CardItem_XP -->
+<article class="bg-card-purple neo-border rounded-xl shadow-neo p-5 space-y-4" data-purpose="credit-card-item">
+<!-- Header: Name and Status -->
+<div class="flex justify-between items-center">
+<h3 class="font-display text-xl font-black text-black">XP Visa Infinite</h3>
+<span class="bg-black text-card-purple font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wide">
+          Status
+        </span>
+</div>
+<!-- Amount and Date -->
+<div class="flex justify-between items-end">
+<div class="text-black font-display text-3xl font-black tracking-tighter">R$ 1.250,00</div>
+<div class="text-black font-bold text-sm mb-1 text-right">01/07/23</div>
+</div>
+<!-- Progress Bar -->
+<div aria-label="Progress bar" class="progress-track">
+<div class="progress-fill bg-card-purple w-[25%]"></div>
+</div>
+</article>
+<!-- END: CardItem_XP --></main>
+<!-- END: ContentContainer -->
+<!-- BEGIN: FooterAction -->
+<footer class="w-full max-w-md mt-8 pb-8">
+<button aria-label="Add new card" class="w-full bg-card-blue text-white font-display text-xl py-4 rounded-xl neo-border shadow-neo active:shadow-none active:translate-x-[6px] active:translate-y-[6px] transition-all duration-150 text-shadow-hard flex items-center justify-center gap-2 font-black">
+      Adicionar Cartão
+    </button>
+</footer>
+<!-- END: FooterAction -->
+</body></html>
+
+<!-- Cartão Nubank Replica -->
+<!-- BEGIN: HTML Document --><!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cartão Nubank - Replica</title>
+<!-- BEGIN: Tailwind CSS Setup -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'nu-cyan': '#00D5E2',
+            'nu-orange': '#FF5A00',
+            'nu-yellow': '#FCEE21',
+            'nu-black': '#000000',
+            'nu-gray-light': '#F5F5F5',
+          },
+          fontFamily: {
+            sans: ['Inter', 'Roboto', 'sans-serif'],
+          },
+          boxShadow: {
+            'brutal': '4px 4px 0px 0px rgba(0,0,0,1)', // Brutalist style shadow often seen in modern UI trends or specific design systems
+          }
+        }
+      }
+    }
+  </script>
+<!-- END: Tailwind CSS Setup -->
+<!-- BEGIN: Font Awesome for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- END: Font Awesome -->
+<!-- BEGIN: Custom Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- END: Custom Fonts -->
+<!-- BEGIN: Custom CSS -->
+<style data-purpose="base-styles">
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F5F5F5; /* Light gray background for contrast */
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    /* Hiding scrollbar for cleaner mobile look */
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .safe-area-bottom {
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+  </style>
+<!-- END: Custom CSS -->
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-50 min-h-screen flex flex-col relative pb-24">
+<!-- BEGIN: Header -->
+<header class="bg-white px-4 py-4 flex items-center justify-between sticky top-0 z-50 border-b border-gray-100" data-purpose="app-header">
+<button aria-label="Voltar" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors">
+<i class="fa-solid fa-chevron-left text-xl text-nu-black"></i>
+</button>
+<h1 class="text-lg font-bold text-nu-black">Cartão Nubank</h1>
+<button aria-label="Configurações" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors">
+<i class="fa-solid fa-gear text-lg text-nu-black"></i>
+</button>
+</header>
+<!-- END: Header -->
+<!-- BEGIN: Main Content -->
+<main class="flex-grow px-4 py-6 space-y-6 max-w-md mx-auto w-full" data-purpose="main-scroll-view">
+<!-- BEGIN: Main Card (Cyan) -->
+<!-- This section displays current invoice details and credit limit -->
+<section class="bg-nu-cyan rounded-3xl p-6 shadow-sm text-nu-black relative overflow-hidden" data-purpose="invoice-summary">
+<div class="flex justify-between items-start mb-2">
+<span class="font-semibold text-lg">Fatura Atual</span>
+<!-- Due Date Badge -->
+<span class="bg-nu-orange text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+          Vence em 5 dias
+        </span>
+</div>
+<!-- Large Invoice Amount -->
+<div class="mt-2 mb-1">
+<h2 class="text-4xl font-extrabold tracking-tight">R$ 1.250,00</h2>
+</div>
+<!-- Available Limit -->
+<p class="text-sm font-medium opacity-80 mb-6">Disponível: R$ 3.750,00</p>
+<!-- Progress Bar Container -->
+<div class="relative w-full h-3 bg-nu-black rounded-full overflow-hidden mb-2">
+<!-- Progress Fill -->
+<div class="absolute top-0 left-0 h-full bg-nu-orange w-1/4 rounded-full"></div>
+</div>
+<!-- Progress Labels -->
+<div class="flex justify-between text-xs font-bold opacity-90">
+<span>25% utilizado</span>
+<span>Limite: R$ 5.000</span>
+</div>
+</section>
+<!-- END: Main Card -->
+<!-- BEGIN: Payment Strategy Section -->
+<!-- Grid of buttons for payment options -->
+<section data-purpose="payment-strategy-selector">
+<h3 class="text-lg font-bold text-nu-black mb-4">Estratégia de Pagamento</h3>
+<div class="grid grid-cols-2 gap-3">
+<!-- Button 1: Pagar Total -->
+<button class="bg-nu-orange text-white rounded-2xl p-4 flex flex-col items-start justify-between h-24 shadow-sm hover:opacity-90 transition-opacity">
+<i class="fa-solid fa-check-circle text-2xl mb-2"></i>
+<span class="font-bold text-sm">Pagar Total</span>
+</button>
+<!-- Button 2: Valor Fixo -->
+<button class="bg-nu-orange text-white rounded-2xl p-4 flex flex-col items-start justify-between h-24 shadow-sm hover:opacity-90 transition-opacity">
+<i class="fa-solid text-2xl mb-2 fa-dollar-sign"></i>
+<span class="font-bold text-sm">Valor Fixo</span>
+</button>
+<!-- Button 3: Mínimo -->
+<button class="bg-white border-2 border-nu-black text-nu-black rounded-2xl p-4 flex flex-col items-start justify-between h-24 hover:bg-gray-50 transition-colors">
+<i class="fa-solid text-2xl mb-2 fa-download"></i>
+<span class="font-bold text-sm">Mínimo</span>
+</button>
+<!-- Button 4: Porcentagem -->
+<button class="bg-white border-2 border-nu-black text-nu-black rounded-2xl p-4 flex flex-col items-start justify-between h-24 hover:bg-gray-50 transition-colors">
+<i class="fa-solid fa-percent text-2xl mb-2"></i>
+<span class="font-bold text-sm">Porcentagem</span>
+</button>
+</div>
+</section>
+<!-- END: Payment Strategy Section -->
+<!-- BEGIN: Monthly Value Card -->
+<!-- Detailed breakdown with chart visualization -->
+<section class="bg-white border-2 border-nu-black rounded-3xl p-5" data-purpose="monthly-value-details">
+<div class="flex justify-between items-center mb-1">
+<label class="text-xs font-bold text-gray-500 uppercase tracking-wider">Valor Mensal</label>
+</div>
+<!-- Editable Value Display -->
+<div class="flex items-center justify-between mb-4 border-b border-gray-100 pb-2">
+<span class="text-2xl font-extrabold text-nu-black">R$ 450,00</span>
+<button class="text-nu-black hover:bg-gray-100 p-2 rounded-full">
+<i class="fa-solid fa-pencil text-sm"></i>
+</button>
+</div>
+<!-- Info Box -->
+<div class="bg-nu-yellow rounded-xl p-4 flex items-start gap-3 mb-4">
+<div class="mt-1">
+<i class="fa-solid text-nu-black text-lg fa-arrow-trend-up"></i>
+</div>
+<p class="text-sm font-semibold leading-tight text-nu-black">
+          Com pagamento fixo de R$ 450,00, você quitará essa dívida em 3 meses.
+        </p>
+</div>
+<!-- Chart Placeholder Area -->
+<div class="bg-nu-yellow rounded-xl p-4 h-32 relative flex flex-col justify-end" data-purpose="chart-container">
+<!-- SVG Chart Representation -->
+<div class="absolute inset-0 p-4 flex items-center justify-center"><svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 100 40">
+<!-- Grid lines -->
+<line stroke="rgba(0,0,0,0.1)" stroke-dasharray="2" stroke-width="0.5" x1="0" x2="100" y1="0" y2="0"></line>
+<line stroke="rgba(0,0,0,0.1)" stroke-dasharray="2" stroke-width="0.5" x1="0" x2="100" y1="20" y2="20"></line>
+<line stroke="rgba(0,0,0,0.1)" stroke-dasharray="2" stroke-width="0.5" x1="0" x2="100" y1="40" y2="40"></line>
+<!-- Straight Line Polyline: Top-Left(0,5) -> Down(20,35) -> Up(50,15) -> Down(70,25) -> Up(85,5) -> Down(100,20) -->
+<polyline fill="none" points="0,5 20,35 50,15 70,25 85,5 100,20" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></polyline>
+</svg></div>
+<!-- X-Axis Labels -->
+<div class="flex justify-between w-full text-[10px] font-bold text-nu-black uppercase z-10 pt-2">
+<span>Hoje</span>
+<span>Set</span>
+<span>Out</span>
+<span>Nov</span>
+</div>
+</div>
+</section>
+<!-- END: Monthly Value Card -->
+<!-- BEGIN: Recent Purchases Section -->
+<section data-purpose="recent-purchases-list">
+<h3 class="text-lg font-bold text-nu-black mb-4">Compras Recentes</h3>
+<div class="bg-white border border-nu-black rounded-2xl overflow-hidden">
+<!-- Item 1 -->
+<div class="p-4 flex items-center justify-between border-b border-gray-100 last:border-0 hover:bg-gray-50 transition-colors">
+<div class="flex items-center gap-4">
+<!-- Icon Circle -->
+<div class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0 text-nu-black">
+<i class="fa-solid fa-cart-shopping"></i>
+</div>
+<!-- Details -->
+<div class="flex flex-col">
+<span class="font-bold text-sm text-nu-black">Supermercado Silva</span>
+<span class="text-xs text-gray-500">Ontem • Alimentação</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-bold text-sm text-nu-black">- R$ 432,10</span>
+<!-- Avatar Placeholder -->
+<div class="w-5 h-5 rounded-full mt-1 bg-gray-200 flex items-center justify-center text-[10px] text-gray-500"><i class="fa-solid fa-user"></i></div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-4 flex items-center justify-between border-b border-gray-100 last:border-0 hover:bg-gray-50 transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0 text-nu-black">
+<i class="fa-solid fa-film text-nu-black"></i> <!-- Using brand icon if avail in FontAwesome free, else generic -->
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-sm text-nu-black">Netflix</span>
+<span class="text-xs text-gray-500">12 Ago • Assinatura</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-bold text-sm text-nu-black">- R$ 55,90</span>
+<div class="w-5 h-5 rounded-full mt-1 bg-gray-200 flex items-center justify-center text-[10px] text-gray-500"><i class="fa-solid fa-user"></i></div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-4 flex items-center justify-between hover:bg-gray-50 transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0 text-nu-black">
+<i class="fa-solid fa-gas-pump"></i>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-sm text-nu-black">Posto Ipiranga</span>
+<span class="text-xs text-gray-500">10 Ago • Transporte</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-bold text-sm text-nu-black">- R$ 150,00</span>
+<div class="w-5 h-5 rounded-full mt-1 bg-gray-200 flex items-center justify-center text-[10px] text-gray-500"><i class="fa-solid fa-user"></i></div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Recent Purchases Section -->
+</main>
+<!-- END: Main Content -->
+<!-- BEGIN: Sticky Footer -->
+<footer class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 safe-area-bottom z-40 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)]" data-purpose="sticky-action-bar">
+<div class="max-w-md mx-auto flex items-center justify-between gap-4">
+<!-- Footer Info -->
+<div class="flex flex-col">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-wide">Pagamento Programado</span>
+<span class="text-xl font-extrabold text-nu-black">R$ 450,00</span>
+</div>
+<!-- Action Button -->
+<button class="bg-nu-orange text-white px-6 py-3 rounded-full font-bold flex items-center gap-2 shadow-lg hover:bg-orange-600 transition-colors active:scale-95 transform">
+<i class="fa-solid fa-floppy-disk"></i>
+<span>Salvar Estratégia</span>
+</button>
+</div>
+</footer>
+<!-- END: Sticky Footer -->
+</body></html><!-- END: HTML Document --><!-- MISSING_IMAGES:
+- User Avatar 1
+- User Avatar 2
+- User Avatar 3
+-->
+
+<!-- Sugestões Automáticas - Transaction List -->
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sugestões Financeiras</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'paper-beige': '#F7F5F0',
+            'brutal-green': '#00FF00',
+            'brutal-gray': '#D9D9D9',
+          },
+          fontFamily: {
+            sans: ['Roboto', 'Inter', 'sans-serif'],
+          },
+          borderWidth: {
+            '3': '2px', 
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles for Specific Tweaks -->
+<style data-purpose="typography">
+    body {
+      -webkit-font-smoothing: antialiased;
+    }
+    /* Ensure borders are crisp and solid black */
+    * {
+      border-color: #000000;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-paper-beige text-black p-5 min-h-screen max-w-md mx-auto relative">
+<!-- BEGIN: Header -->
+<header class="flex items-center justify-between mb-8 relative">
+<!-- Back Button -->
+<button aria-label="Voltar" class="p-1 focus:outline-none">
+<svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+<!-- Title -->
+<h1 class="text-xl font-bold absolute left-1/2 transform -translate-x-1/2">
+      Sugestões
+    </h1>
+<!-- Empty div to balance flex layout if needed, though absolute positioning handles center -->
+<div class="w-8"></div>
+</header>
+<!-- END: Header -->
+<!-- BEGIN: Intro Section -->
+<section class="mb-8">
+<h2 class="text-3xl font-extrabold leading-tight mb-3">
+      Sugestões Automáticas
+    </h2>
+<p class="text-lg font-semibold leading-snug">
+      Identificamos 3 novos gastos nas notificações do seu banco. Confirme para organizar suas finanças.
+    </p>
+</section>
+<!-- END: Intro Section -->
+<!-- BEGIN: Transaction List -->
+<main class="space-y-8 pb-10">
+<!-- Group: TODAY -->
+<div data-purpose="group-today">
+<!-- Date Separator -->
+<div class="flex items-center mb-3">
+<div class="border-2 border-black px-2 py-1 bg-white z-10">
+<span class="block text-lg font-black uppercase tracking-wide">HOJE</span>
+</div>
+<div class="h-[2px] bg-black flex-grow -ml-[2px]"></div>
+</div>
+<!-- Card 1: Uber -->
+<article class="bg-white border-2 border-black p-4 shadow-none mb-5">
+<!-- Card Content Top -->
+<div class="flex justify-between items-start mb-5">
+<div class="flex gap-3">
+<!-- Icon Container -->
+<div class="w-12 h-12 flex-shrink-0 relative"><div class="w-full h-full rounded-full flex items-center justify-center border-2 border-black bg-[#F7E967]">
+<svg class="w-6 h-6 text-black" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6h-2c0-2.21-1.79-4-4-4S9 3.79 9 6H7c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm7 14H7V8h12v10zm-7-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</div></div>
+<!-- Details -->
+<div class="flex flex-col">
+<span class="text-lg font-bold leading-none mb-1">Uber * Trip</span>
+<div class="flex items-center gap-1 text-sm font-bold text-gray-800">
+<!-- Generic Card Icon -->
+<svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm2.5 4a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm11.207 1.293a1 1 0 00-1.414-1.414l-4.5 4.5a1 1 0 001.414 1.414l4.5-4.5z" fill-rule="evenodd"></path>
+</svg>
+<span>Nubank • 14:30</span>
+</div>
+</div>
+</div>
+<!-- Price -->
+<div class="text-lg font-bold whitespace-nowrap">
+            - R$ 24,90
+          </div>
+</div>
+<!-- Action Buttons -->
+<div class="flex gap-3">
+<button class="flex-1 bg-brutal-gray border-2 border-black py-3 px-4 font-bold text-base hover:bg-gray-300 transition-colors rounded-none flex items-center justify-center">Ignorar</button>
+<button class="flex-1 bg-brutal-green border-2 border-black py-3 px-4 font-bold text-base hover:opacity-90 transition-opacity rounded-none flex items-center justify-center">Adicionar</button>
+</div>
+</article>
+<!-- Card 2: iFood -->
+<article class="bg-white border-2 border-black p-4 shadow-none mb-5">
+<!-- Card Content Top -->
+<div class="flex justify-between items-start mb-5">
+<div class="flex gap-3">
+<div class="w-12 h-12 flex-shrink-0 relative"><div class="w-full h-full rounded-full bg-[#EA1D2C] flex items-center justify-center border-2 border-black">
+<svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v15h2.5v-5h2v5H23V6h-2v5h-2V6h-2z"></path></svg>
+</div></div>
+<div class="flex flex-col">
+<span class="text-lg font-bold leading-none mb-1">iFood * Pedido</span>
+<div class="flex items-center gap-1 text-sm font-bold text-gray-800">
+<!-- Bank Icon -->
+<svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z"></path>
+</svg>
+<span>Itaú • 12:15</span>
+</div>
+</div>
+</div>
+<div class="text-lg font-bold whitespace-nowrap">
+            - R$ 45,50
+          </div>
+</div>
+<!-- Action Buttons -->
+<div class="flex gap-3">
+<button class="flex-1 bg-brutal-gray border-2 border-black py-3 px-4 font-bold text-base hover:bg-gray-300 transition-colors rounded-none flex items-center justify-center">Ignorar</button>
+<button class="flex-1 bg-brutal-green border-2 border-black py-3 px-4 font-bold text-base hover:opacity-90 transition-opacity rounded-none flex items-center justify-center">Adicionar</button>
+</div>
+</article>
+</div>
+<!-- Group: YESTERDAY -->
+<div data-purpose="group-yesterday">
+<!-- Date Separator -->
+<div class="flex items-center mb-3">
+<div class="border-2 border-black px-2 py-1 bg-white z-10">
+<span class="block text-lg font-black uppercase tracking-wide">ONTEM</span>
+</div>
+<div class="h-[2px] bg-black flex-grow -ml-[2px]"></div>
+</div>
+<!-- Card 3: Netflix -->
+<article class="bg-white border-2 border-black p-4 shadow-none mb-5">
+<!-- Card Content Top -->
+<div class="flex justify-between items-start mb-5">
+<div class="flex gap-3">
+<div class="w-12 h-12 flex-shrink-0 relative"><div class="w-full h-full rounded-full flex items-center justify-center border-2 border-black bg-[#F7E967]">
+<svg class="w-6 h-6 text-black" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"></path></svg>
+</div></div>
+<div class="flex flex-col">
+<span class="text-lg font-bold leading-none mb-1">Netflix Com</span>
+<div class="flex items-center gap-1 text-sm font-bold text-gray-800">
+<!-- Generic Card Icon -->
+<svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm2.5 4a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm11.207 1.293a1 1 0 00-1.414-1.414l-4.5 4.5a1 1 0 001.414 1.414l4.5-4.5z" fill-rule="evenodd"></path>
+</svg>
+<span>Nubank • Ontem</span>
+</div>
+</div>
+</div>
+<div class="text-lg font-bold whitespace-nowrap">
+            - R$ 55,90
+          </div>
+</div>
+<!-- Action Buttons -->
+<div class="flex gap-3">
+<button class="flex-1 bg-brutal-gray border-2 border-black py-3 px-4 font-bold text-base hover:bg-gray-300 transition-colors rounded-none flex items-center justify-center">Ignorar</button>
+<button class="flex-1 bg-brutal-green border-2 border-black py-3 px-4 font-bold text-base hover:opacity-90 transition-opacity rounded-none flex items-center justify-center">Adicionar</button>
+</div>
+</article>
+</div>
+</main>
+<!-- END: Transaction List -->
+</body></html>
+
+<!-- Neo-Brutalism Finance Dashboard -->
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Detalhes do Financiamento</title>
+<!-- Load Tailwind CSS with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration for Custom Colors and Fonts -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'], // Assuming Inter for that clean, robust look
+          },
+          colors: {
+            'neo-purple': '#D033FF',
+            'neo-yellow': '#FFFF00',
+            'neo-green': '#00FF00',
+            'neo-blue': '#0066FF',
+            'neo-grey': '#D3D3D3',
+            'neo-black': '#000000',
+          },
+          boxShadow: {
+            'brutal': '4px 4px 0px 0px #000000', // Hard, solid shadow
+            'brutal-sm': '2px 2px 0px 0px #000000',
+          },
+          borderWidth: {
+            '3': '3px',
+            '4': '4px', // Standard border width for this design
+          }
+        }
+      }
+    }
+  </script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<style data-purpose="custom-utilities">
+    /* Custom utility to ensure borders are crisp */
+    body {
+      background-color: #ffffff;
+      color: #000000;
+    }
+    
+    /* Utility to hide scrollbar but allow scrolling */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-sans antialiased min-h-screen pb-10 bg-white">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-white border-b-4 border-black px-4 py-4 flex items-center justify-between">
+<!-- Back Button -->
+<button aria-label="Voltar" class="p-1 hover:bg-gray-100 rounded focus:outline-none">
+<svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" stroke-width="4" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.75 19.5L8.25 12l7.5-7.5" stroke-linecap="square" stroke-linejoin="miter"></path>
+</svg>
+</button>
+<!-- Title -->
+<h1 class="text-lg font-bold text-center leading-tight">Detalhes do Financiamento</h1>
+<!-- Edit Button -->
+<button aria-label="Editar" class="p-1 hover:bg-gray-100 rounded focus:outline-none">
+<svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" stroke-width="4" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" stroke-linecap="square" stroke-linejoin="miter"></path>
+</svg>
+</button>
+</header>
+<!-- END: MainHeader -->
+<main class="p-4 max-w-md mx-auto space-y-8">
+<!-- BEGIN: MainInfoCard -->
+<!-- The purple card showing vehicle and payment progress -->
+<section class="bg-neo-purple border-4 border-black p-5 shadow-brutal space-y-3 relative overflow-hidden">
+<!-- Vehicle Title -->
+<div>
+<h2 class="font-black uppercase tracking-tighter leading-none text-6xl">SUV 2024</h2>
+<p class="font-medium text-xs mt-1">Santander Financiamentos</p>
+</div>
+<!-- Current Installment Price -->
+<div class="pt-2">
+<p class="font-bold text-sm">Parcela atual R$ 1.250,00</p>
+</div>
+<!-- Payment Count -->
+<div>
+<p class="font-black uppercase text-4xl">10 de 60 pagas</p>
+</div>
+<!-- Progress Bar Container -->
+<div class="w-full h-8 border-4 border-black bg-transparent rounded-full overflow-hidden mt-2 relative">
+<!-- Progress Fill -->
+<div class="h-full bg-black w-[16%] absolute top-0 left-0 rounded-full"></div>
+</div>
+</section>
+<!-- END: MainInfoCard -->
+<!-- BEGIN: ActionCard -->
+<!-- Yellow card for immediate action -->
+<section class="bg-neo-yellow border-4 border-black p-4 shadow-brutal flex flex-col justify-between gap-3">
+<h3 class="font-black leading-tight max-w-[70%] text-3xl">Confirmar valor de Abril</h3>
+<div class="w-full text-right ml-auto">
+<button class="bg-neo-blue border-3 border-black px-4 py-2 font-bold text-white shadow-brutal-sm active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all">
+          Confirmar
+        </button>
+</div>
+</section>
+<!-- END: ActionCard -->
+<!-- BEGIN: StatsGrid -->
+<!-- 2-column grid for financial totals -->
+<section class="grid grid-cols-2 gap-4">
+<!-- Total Paid Card -->
+<div class="bg-white border-4 border-black p-4 shadow-brutal">
+<p class="text-xs font-normal mb-1">Total Pago</p>
+<p class="text-3xl font-black">R$ 12.500,00</p>
+</div>
+<!-- Remaining Card -->
+<div class="bg-white border-4 border-black p-4 shadow-brutal">
+<p class="text-xs font-normal mb-1">Restante Estimado</p>
+<p class="text-3xl font-black">R$ 62.500,00</p>
+</div>
+</section>
+<!-- END: StatsGrid -->
+<!-- BEGIN: HistorySection -->
+<section class="space-y-4 pt-4">
+<!-- Section Header -->
+<div class="flex items-center justify-between">
+<div>
+<h3 class="text-xl font-black">Histórico e Projeções</h3>
+<p class="text-sm font-medium text-gray-600">Em processo de valor de Abril</p>
+</div>
+<button class="p-2 border-3 border-black bg-white shadow-brutal-sm hover:translate-x-[1px] hover:translate-y-[1px]">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="3" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" stroke-linecap="square" stroke-linejoin="miter"></path>
+</svg>
+</button>
+</div>
+<!-- History List -->
+<div class="space-y-3">
+<!-- Item 1: May (Paid) -->
+<div class="bg-white border-4 border-black p-2 flex items-center justify-between shadow-brutal-sm">
+<div class="flex items-center gap-3">
+<!-- Date Box -->
+<div class="bg-neo-green border-3 border-black px-3 py-2 text-center font-bold leading-tight w-16"><div class="flex flex-col items-center justify-center"><span class="text-sm font-bold uppercase">MAI</span><span class="text-xl font-black">24</span></div></div>
+<!-- Month Description (Optional based on image context, assumed hidden or integrated) -->
+</div>
+<!-- Status Badge -->
+<div class="bg-neo-green border-3 border-black px-4 py-1 font-bold text-sm">
+            Pago
+          </div>
+</div>
+<!-- Item 2: April (Paid - highlighted in request) -->
+<div class="bg-white border-4 border-black p-2 flex items-center justify-between shadow-brutal-sm relative">
+<!-- Green accent bar on left similar to image -->
+<div class="absolute left-0 top-0 bottom-0 w-2 bg-neo-green border-r-3 border-black h-full z-10 hidden"></div>
+<div class="flex items-center gap-3">
+<!-- Date Box -->
+<div class="bg-neo-green border-3 border-black px-3 py-2 text-center font-bold leading-tight w-16"><div class="flex flex-col items-center justify-center"><span class="text-sm font-bold uppercase">ABR</span><span class="text-xl font-black">24</span></div></div>
+</div>
+<!-- Status Badge -->
+<div class="bg-neo-green border-3 border-black px-4 py-1 font-bold text-sm">
+            Pago
+          </div>
+</div>
+<!-- Item 3: November (Future) -->
+<div class="bg-white border-4 border-black p-2 flex items-center justify-between shadow-brutal-sm">
+<div class="flex items-center gap-3">
+<!-- Date Box -->
+<div class="bg-white border-3 border-black px-3 py-2 text-center font-bold leading-tight w-16"><div class="flex flex-col items-center justify-center"><span class="text-sm font-bold uppercase">NOV</span><span class="text-xl font-black">24</span></div></div>
+</div>
+<!-- Status Badge -->
+<div class="bg-gray-400 border-3 border-black px-4 py-1 font-bold text-sm text-black">
+            Futuro
+          </div>
+</div>
+<!-- Item 4: December (Future) -->
+<div class="bg-white border-4 border-black p-2 flex items-center justify-between shadow-brutal-sm">
+<div class="flex items-center gap-3">
+<!-- Date Box -->
+<div class="bg-white border-3 border-black px-3 py-2 text-center font-bold leading-tight w-16"><div class="flex flex-col items-center justify-center"><span class="text-sm font-bold uppercase">DEZ</span><span class="text-xl font-black">24</span></div></div>
+</div>
+<!-- Status Badge -->
+<div class="bg-gray-400 border-3 border-black px-4 py-1 font-bold text-sm text-black">
+            Futuro
+          </div>
+</div>
+</div>
+</section>
+<!-- END: HistorySection -->
+<!-- Bottom Spacer for better scroll experience on mobile -->
+<div class="h-8"></div>
+</main>
+</body></html>
+
+<!-- Grupo Familiar App Screen -->
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Grupo Familiar - Neo-Brutalism</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'nb-beige': '#F3EFE0',
+            'nb-yellow': '#FFE600',
+            'nb-cyan': '#00C2FF',
+            'nb-pink': '#FF66C4',
+            'nb-green': '#4ADE80',
+            'nb-purple': '#A855F7',
+            'nb-orange': '#FB923C',
+          },
+          fontFamily: {
+            sans: ['Roboto', 'sans-serif'],
+          },
+          boxShadow: {
+            'hard': '4px 4px 0px 0px #000000',
+            'hard-sm': '2px 2px 0px 0px #000000',
+          },
+          borderWidth: {
+            '3': '3px',
+          }
+        }
+      }
+    }
+  </script>
+<!-- FontAwesome for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts: Roboto for a clean sans-serif look -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'nb-beige': '#F3EFE0',
+            'nb-yellow': '#FFE600',
+            'nb-cyan': '#00C2FF',
+            'nb-pink': '#FF66C4',
+            'nb-green': '#4ADE80',
+            'nb-purple': '#A855F7',
+            'nb-orange': '#FB923C',
+          },
+          fontFamily: {
+            sans: ['Roboto', 'sans-serif'],
+          },
+          boxShadow: {
+            'hard': '4px 4px 0px 0px #000000',
+            'hard-sm': '2px 2px 0px 0px #000000',
+          },
+          borderWidth: {
+            '3': '3px',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles for Neo-Brutalism specific details -->
+<style data-purpose="neobrutalism-utils">
+    body {
+      background-color: #F3EFE0;
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    /* Utility for thick borders */
+    .border-thick {
+      border: 3px solid black;
+    }
+
+    /* Progress bar specific styling */
+    .progress-bar-container {
+      background-color: #e5e7eb;
+      border: 2px solid black;
+      border-radius: 9999px;
+      height: 1.5rem;
+      overflow: hidden;
+      display: flex;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased min-h-screen pb-10">
+<!-- BEGIN: Main Container -->
+<main class="max-w-md mx-auto p-4 flex flex-col gap-6">
+<!-- BEGIN: Header -->
+<header class="flex items-center justify-between py-2" data-purpose="screen-header">
+<button class="w-10 h-10 flex items-center justify-center border-thick rounded-full bg-white shadow-hard active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all">
+<i class="fa-solid fa-arrow-left text-lg"></i>
+</button>
+<h1 class="text-xl font-black uppercase tracking-wide">Grupo Familiar</h1>
+<button class="w-10 h-10 flex items-center justify-center border-thick rounded-full bg-white shadow-hard active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all">
+<i class="fa-solid fa-gear text-lg"></i>
+</button>
+</header>
+<!-- END: Header -->
+<!-- BEGIN: Invite Card -->
+<!-- Main top card for inviting new members -->
+<section class="bg-white border-thick rounded-xl shadow-hard p-6 text-center flex flex-col items-center gap-4 relative overflow-hidden" data-purpose="invite-card">
+<!-- Decorative background blobs can go here if needed, keeping it clean for now -->
+<div class="w-16 h-16 rounded-full bg-nb-green flex items-center justify-center mb-1 overflow-hidden border-2 border-black">
+<!-- Using placeholder for Icon -->
+<img alt="Invite Icon" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCoqdfgYGBmGxbjb7FLncj1-vKE19vXMOqEY9I4k6M5wy8HI2ugZnPG8SzSs8Lz_GkElFGNUO_-tRl5o-8-X7Fc8TFKCPmVL6k5vhUUnrjdVZ3e5gaeco5QF0vS9bRrIvbT-yT1VBTAniBKwe3whSME7H1oSrB0MZl3V3iuTAJtlpe6EspA_ZJuI66uFfBSv8Lmyt7OCU0WuS6J-mPrusUEw5J1v8hoagxcacXYun8PXOXEGpABc_GoHvbzTFMe-S8dn2NsexyVl4"/>
+</div>
+<div class="space-y-1">
+<h2 class="text-2xl font-black">Convide membros</h2>
+<p class="font-medium leading-tight text-black">Compartilhe o código abaixo para adicionar sua família ou parceiros.</p>
+</div>
+<!-- Code Display Box -->
+<div class="bg-nb-yellow px-6 py-3 rounded-lg w-full max-w-[200px] transform -rotate-1 hover:rotate-0 transition-transform duration-300 border-2 border-black">
+<span class="text-2xl font-black tracking-widest block">X9F-22A</span>
+</div>
+<!-- Action Button -->
+<button class="w-full bg-nb-cyan rounded-lg py-3 shadow-hard font-bold text-lg flex items-center justify-center gap-2 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all mt-2 border-2 border-black">
+<span>Enviar Convite</span>
+<i class="fa-solid fa-share-nodes"></i>
+</button>
+</section>
+<!-- END: Invite Card -->
+<!-- BEGIN: Members Section -->
+<section class="flex flex-col gap-3" data-purpose="members-list">
+<h3 class="text-lg font-black uppercase tracking-wide ml-1">Membros</h3>
+<!-- Member 1: João -->
+<div class="bg-nb-pink rounded-xl shadow-hard p-4 flex items-center justify-between active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all cursor-pointer border-2 border-black">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full border-thick bg-white overflow-hidden shrink-0 border-2 border-black">
+<img alt="João Silva" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbiT9m-czcy2zK27iyv4H6dNqkMEvT2UlOvjlxBmBe58T-0uc24wUEYc1kvNACagyaACN3SdveO0mus4HHaMNap1-LbCrP4QTvj14WvJ-aB5HhC0EZbP5FJnqqDzKckUSRiQrf1RFZClCKbFzN025eq-oKPB88FWOKU7jGPsqeg1pZSQzE3RCvZ5p1a4yDnlOTWGopakISfRaY5YRylUYYDczMACL8sLTFIvqh0QJTAkmg8-rRpJSSedgeX45Ub0BSz6d64E4w9QY"/>
+</div>
+<div class="border-2 border-black">
+<div class="flex items-center gap-2">
+<h4 class="font-bold text-lg leading-none">João Silva</h4>
+<span class="bg-nb-green border-2 border-black text-xs font-bold px-1.5 py-0.5 rounded shadow-hard-sm leading-none">ADMIN</span>
+</div>
+<p class="text-sm font-medium mt-1 text-gray-800">joao.silva@email.com</p>
+</div>
+</div>
+<i class="fa-solid fa-chevron-right text-xl"></i>
+</div>
+<!-- Member 2: Maria -->
+<div class="bg-nb-yellow rounded-xl shadow-hard p-4 flex items-center justify-between active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all cursor-pointer border-2 border-black">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full border-thick bg-white overflow-hidden shrink-0 border-2 border-black">
+<img alt="Maria Silva" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtx1MIKoTaunQUyTQKjBQvRIDzNdNrwu7NHewrxNvMcRMFGi8d_vbr6Ywol3V9LFROah6vSvzvrqfzl1VQe3g4s0Fz_POcj2VcnxISTj6DRk9sSf4RoneuXbJaUGf6FjXx27CnPQw5nm4a7521AUjJb2S5Iu2Y1-poKFBUhiTLkYIt2iCULi8pac9AzF63HKxVAaGxf9KTwk6AbgUUQj4V7m6oeXodXmKyfXQ8huu4GzqpMBIMSVd0KAuWKqGNmFgktJTZbVojTR8"/>
+</div>
+<div class="border-2 border-black">
+<div class="flex items-center gap-2">
+<h4 class="font-bold text-lg leading-none">Maria Silva</h4>
+<span class="bg-nb-purple text-white border-2 border-black text-xs font-bold px-1.5 py-0.5 rounded shadow-hard-sm leading-none">MEMBRO</span>
+</div>
+<p class="text-sm font-medium mt-1 text-gray-800">maria.silva@email.com</p>
+</div>
+</div>
+<i class="fa-solid fa-chevron-right text-xl"></i>
+</div>
+</section>
+<!-- END: Members Section -->
+<!-- BEGIN: Summary Section -->
+<section class="flex flex-col gap-3" data-purpose="financial-summary">
+<div class="flex items-center justify-between px-1">
+<h3 class="text-lg font-black uppercase tracking-wide">Resumo por Pessoa</h3>
+<button class="bg-black text-white border-2 border-black px-3 py-1 rounded-md text-sm font-bold flex items-center gap-2 shadow-hard-sm active:translate-x-[1px] active:translate-y-[1px] active:shadow-none transition-all">
+<i class="fa-solid fa-eye-slash"></i>
+          Ocultar
+        </button>
+</div>
+<div class="bg-white border-thick rounded-xl shadow-hard p-5 flex flex-col gap-6">
+<!-- Person 1 Stats (João) -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-end mb-1">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full border-2 border-black overflow-hidden border-2 border-black">
+<img alt="João" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbiT9m-czcy2zK27iyv4H6dNqkMEvT2UlOvjlxBmBe58T-0uc24wUEYc1kvNACagyaACN3SdveO0mus4HHaMNap1-LbCrP4QTvj14WvJ-aB5HhC0EZbP5FJnqqDzKckUSRiQrf1RFZClCKbFzN025eq-oKPB88FWOKU7jGPsqeg1pZSQzE3RCvZ5p1a4yDnlOTWGopakISfRaY5YRylUYYDczMACL8sLTFIvqh0QJTAkmg8-rRpJSSedgeX45Ub0BSz6d64E4w9QY"/>
+</div>
+<span class="font-bold text-lg">João</span>
+</div>
+<span class="font-black text-sm">62% dos gastos</span>
+</div>
+<!-- Custom Progress Bar -->
+<div class="w-full rounded-full border-2 border-black overflow-hidden h-4" style="background: linear-gradient(90deg, #4ADE80 0%, #4ADE80 62%, #00C2FF 62%, #00C2FF 100%);"></div>
+<!-- Stats Numbers -->
+<div class="flex items-center justify-between bg-nb-beige border-2 border-black rounded-lg p-3 mt-1">
+<div class="flex flex-col w-1/2 items-start pl-2">
+<span class="text-xs font-bold mb-1 uppercase text-black">Receitas</span>
+<div class="flex items-center gap-1 text-nb-green drop-shadow-sm">
+<i class="fa-solid fa-arrow-trend-up"></i>
+<span class="font-black text-black">R$ 5.000</span>
+</div>
+</div>
+<div class="w-0.5 h-8 bg-black"></div> <!-- Vertical Divider -->
+<div class="flex flex-col w-1/2 items-end pr-2">
+<span class="text-xs font-bold mb-1 uppercase text-black">Despesas</span>
+<div class="flex items-center gap-1 text-red-500 drop-shadow-sm">
+<span class="font-black text-black">R$ 3.200</span>
+<i class="fa-solid fa-arrow-trend-down transform rotate-45"></i>
+</div>
+</div>
+</div>
+</div>
+<hr class="border-t-2 border-black border-dashed opacity-50"/>
+<!-- Person 2 Stats (Maria) -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-end mb-1">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full border-2 border-black overflow-hidden border-2 border-black">
+<img alt="Maria" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtx1MIKoTaunQUyTQKjBQvRIDzNdNrwu7NHewrxNvMcRMFGi8d_vbr6Ywol3V9LFROah6vSvzvrqfzl1VQe3g4s0Fz_POcj2VcnxISTj6DRk9sSf4RoneuXbJaUGf6FjXx27CnPQw5nm4a7521AUjJb2S5Iu2Y1-poKFBUhiTLkYIt2iCULi8pac9AzF63HKxVAaGxf9KTwk6AbgUUQj4V7m6oeXodXmKyfXQ8huu4GzqpMBIMSVd0KAuWKqGNmFgktJTZbVojTR8"/>
+</div>
+<span class="font-bold text-lg">Maria</span>
+</div>
+<span class="font-black text-sm">38% dos gastos</span>
+</div>
+<!-- Custom Progress Bar -->
+<div class="w-full h-6 rounded-full border-2 border-black overflow-hidden" style="background: linear-gradient(90deg, #FB923C 0%, #FB923C 38%, #A855F7 38%, #A855F7 100%);"></div>
+<!-- Stats Numbers -->
+<div class="flex items-center justify-between bg-nb-beige border-2 border-black rounded-lg p-3 mt-1">
+<div class="flex flex-col w-1/2 items-start pl-2">
+<span class="text-xs font-bold mb-1 uppercase text-black">Receitas</span>
+<div class="flex items-center gap-1 text-nb-green drop-shadow-sm">
+<i class="fa-solid fa-arrow-trend-up"></i>
+<span class="font-black text-black">R$ 4.200</span>
+</div>
+</div>
+<div class="w-0.5 h-8 bg-black"></div> <!-- Vertical Divider -->
+<div class="flex flex-col w-1/2 items-end pr-2">
+<span class="text-xs font-bold mb-1 uppercase text-black">Despesas</span>
+<div class="flex items-center gap-1 text-red-500 drop-shadow-sm">
+<span class="font-black text-black">R$ 1.950</span>
+<i class="fa-solid fa-arrow-trend-down transform rotate-45"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Summary Section -->
+</main>
+<!-- END: Main Container -->
+</body></html>
+
+<!-- Lembretes UI -->
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lembretes - Neo-Brutalist Layout</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration for Specific Colors and Fonts -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'cream-beige': '#F3EBD7',
+            'retro-purple': '#7C3AED',
+            'retro-green': '#22C55E',
+          },
+          fontFamily: {
+            sans: ['Arial', 'sans-serif'],
+          },
+          borderWidth: {
+            '3': '3px',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom CSS for specific neo-brutalist styling touches -->
+<style data-purpose="neo-brutalist-theme">
+    /* 
+       Neo-brutalism relies on harsh contrasts, thick borders, and lack of border-radius.
+       These global resets ensure that aesthetic is maintained.
+    */
+    body {
+      background-color: #F3EBD7;
+      color: #000000;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    /* Ensure all structural elements have sharp corners */
+    * {
+      border-radius: 0 !important;
+    }
+
+    /* Utility for thick underline on section titles */
+    .thick-underline {
+      text-decoration: none;
+      border-bottom: 3px solid black;
+      display: inline-block;
+      padding-bottom: 2px;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex flex-col font-sans">
+<!-- BEGIN: Header -->
+<!-- Main sticky header with the page title -->
+<header class="bg-cream-beige border-b-3 border-black p-6 sticky top-0 z-50">
+<h1 class="text-3xl font-bold text-center tracking-wide">Lembretes</h1>
+</header>
+<!-- END: Header -->
+<!-- BEGIN: Main Content -->
+<main class="flex-grow p-4 md:p-6 max-w-md mx-auto w-full">
+<!-- BEGIN: Daily Habits Section -->
+<section aria-labelledby="daily-habits-title" class="mb-8">
+<h2 class="text-2xl font-bold mb-4 thick-underline inline-block" id="daily-habits-title">
+        Hábitos Diários
+      </h2>
+<!-- Card Container: Daily Habits -->
+<article class="border-3 border-black bg-cream-beige mb-6" data-purpose="card-active">
+<!-- Top Part: Description and Toggle -->
+<div class="p-4">
+<div class="flex justify-between items-start mb-2 gap-2">
+<h3 class="text-lg font-bold leading-tight">Registrar gastos diários</h3>
+<!-- Active Badge -->
+<span class="text-white font-bold text-xs px-2 py-1 border-3 border-black uppercase shrink-0" style="background-color: #6200ea;">ATIVADO</span>
+</div>
+<p class="text-sm font-medium leading-snug">
+            Receba um lembrete para categorizar suas compras do dia.
+          </p>
+</div>
+<!-- Divider Line -->
+<div class="border-t-3 border-black w-full"></div>
+<!-- Bottom Part: Time Settings -->
+<div class="flex justify-between items-center bg-cream-beige p-4">
+<div class="flex items-center gap-2">
+<!-- Clock Icon SVG -->
+<svg fill="none" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewbox="0 0 24 24" width="20"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+<span class="font-bold text-lg">Horário</span>
+</div>
+<!-- Time Badge -->
+<div class="text-black font-bold text-lg px-3 py-1 border-3 border-black" style="background-color: #00e676;">20:00</div>
+</div>
+</article>
+</section>
+<!-- END: Daily Habits Section -->
+<!-- BEGIN: Monthly Routine Section -->
+<section aria-labelledby="monthly-routine-title" class="mb-8">
+<h2 class="text-2xl font-bold mb-4 thick-underline inline-block" id="monthly-routine-title">
+        Rotina Mensal
+      </h2>
+<!-- Card Container: Monthly Routine -->
+<article class="border-3 border-black bg-cream-beige mb-6" data-purpose="card-inactive">
+<!-- Top Part: Description and Toggle -->
+<div class="p-4">
+<div class="flex justify-between items-start mb-2 gap-2">
+<h3 class="text-lg font-bold leading-tight">Confirmar salário mensal</h3>
+<!-- Inactive Badge -->
+<span class="text-black font-bold text-xs px-2 py-1 border-3 border-black uppercase shrink-0 bg-cream-beige">
+              Desativado
+            </span>
+</div>
+<p class="text-sm font-medium leading-snug">
+            Lembrete para confirmar a entrada da renda no início do mês.
+          </p>
+</div>
+<!-- Divider Line -->
+<div class="border-t-3 border-black w-full"></div>
+<!-- Bottom Part: Time Settings -->
+<div class="flex justify-between items-center bg-cream-beige p-4">
+<div class="flex items-center gap-2">
+<!-- Clock Icon SVG -->
+<svg fill="none" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewbox="0 0 24 24" width="20"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+<span class="font-bold text-lg">Horário</span>
+</div>
+<!-- Time Badge (Neutral) -->
+<div class="bg-white text-black font-bold text-lg px-3 py-1 border-3 border-black">
+            09:00
+          </div>
+</div>
+</article>
+</section>
+<!-- END: Monthly Routine Section -->
+<!-- BEGIN: Footer Info -->
+<footer class="mt-4 font-medium leading-relaxed text-base">
+<p>Esses lembretes ajudam a manter seu fluxo de caixa atualizado e suas projeções financeiras precisas.</p>
+</footer>
+<!-- END: Footer Info -->
+</main>
+<!-- END: Main Content -->
+</body></html>

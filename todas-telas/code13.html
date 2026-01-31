@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Planejamento Neo-brutalista</title>
+<!-- Tailwind CSS v3 with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Arial Black"', '"Helvetica Neue"', 'sans-serif'],
+          },
+          colors: {
+            'nb-green': '#86efac', 
+            'nb-purple': '#d8b4fe',
+            'nb-yellow': '#fef08a',
+            'nb-blue': '#2563eb',
+          },
+          boxShadow: {
+            'hard': '6px 6px 0px 0px #000000',
+            'hard-sm': '3px 3px 0px 0px #000000',
+          },
+          borderWidth: {
+            '3': '3px',
+            '4': '3px', /* Overriding 4 to 3px as requested for container borders */
+          }
+        }
+      }
+    }
+  </script>
+<!-- Tailwind Config for Custom Colors and Fonts -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Arial Black"', '"Helvetica Neue"', 'sans-serif'],
+          },
+          colors: {
+            'nb-green': '#86efac', 
+            'nb-purple': '#d8b4fe',
+            'nb-yellow': '#fef08a',
+            'nb-blue': '#2563eb',
+          },
+          boxShadow: {
+            'hard': '6px 6px 0px 0px #000000',
+            'hard-sm': '3px 3px 0px 0px #000000',
+          },
+          borderWidth: {
+            '3': '3px',
+            '4': '3px', /* Overriding 4 to 3px as requested for container borders */
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles for Specific Neo-Brutalist Elements -->
+<style data-purpose="custom-inputs">
+    /* Custom Range Slider Styling to match Neo-Brutalist aesthetic */
+    input[type=range] {
+      -webkit-appearance: none; 
+      width: 100%; 
+      background: transparent; 
+      margin: 10px 0;
+    }
+    
+    input[type=range]:focus {
+      outline: none;
+    }
+
+    /* Track (Chrome/Safari/Opera) */
+    input[type=range]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 6px;
+      cursor: pointer;
+      background: #000000;
+      border-radius: 0px;
+    }
+
+    /* Thumb (Chrome/Safari/Opera) */
+    input[type=range]::-webkit-slider-thumb {
+      height: 20px;
+      width: 20px;
+      border: 2px solid #000000;
+      background: #ffffff; 
+      cursor: pointer;
+      -webkit-appearance: none;
+      margin-top: -7px; /* Centers the thumb on the track (height 6px - 20px)/2 */
+      box-shadow: none;
+    }
+
+    /* Track (Firefox) */
+    input[type=range]::-moz-range-track {
+      width: 100%;
+      height: 6px;
+      cursor: pointer;
+      background: #000000;
+      border-radius: 0px;
+    }
+
+    /* Thumb (Firefox) */
+    input[type=range]::-moz-range-thumb {
+      height: 20px;
+      width: 20px;
+      border: 2px solid #000000;
+      background: #ffffff;
+      cursor: pointer;
+      border-radius: 0px;
+      box-shadow: none;
+    }
+
+    /* Specific Thumb Colors */
+    .thumb-green-custom::-webkit-slider-thumb { background: #90EE90 !important; }
+    .thumb-green-custom::-moz-range-thumb { background: #90EE90 !important; }
+    
+    .thumb-yellow-custom::-webkit-slider-thumb { background: #FFFFE0 !important; }
+    .thumb-yellow-custom::-moz-range-thumb { background: #FFFFE0 !important; }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-white text-black font-sans antialiased pb-12">
+<!-- BEGIN: Main Header -->
+<header class="border-b-4 border-black p-4 flex items-center bg-white sticky top-0 z-50">
+<!-- Back Arrow Icon -->
+<button aria-label="Voltar" class="mr-4 hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform active:translate-x-0 active:translate-y-0"><svg fill="none" height="32" stroke="black" stroke-linecap="square" stroke-linejoin="miter" stroke-width="4" viewbox="0 0 24 24" width="32"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg></button>
+<!-- Title -->
+<h1 class="text-2xl md:text-4xl font-black uppercase tracking-tight flex-grow text-center pr-10 md:pr-0">
+      Planejamento Neo-brutalista
+    </h1>
+</header>
+<!-- END: Main Header -->
+<!-- BEGIN: Main Content Container -->
+<main class="max-w-md mx-auto p-4 space-y-12 md:max-w-5xl md:grid md:grid-cols-3 md:gap-8 md:space-y-0 mt-8">
+<!-- BEGIN: January Group -->
+<section class="flex flex-col gap-6" data-purpose="january-section">
+<!-- JAN Card -->
+<article class="bg-nb-green border-4 border-black shadow-hard rounded-lg p-[20px]">
+<h2 class="text-4xl font-black mb-4">JAN</h2>
+<div class="space-y-1 text-lg font-bold leading-tight">
+<p>Renda: R$ 5000</p>
+<p>Desp: R$ 3500</p>
+<p>Saldo: R$ 1500</p>
+</div>
+</article>
+<!-- Chart Placeholder -->
+<div class="border-4 border-black shadow-hard bg-white overflow-hidden h-40 flex items-center justify-center relative">
+<!-- Grid Background Pattern for Aesthetic -->
+<div class="absolute inset-0 opacity-10" style="background-image: linear-gradient(#000 2px, transparent 2px), linear-gradient(90deg, #000 2px, transparent 2px); background-size: 20px 20px;"></div>
+<img alt="Gráfico de Evolução Janeiro" class="w-full h-full object-cover p-2 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7aVNCvkA72YalNZkZMwpIPodMm4I-f64YqNo-pBphhH3ZT-w_92-nLhg9lQ_eTqig44ejXTa8bnmlaueF_SZQgwBFwzsS_0VB0ez7Shv7EIKCmqUJQInQ0lro-ODaYQxMm6D3dISDVEeHIkVZU1eL5ajVXZprEsrdNtZOACnTqZiso2LEHfEg8TspV_TuXVCnScUk3Y8XGyfilh0e7YNT0k9rcCbrbUcUYclI7qvCf3dqI6jX7QrxpupJcWUu_Cd-yVWiiKfcA5o"/>
+</div>
+<!-- Simulation Controls -->
+<div class="space-y-4">
+<h3 class="text-xl font-black">Simulação de Economia</h3>
+<!-- Slider 1 -->
+<div class="space-y-1">
+<label class="block text-sm font-bold">Economia Mensal</label>
+<div class="flex items-center gap-2">
+<input class="thumb-green-custom flex-grow h-2 bg-black appearance-none" max="10000" min="0" type="range" value="5000"/>
+<div class="border-3 border-black px-2 py-1 font-bold text-sm min-w-[60px] text-center shadow-hard-sm" style="background-color: #90EE90;">
+              5000
+            </div>
+</div>
+</div>
+<!-- Slider 2 -->
+<div class="space-y-1">
+<label class="block text-sm font-bold">Redução de Gastos</label>
+<div class="flex items-center gap-2">
+<input class="thumb-yellow-custom flex-grow h-2 bg-black appearance-none" max="1000" min="0" type="range" value="400"/>
+<div class="border-3 border-black px-2 py-1 font-bold text-sm min-w-[60px] text-center shadow-hard-sm" style="background-color: #FFFFE0;">
+              400
+            </div>
+</div>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full bg-nb-blue text-black border-4 border-black shadow-hard font-black py-3 px-4 text-center uppercase tracking-wide hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all active:bg-blue-600" style="background-color: #2962FF !important; color: black !important; font-weight: bold !important;">
+        Ver Detalhes do Cenário
+      </button>
+</section>
+<!-- END: January Group -->
+<!-- BEGIN: February Group -->
+<section class="flex flex-col gap-6" data-purpose="february-section">
+<!-- FEV Card -->
+<article class="bg-nb-purple border-4 border-black shadow-hard rounded-lg p-[20px]">
+<h2 class="text-4xl font-black mb-4">FEV</h2>
+<div class="space-y-1 text-lg font-bold leading-tight">
+<p>Renda: R$ 5000</p>
+<p>Desp: R$ 3200</p>
+<p>Saldo: R$ 1800</p>
+</div>
+</article>
+<!-- Chart Placeholder Middle -->
+<div class="border-4 border-black shadow-hard bg-white overflow-hidden p-2 relative h-48"><div class="flex flex-col items-center justify-center h-full w-full relative pt-2">
+<h3 class="text-center font-black text-lg border-b-2 border-black pb-1 mb-4 z-20 relative bg-white px-2">Evolução do Saldo</h3>
+<div class="absolute inset-0 z-0 opacity-10" style="background-image: linear-gradient(#000 2px, transparent 2px), linear-gradient(90deg, #000 2px, transparent 2px); background-size: 30px 30px;"></div>
+<img alt="Gráfico de Evolução Fevereiro" class="w-full h-24 object-contain mix-blend-multiply relative z-10 mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3R31xWm1xtO2D3qThdqsu9OmGJikL3BLWvUln0XHkDlzJKQbnPyAXwkYDXq6Uiz2-qn1vAX_0lbljxChHcoPKA8tfdfLQJEVpCrBD11u3YcpSQzCn_LvAcyAXDIixAdfo6xlWOuPbO-pfMBbEk72srrBaJyiwZfpdNLiOXNdUBD9UmZtEmIkz6dbZzzlESbelbEuy3q3zJqV38FGGA4Gjc8t4J4BYLIXrWR7iazvrkq2L-zJ9MWgnU2-95jnZvZUlNslPe1Tlz6A"/>
+</div></div>
+<!-- Action Button (February doesn't have sliders in the image prompt description, only button) -->
+<div class="flex-grow flex items-end">
+<button class="w-full bg-nb-blue text-black border-4 border-black shadow-hard font-black py-3 px-4 text-center uppercase tracking-wide hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all active:bg-blue-600" style="background-color: #2962FF !important; color: black !important; font-weight: bold !important;">
+          Ver Detalhes do Cenário
+        </button>
+</div>
+</section>
+<!-- END: February Group -->
+<!-- BEGIN: March Group -->
+<section class="flex flex-col gap-6" data-purpose="march-section">
+<!-- MAR Card -->
+<article class="bg-nb-yellow border-4 border-black shadow-hard rounded-lg p-[20px]">
+<h2 class="text-4xl font-black mb-4">MAR</h2>
+<div class="space-y-1 text-lg font-bold leading-tight">
+<p>Renda: R$ 5000</p>
+<p>Desp: R$ 3600</p>
+<p>Saldo: R$ 1400</p>
+</div>
+</article>
+<!-- Chart Placeholder Right -->
+<div class="border-4 border-black shadow-hard bg-white overflow-hidden h-40 flex items-center justify-center relative">
+<div class="absolute inset-0 opacity-10" style="background-image: linear-gradient(#000 2px, transparent 2px), linear-gradient(90deg, #000 2px, transparent 2px); background-size: 20px 20px;"></div>
+<img alt="Gráfico de Evolução Março" class="w-full h-full object-cover p-2 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2MH1Yqik33S8O_MpNuHbLxEeuOk1trR1gGWXErZ0MpLDxqkQEKU1pxRhTDHTN8dmyBmMSdS0m4vkMlkBEIDdihBnIhny8xvDvuEDYJ3pq8IKwAnrq7VFa3_CD3cohQHUeu1Y0PLdsjo2IdgWtr_3q6PjtEinQpiopxcKYxulWW9hSLz38e_uQlqB0G4Uh0dEhaHwSfnpyjspmwDEwslhOjVrejBKUVRyx5I14nfbG2TdA2m3so1cX-sLhhhdwGMy54R3dNblqdb4"/>
+</div>
+<!-- Simulation Controls -->
+<div class="space-y-4">
+<h3 class="text-xl font-black">Simulação de Economia</h3>
+<!-- Slider 1 -->
+<div class="space-y-1">
+<label class="block text-sm font-bold">Economia Mensal</label>
+<div class="flex items-center gap-2">
+<input class="thumb-green-custom flex-grow h-2 bg-black appearance-none" max="1000" min="0" type="range" value="0"/>
+<div class="border-3 border-black px-2 py-1 font-bold text-sm min-w-[60px] text-center shadow-hard-sm" style="background-color: #90EE90;">
+              $000
+            </div>
+</div>
+</div>
+<!-- Slider 2 -->
+<div class="space-y-1">
+<label class="block text-sm font-bold">Redução de Gastos</label>
+<div class="flex items-center gap-2">
+<input class="thumb-yellow-custom flex-grow h-2 bg-black appearance-none" max="100" min="0" type="range" value="50"/>
+<div class="border-3 border-black px-2 py-1 font-bold text-sm min-w-[60px] text-center shadow-hard-sm" style="background-color: #FFFFE0;">
+              50
+            </div>
+</div>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full bg-nb-blue text-black border-4 border-black shadow-hard font-black py-3 px-4 text-center uppercase tracking-wide hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all active:bg-blue-600" style="background-color: #2962FF !important; color: black !important; font-weight: bold !important;">
+        Ver Detalhes do Cenário
+      </button>
+</section>
+<!-- END: March Group -->
+</main>
+<!-- END: Main Content Container -->
+</body></html>

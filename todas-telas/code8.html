@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Detalhes do Financiamento</title>
+<!-- Load Tailwind CSS with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration for Custom Colors and Fonts -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'], // Assuming Inter for that clean, robust look
+          },
+          colors: {
+            'neo-purple': '#D033FF',
+            'neo-yellow': '#FFFF00',
+            'neo-green': '#00FF00',
+            'neo-blue': '#0066FF',
+            'neo-grey': '#D3D3D3',
+            'neo-black': '#000000',
+          },
+          boxShadow: {
+            'brutal': '4px 4px 0px 0px #000000', // Hard, solid shadow
+            'brutal-sm': '2px 2px 0px 0px #000000',
+          },
+          borderWidth: {
+            '3': '3px',
+            '4': '4px', // Standard border width for this design
+          }
+        }
+      }
+    }
+  </script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<style data-purpose="custom-utilities">
+    /* Custom utility to ensure borders are crisp */
+    body {
+      background-color: #ffffff;
+      color: #000000;
+    }
+    
+    /* Utility to hide scrollbar but allow scrolling */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-sans antialiased min-h-screen pb-10 bg-white">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-white border-b-4 border-black px-4 py-4 flex items-center justify-between">
+<!-- Back Button -->
+<button aria-label="Voltar" class="p-1 hover:bg-gray-100 rounded focus:outline-none">
+<svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" stroke-width="4" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.75 19.5L8.25 12l7.5-7.5" stroke-linecap="square" stroke-linejoin="miter"></path>
+</svg>
+</button>
+<!-- Title -->
+<h1 class="text-lg font-bold text-center leading-tight">Detalhes do Financiamento</h1>
+<!-- Edit Button -->
+<button aria-label="Editar" class="p-1 hover:bg-gray-100 rounded focus:outline-none">
+<svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" stroke-width="4" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" stroke-linecap="square" stroke-linejoin="miter"></path>
+</svg>
+</button>
+</header>
+<!-- END: MainHeader -->
+<main class="p-4 max-w-md mx-auto space-y-8">
+<!-- BEGIN: MainInfoCard -->
+<!-- The purple card showing vehicle and payment progress -->
+<section class="bg-neo-purple border-4 border-black p-5 shadow-brutal space-y-3 relative overflow-hidden">
+<!-- Vehicle Title -->
+<div>
+<h2 class="font-black uppercase tracking-tighter leading-none text-6xl">SUV 2024</h2>
+<p class="font-medium text-xs mt-1">Santander Financiamentos</p>
+</div>
+<!-- Current Installment Price -->
+<div class="pt-2">
+<p class="font-bold text-sm">Parcela atual R$ 1.250,00</p>
+</div>
+<!-- Payment Count -->
+<div>
+<p class="font-black uppercase text-4xl">10 de 60 pagas</p>
+</div>
+<!-- Progress Bar Container -->
+<div class="w-full h-8 border-4 border-black bg-transparent rounded-full overflow-hidden mt-2 relative">
+<!-- Progress Fill -->
+<div class="h-full bg-black w-[16%] absolute top-0 left-0 rounded-full"></div>
+</div>
+</section>
+<!-- END: MainInfoCard -->
+<!-- BEGIN: ActionCard -->
+<!-- Yellow card for immediate action -->
+<section class="bg-neo-yellow border-4 border-black p-4 shadow-brutal flex flex-col justify-between gap-3">
+<h3 class="font-black leading-tight max-w-[70%] text-3xl">Confirmar valor de Abril</h3>
+<div class="w-full text-right ml-auto">
+<button class="bg-neo-blue border-3 border-black px-4 py-2 font-bold text-white shadow-brutal-sm active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all">
+          Confirmar
+        </button>
+</div>
+</section>
+<!-- END: ActionCard -->
+<!-- BEGIN: StatsGrid -->
+<!-- 2-column grid for financial totals -->
+<section class="grid grid-cols-2 gap-4">
+<!-- Total Paid Card -->
+<div class="bg-white border-4 border-black p-4 shadow-brutal">
+<p class="text-xs font-normal mb-1">Total Pago</p>
+<p class="text-3xl font-black">R$ 12.500,00</p>
+</div>
+<!-- Remaining Card -->
+<div class="bg-white border-4 border-black p-4 shadow-brutal">
+<p class="text-xs font-normal mb-1">Restante Estimado</p>
+<p class="text-3xl font-black">R$ 62.500,00</p>
+</div>
+</section>
+<!-- END: StatsGrid -->
+<!-- BEGIN: HistorySection -->
+<section class="space-y-4 pt-4">
+<!-- Section Header -->
+<div class="flex items-center justify-between">
+<div>
+<h3 class="text-xl font-black">Histórico e Projeções</h3>
+<p class="text-sm font-medium text-gray-600">Em processo de valor de Abril</p>
+</div>
+<button class="p-2 border-3 border-black bg-white shadow-brutal-sm hover:translate-x-[1px] hover:translate-y-[1px]">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="3" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" stroke-linecap="square" stroke-linejoin="miter"></path>
+</svg>
+</button>
+</div>
+<!-- History List -->
+<div class="space-y-3">
+<!-- Item 1: May (Paid) -->
+<div class="bg-white border-4 border-black p-2 flex items-center justify-between shadow-brutal-sm">
+<div class="flex items-center gap-3">
+<!-- Date Box -->
+<div class="bg-neo-green border-3 border-black px-3 py-2 text-center font-bold leading-tight w-16"><div class="flex flex-col items-center justify-center"><span class="text-sm font-bold uppercase">MAI</span><span class="text-xl font-black">24</span></div></div>
+<!-- Month Description (Optional based on image context, assumed hidden or integrated) -->
+</div>
+<!-- Status Badge -->
+<div class="bg-neo-green border-3 border-black px-4 py-1 font-bold text-sm">
+            Pago
+          </div>
+</div>
+<!-- Item 2: April (Paid - highlighted in request) -->
+<div class="bg-white border-4 border-black p-2 flex items-center justify-between shadow-brutal-sm relative">
+<!-- Green accent bar on left similar to image -->
+<div class="absolute left-0 top-0 bottom-0 w-2 bg-neo-green border-r-3 border-black h-full z-10 hidden"></div>
+<div class="flex items-center gap-3">
+<!-- Date Box -->
+<div class="bg-neo-green border-3 border-black px-3 py-2 text-center font-bold leading-tight w-16"><div class="flex flex-col items-center justify-center"><span class="text-sm font-bold uppercase">ABR</span><span class="text-xl font-black">24</span></div></div>
+</div>
+<!-- Status Badge -->
+<div class="bg-neo-green border-3 border-black px-4 py-1 font-bold text-sm">
+            Pago
+          </div>
+</div>
+<!-- Item 3: November (Future) -->
+<div class="bg-white border-4 border-black p-2 flex items-center justify-between shadow-brutal-sm">
+<div class="flex items-center gap-3">
+<!-- Date Box -->
+<div class="bg-white border-3 border-black px-3 py-2 text-center font-bold leading-tight w-16"><div class="flex flex-col items-center justify-center"><span class="text-sm font-bold uppercase">NOV</span><span class="text-xl font-black">24</span></div></div>
+</div>
+<!-- Status Badge -->
+<div class="bg-gray-400 border-3 border-black px-4 py-1 font-bold text-sm text-black">
+            Futuro
+          </div>
+</div>
+<!-- Item 4: December (Future) -->
+<div class="bg-white border-4 border-black p-2 flex items-center justify-between shadow-brutal-sm">
+<div class="flex items-center gap-3">
+<!-- Date Box -->
+<div class="bg-white border-3 border-black px-3 py-2 text-center font-bold leading-tight w-16"><div class="flex flex-col items-center justify-center"><span class="text-sm font-bold uppercase">DEZ</span><span class="text-xl font-black">24</span></div></div>
+</div>
+<!-- Status Badge -->
+<div class="bg-gray-400 border-3 border-black px-4 py-1 font-bold text-sm text-black">
+            Futuro
+          </div>
+</div>
+</div>
+</section>
+<!-- END: HistorySection -->
+<!-- Bottom Spacer for better scroll experience on mobile -->
+<div class="h-8"></div>
+</main>
+</body></html>

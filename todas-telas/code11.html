@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Neo-Brutalist Onboarding</title>
+<!-- Tailwind CSS v3 with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- FontAwesome for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts: Space Grotesk for that chunky neo-brutalist feel -->
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brutal-bg': '#F3F0E9',
+            'brutal-purple': '#6200EA',
+            'brutal-blue': '#2979FF',
+            'brutal-yellow': '#FFEA00',
+            'brutal-black': '#000000',
+          },
+          fontFamily: {
+            sans: ['"Space Grotesk"', 'sans-serif'],
+          },
+          boxShadow: {
+            'hard': '4px 4px 0px #000000',
+            'hard-sm': '2px 2px 0px #000000',
+            'hard-lg': '6px 6px 0px #000000',
+          },
+          borderWidth: {
+            '3': '3px',
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles -->
+<!-- Purpose: Handle specific neo-brutalist resets and mobile optimizations -->
+<style data-purpose="global-styles">
+    body {
+      background-color: #F3F0E9;
+      color: #000000;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    /* Enforce specific neo-brutalist styles requested */
+    .neo-box {
+      border: 2px solid black;
+      border-radius: 8px;
+      box-shadow: 4px 4px 0px 0px black;
+    }
+
+    input[type="text"], input[type="number"] {
+       border-radius: 8px;
+    }
+
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+  </style>
+<!-- END: Custom Styles -->
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex flex-col font-sans p-5 pb-8">
+<!-- BEGIN: Header Section -->
+<!-- Purpose: Displays the step counter and progress bar -->
+<header class="w-full mb-6" data-purpose="onboarding-progress">
+<div class="flex items-center mb-2 justify-center">
+<span class="font-bold text-sm tracking-wide">Passo 1 de 3</span>
+</div>
+<div class="w-full h-4 bg-white border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] overflow-hidden rounded-full justify-center">
+<div class="h-full bg-[#7B1FA2] w-1/4 border-r-2 border-black rounded-l-full"></div>
+</div>
+</header>
+<!-- END: Header Section -->
+<!-- BEGIN: Main Content -->
+<!-- Purpose: Hero image, headings, and form inputs -->
+<main class="flex-grow flex flex-col items-center w-full max-w-md mx-auto space-y-6">
+<!-- BEGIN: Hero Image -->
+<!-- Circular container for the extracted plant icon -->
+<div class="relative w-[150px] h-[150px] rounded-full border-2 border-black bg-white overflow-hidden shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center shrink-0 mb-4 mx-auto p-1" data-purpose="hero-image">
+<img alt="Plant sprout on coins" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxMhTThjnu9gCgKL7ar2PerZRO8iSSMdHZxNdfsP0PeKqXCYdq3wcsm92iUTuiRLXuecSaSITNICpOVqUKWKV0JAtMasHEHlV45YfCdNToe31n3AaE7m-OUdRT8Ndl1hcU2gwot4-AjdF75kQyZ39qvGEcGJqw30NCf-esL0flTQe7LhTW_pmZbIeFmZknVe1uIw8m_8e4TLbNnWzzDqcwXpprGiWl_x9VLYe2C_QmkfkQehmj2U5YhSFKuWu4AA3Y7K1pdNN-BW8"/>
+</div>
+<!-- END: Hero Image -->
+<!-- BEGIN: Headings -->
+<div class="text-center space-y-2" data-purpose="text-intro">
+<h1 class="text-3xl leading-tight font-extrabold">Vamos começar?</h1>
+<p class="text-base font-normal leading-snug px-2">
+        Para iniciar, precisamos de alguns dados básicos. Não se preocupe, você pode ajustar tudo depois.
+      </p>
+</div>
+<!-- END: Headings -->
+<!-- BEGIN: Form Section -->
+<form class="w-full space-y-6 mt-4" data-purpose="onboarding-form">
+<!-- Field 1: Income -->
+<div class="flex flex-col space-y-2 mb-4">
+<label class="font-bold text-lg" for="income">Renda mensal aproximada</label>
+<div class="relative">
+<input class="w-full h-14 border-2 border-black bg-white rounded-lg px-4 text-xl font-bold text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] focus:ring-0 focus:border-black focus:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all placeholder-gray-500" id="income" placeholder="R$ 0,00" type="text"/>
+</div>
+</div>
+<!-- Field 2: Fixed Expenses (Optional) -->
+<div class="flex flex-col space-y-2">
+<label class="font-bold text-lg">Principais despesas fixas <span class="text-sm font-normal text-gray-600">(Opcional)</span></label>
+<div class="grid grid-cols-1 gap-3">
+<!-- Option 1: Rent -->
+<button class="flex items-center w-full h-14 px-4 bg-white border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all text-left" type="button">
+<div class="w-8 flex justify-center mr-3">
+<i class="fa-solid fa-house text-xl"></i>
+</div>
+<span class="font-bold">Ex: Aluguel</span>
+</button>
+<!-- Option 2: Utilities -->
+<button class="flex items-center w-full h-14 px-4 bg-white border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all text-left" type="button">
+<div class="w-8 flex justify-center mr-3">
+<i class="fa-solid fa-bolt text-xl"></i>
+</div>
+<span class="font-bold">Ex: Contas de consumo</span>
+</button>
+</div>
+</div>
+<!-- Field 3: Credit Card -->
+<div class="flex flex-col space-y-2">
+<label class="font-bold text-lg">Você possui cartão de crédito?</label>
+<div class="grid grid-cols-2 gap-4">
+<!-- Button: Yes (Selected State - Blue) -->
+<button class="h-12 bg-[#2979FF] text-white border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] font-bold text-lg active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" type="button">
+            Sim
+          </button>
+<!-- Button: No -->
+<button class="h-12 bg-transparent text-black border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] font-bold text-lg hover:bg-white active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" type="button">
+            Não
+          </button>
+</div>
+</div>
+<!-- Field 4: Loans -->
+<div class="flex flex-col space-y-2">
+<label class="font-bold text-lg leading-tight">Possui financiamentos ou empréstimos?</label>
+<div class="grid grid-cols-2 gap-4">
+<!-- Button: Yes -->
+<button class="h-12 bg-transparent text-black border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] font-bold text-lg hover:bg-white active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" type="button">
+            Sim
+          </button>
+<!-- Button: No -->
+<button class="h-12 bg-transparent text-black border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] font-bold text-lg hover:bg-white active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" type="button">
+            Não
+          </button>
+</div>
+</div>
+</form>
+<!-- END: Form Section -->
+</main>
+<!-- END: Main Content -->
+<!-- BEGIN: Footer Actions -->
+<!-- Purpose: Primary Call to Action anchored at the bottom of the flow -->
+<footer class="mt-8 w-full max-w-md mx-auto mb-6" data-purpose="footer-actions">
+<button class="w-full h-16 bg-[#FFEA00] text-black border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] font-bold text-lg flex items-center justify-center space-x-2 active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" type="button">
+<span>Começar meu orçamento</span>
+<i class="fa-solid fa-arrow-right"></i>
+</button>
+</footer>
+<!-- END: Footer Actions -->
+</body></html>

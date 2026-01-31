@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nova Receita - Neobrutalism</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Font Awesome for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts: Inter (Clean Sans-Serif) -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'neo-green': '#4ADE80', // Bright lime green approximation
+            'neo-black': '#000000',
+            'neo-white': '#FFFFFF',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          boxShadow: {
+            'neo': '4px 4px 0px 0px #000000', // Hard shadow, no blur
+            'neo-sm': '2px 2px 0px 0px #000000',
+          },
+          borderWidth: {
+            '3': '3px',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom CSS for specific styling needs -->
+<style data-purpose="custom-utilities">
+    /* Remove tap highlight on mobile */
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    /* Custom cursor animation for the price input */
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    .cursor-blink {
+      animation: blink 1s step-end infinite;
+    }
+
+    /* Hide scrollbar for clean mobile look */
+    body::-webkit-scrollbar {
+      display: none;
+    }
+    body {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-neo-white font-sans text-neo-black min-h-screen flex flex-col antialiased relative overflow-x-hidden">
+<!-- BEGIN: Main Header -->
+<!-- Simple centered header with a bottom border -->
+<header class="w-full bg-neo-white z-10 sticky top-0">
+<div class="py-4 text-center">
+<h1 class="text-lg font-bold tracking-tight">Nova Receita</h1>
+</div>
+<div class="h-[3px] w-full bg-neo-black"></div>
+</header>
+<!-- END: Main Header -->
+<!-- BEGIN: Main Content Area -->
+<main class="flex-grow px-5 py-6 flex flex-col items-center w-full max-w-md mx-auto space-y-8 pb-32">
+<!-- BEGIN: Amount Section -->
+<!-- Large price display with a blinking cursor effect -->
+<section class="text-center w-full mt-4" data-purpose="amount-display"><h2 class="text-xs font-bold uppercase tracking-wider mb-2">VALOR DA RECEITA</h2>
+<div class="flex items-center justify-center text-6xl font-extrabold tracking-tighter relative">
+<span class="relative z-10">R$ <span class="relative">0<span class="absolute inset-y-0 left-1/2 -translate-x-1/2 w-[4px] h-[80%] top-[10%] animate-pulse bg-neo-green"></span></span>,00</span>
+</div></section>
+<!-- END: Amount Section -->
+<!-- BEGIN: Details Card 1 -->
+<!-- Contains Description, Type Toggle, and Switch -->
+<div class="relative w-full mt-6 mb-8">
+<!-- Green Tab Decoration Top -->
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 w-3/4 h-6 bg-neo-green border-3 border-neo-black rounded-t-lg z-0"></div>
+<section class="w-full bg-neo-white border-3 border-neo-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rounded-lg overflow-hidden relative z-10" data-purpose="details-card">
+<!-- Description Input Row -->
+<div class="flex gap-3 border-b-3 border-neo-black bg-white p-5 items-center">
+<div class="">
+<i class="fa-solid fa-file-lines text-xl"></i>
+</div>
+<div class="flex-grow">
+<label class="block text-xs font-bold mb-1 uppercase" for="description">Descrição</label>
+<input class="w-full border-none p-0 text-neo-black placeholder-gray-400 focus:ring-0 text-lg bg-transparent font-semibold" id="description" placeholder="Ex: Salário, Projeto X..." type="text"/>
+</div>
+</div>
+<!-- Toggle Switch (Fixo / Variável) -->
+<div class="border-b-3 border-neo-black bg-white p-5">
+<div class="flex w-full border-3 border-neo-black rounded-full overflow-hidden h-12 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] bg-white">
+<button class="flex-1 font-bold text-sm bg-white hover:bg-gray-50 transition-colors flex items-center justify-center border-r-3 border-neo-black">
+              Fixo
+            </button>
+<button class="flex-1 font-bold text-sm bg-neo-green flex items-center justify-center">
+              Variável
+            </button>
+</div>
+</div>
+<!-- Monthly Variation Checkbox -->
+<div class="flex items-center justify-between bg-white p-5">
+<span class="font-bold text-sm">Valor varia mensalmente?</span>
+<!-- Custom Blocky Switch Toggle -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-14 h-8 bg-white border-3 border-neo-black peer-focus:outline-none peer-checked:bg-neo-green rounded-none shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-colors"></div>
+<div class="absolute bg-neo-black h-5 w-5 border border-black transition-transform peer-checked:translate-x-6 rounded-none left-[3px] top-[3px]"></div>
+</label>
+</div>
+</section>
+</div>
+<!-- END: Details Card 1 -->
+<!-- BEGIN: Details Card 2 -->
+<!-- Contains Date, Account, and Responsible person selectors -->
+<div class="relative w-full mb-8">
+<!-- Green Tab Decoration Bottom -->
+<div class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-3/4 h-6 bg-neo-green border-3 border-neo-black rounded-b-lg z-0"></div>
+<section class="w-full bg-neo-white border-3 border-neo-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rounded-lg overflow-hidden relative z-10" data-purpose="meta-card">
+<!-- Row: Date -->
+<div class="flex items-center justify-between border-b-3 border-neo-black bg-white active:bg-gray-50 cursor-pointer p-5">
+<div class="flex items-center gap-4">
+<i class="fa-solid fa-calendar text-xl w-6 text-center"></i>
+<span class="font-bold text-sm">Data</span>
+</div>
+<div class="flex items-center gap-2 font-bold text-sm">
+<span>Hoje</span>
+<i class="fa-solid fa-chevron-right text-xs"></i>
+</div>
+</div>
+<!-- Row: Account -->
+<div class="flex items-center justify-between border-b-3 border-neo-black bg-white active:bg-gray-50 cursor-pointer p-5">
+<div class="flex items-center gap-4">
+<i class="fa-solid fa-building-columns text-xl w-6 text-center"></i>
+<span class="font-bold text-sm">Conta de Destino</span>
+</div>
+<div class="flex items-center gap-2 font-bold text-sm">
+<span>Nubank</span>
+<i class="fa-solid fa-chevron-right text-xs"></i>
+</div>
+</div>
+<!-- Row: Responsible -->
+<div class="flex items-center justify-between bg-white active:bg-gray-50 cursor-pointer p-5">
+<div class="flex items-center gap-4">
+<i class="fa-solid fa-user-group text-xl w-6 text-center"></i>
+<span class="font-bold text-sm">Responsável</span>
+</div>
+<div class="flex items-center gap-2 font-bold text-sm">
+<span>Eu</span>
+<i class="fa-solid fa-chevron-right text-xs"></i>
+</div>
+</div>
+</section>
+</div>
+<!-- END: Details Card 2 -->
+</main>
+<!-- END: Main Content Area -->
+<!-- BEGIN: Bottom Action Footer -->
+<footer class="fixed bottom-0 left-0 w-full px-5 pb-8 pt-4 bg-neo-white/90 backdrop-blur-sm z-20">
+<div class="max-w-md mx-auto">
+<button class="w-full bg-neo-green text-neo-black font-extrabold text-lg py-4 px-6 border-3 border-neo-black active:shadow-none active:translate-x-[4px] active:translate-y-[4px] transition-all rounded-sm uppercase tracking-wide shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">Salvar Receita</button>
+</div>
+</footer>
+<!-- END: Bottom Action Footer -->
+</body></html>
