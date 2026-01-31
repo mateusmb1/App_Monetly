@@ -1,7 +1,7 @@
-# Implementation Plan - Neo-Brutalist Finance PWA
+# Monetly Implementation Plan - Neo-Brutalist Finance PWA
 
 ##  Goal
-Replace the existing application with a new **Personal & Family Finance PWA** featuring a "Neo-Brutalist" design. The app will focus on daily usage, projections, and shared family management.
+Replace the existing application with **Monetly**, a new **Personal & Family Finance PWA** featuring a "Neo-Brutalist" design. The app will focus on daily usage, projections, and shared family management.
 
 ## 1. Architecture & Tech Stack
 - **Framework:** Next.js (App Router)

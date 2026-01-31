@@ -34,10 +34,21 @@ export default function LoginPage() {
          <main className="w-full max-w-sm flex flex-col items-center gap-6" data-purpose="login-form-container">
             {/* Header Section */}
             <header className="text-center w-full flex flex-col items-center gap-6">
-               {/* Logo Block */}
-               <div className="bg-white border-[3px] border-black shadow-brutal px-6 py-2 mb-2 inline-block">
-                  <h1 className="text-4xl font-black tracking-tighter uppercase text-black">APP</h1>
+               {/* Logo Video Intro */}
+               <div className="w-full max-w-[280px] aspect-video bg-white border-[3px] border-black shadow-brutal overflow-hidden relative mb-2">
+                  <video
+                     autoPlay
+                     muted
+                     loop
+                     playsInline
+                     className="w-full h-full object-cover"
+                  >
+                     <source src="/assets/intro.mp4" type="video/mp4" />
+                     Seu navegador não suporta vídeos.
+                  </video>
+                  <div className="absolute inset-0 border-[3px] border-black pointer-events-none"></div>
                </div>
+
                {/* Welcome Text */}
                <div className="space-y-1">
                   <h2 className="text-3xl font-black text-black leading-tight">Acesse sua conta</h2>

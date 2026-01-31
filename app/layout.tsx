@@ -14,7 +14,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Neo-Brutalist Finance App",
+  title: "Monetly - Neo-Brutalist Finance",
   description: "A financial app with Neo-brutalist style",
 };
 
