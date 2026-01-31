@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡ Jules Finance
 
-## Getting Started
+> **Neo-Brutalist Family & Personal Finance PWA**
+> Uma experiência financeira crua, direta e eficiente.
 
-First, run the development server:
+---
+
+## 🎨 Design Philosophy
+Este projeto utiliza uma estética **Neo-Brutalista**:
+- Bordas espessas (Brutal Borders)
+- Sombras sólidas e deslocadas
+- Cores vibrantes e alto-contraste
+- Tipografia geométrica
+
+---
+
+## 📸 Visual Showcase
+
+````carousel
+![Dashboard Financeiro Mensal](file:///c:/Users/Eu/Downloads/jules_session_3658926119558465872/todas-telas/screen3.png)
+<!-- slide -->
+![Planejamento de Projeções](file:///c:/Users/Eu/Downloads/jules_session_3658926119558465872/todas-telas/screen11.png)
+<!-- slide -->
+![Lançamento de Despesa](file:///c:/Users/Eu/Downloads/jules_session_3658926119558465872/todas-telas/screen7.png)
+<!-- slide -->
+![Detalhamento de Cartão de Crédito](file:///c:/Users/Eu/Downloads/jules_session_3658926119558465872/todas-telas/screen5.png)
+````
+
+---
+
+## 🚀 Core Features
+
+- 🟢 **Daily Check-in**: Rotina rápida para garantir que nenhum gasto passe despercebido.
+- 👨‍👩‍👧 **Grupos Familiares**: Gerenciamento compartilhado entre família e cônjuges.
+- 📈 **Projeções Futuras**: Visão de fluxo de caixa para 3, 6 e 12 meses.
+- 💳 **Gestão de Dívidas**: Estratégias inteligentes para pagamento de cartões e financiamentos.
+- ⚡ **Offline-first**: Pronto para ser instalado como PWA no seu celular.
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** Next.js 15 (App Router), Tailwind CSS
+- **Backend:** Supabase (PostgreSQL, Auth, RLS)
+- **Protocol:** MCP (Model Context Protocol) para integração fluida
+
+---
+
+## 📚 Documentação do Projeto
+
+Centralize seu conhecimento técnico aqui:
+
+| Documento | Descrição |
+|-----------|-----------|
+| 📅 [PLAN.md](file:///c:/Users/Eu/Downloads/jules_session_3658926119558465872/docs/PLAN.md) | Plano de implementação original do PWA. |
+| 🛠 [FIX_PLAN.md](file:///c:/Users/Eu/Downloads/jules_session_3658926119558465872/docs/FIX_PLAN.md) | Plano de correções do banco de dados. |
+| 🛡 [AUDIT_REPORT.md](file:///c:/Users/Eu/Downloads/jules_session_3658926119558465872/docs/AUDIT_REPORT.md) | Relatórios de auditoria de segurança e schema. |
+| ⚡ [MCP_PLAN.md](file:///c:/Users/Eu/Downloads/jules_session_3658926119558465872/docs/MCP_PLAN.md) | Configuração dos servidores MCP. |
+| 🐘 [SCHEMA.sql](file:///c:/Users/Eu/Downloads/jules_session_3658926119558465872/supabase/schema.sql) | Definição completa do banco de dados e RLS. |
+
+---
+
+## 🛠 Desenvolvimento
 
 ```bash
+# Instalação
+npm install
+
+# Rodar em desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> [!IMPORTANT]
+> Este projeto foi desenvolvido utilizando a arquitetura de Agentes Antigravity para garantir máxima qualidade de código e documentação.
