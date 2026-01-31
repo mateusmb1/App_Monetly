@@ -1,4 +1,4 @@
-# ⚡ Jules Finance
+# ⚡ Monetly
 
 > **Neo-Brutalist Family & Personal Finance PWA**
 > Uma experiência financeira crua, direta e eficiente.

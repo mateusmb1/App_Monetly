@@ -1,4 +1,4 @@
-# Plan de Integração de Logo & Vídeo - Jules Finance
+# Plan de Integração de Logo & Vídeo - Monetly
 
 Este plano descreve como integraremos a nova identidade visual (imagem e vídeo) ao seu aplicativo, mantendo e reforçando a estética Neo-Brutalista.
 
