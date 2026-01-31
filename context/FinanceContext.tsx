@@ -4,7 +4,7 @@ import React, { createContext, useContext, useState, useEffect, ReactNode } from
 import {
     User, Group, Account, Income, Expense, Financing, MonthlySummary
 } from '@/types';
-import { supabase } from '@/lib/supabase';
+import { createClient } from '@/utils/supabase/client';
 
 // Mock Data (Fallback)
 const MOCK_USER: User = {
@@ -72,6 +72,7 @@ type FinanceContextType = {
 export const FinanceContext = createContext<FinanceContextType>({} as FinanceContextType);
 
 export const FinanceProvider = ({ children }: { children: ReactNode }) => {
+    const supabase = createClient();
     const [user, setUser] = useState<User | null>(null);
     const [group, setGroup] = useState<Group | null>(null);
     const [accounts, setAccounts] = useState<Account[]>([]);

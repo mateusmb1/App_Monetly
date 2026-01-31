@@ -35,4 +35,4 @@ Execution
 - [x] Logo and Video integrated
 
 ### Summary
-The project has been elevated from a basic template to **Monetly**, a robust, visually striking, and feature-complete finance application. All requirements from the audit were met, login issues were debugged and fixed (including Google Auth and a dedicated SQL fix for the admin user), and the repository is now fully documented and synchronized with GitHub.
+The project has been elevated from a basic template to **Monetly**, a robust, visually striking, and feature-complete finance application. All requirements from the audit were met, login issues were debugged and fixed (including Google Auth with SSR persistence and a dedicated SQL fix for the admin user), and the repository is now fully documented and synchronized with GitHub.
