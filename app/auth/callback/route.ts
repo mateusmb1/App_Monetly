@@ -10,11 +10,14 @@ export async function GET(request: Request) {
     if (code) {
         const supabase = await createClient()
         const { error } = await supabase.auth.exchangeCodeForSession(code)
+
         if (!error) {
-            return NextResponse.redirect(`${origin}${next}`)
+            // Create the response object first to ensure cookies are attached to the correct domain
+            const response = NextResponse.redirect(`${origin}${next}`)
+            return response
         }
     }
 
-    // return the user to an error page with instructions
-    return NextResponse.redirect(`${origin}/auth/auth-code-error`)
+    // If there's an error or no code, go to login with error feedback
+    return NextResponse.redirect(`${origin}/login?error=auth_callback_failed`)
 }
